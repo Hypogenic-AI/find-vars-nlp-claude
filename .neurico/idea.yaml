@@ -1,0 +1,29 @@
+idea:
+  title: Finding Variables Under Consideration
+  domain: nlp
+  hypothesis: 'Large language models (LLMs) do not always consider the pragmatic implications
+    of their suggestions when generating messages, even though they can identify these
+    implications when prompted. By pre-filling different responses that vary certain
+    axes potentially under consideration and observing if these changes significantly
+    affect perplexity, it is possible to probe which variables the LLM is actually
+    considering during generation.
+
+    '
+  background:
+    description: 'If you ask an LLM to help you write something, especially a message,
+      it often doesn''t consider the pragmatic implications of what it suggests. Yet,
+      LLMs are known to be able to read off these implications when asked. Can we
+      probe for ''the variables under consideration'' by an LLM by prefilling different
+      responses that varies certain axes that might have been considered and sees
+      if they change perplexity significantly?
+
+      '
+  metadata:
+    author: Ari Holtzman
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/vxgsjgCnsmNL3S8eizBY
+    idea_id: finding_variables_under_consid_20260407_203935_ef2c3d7a
+    created_at: '2026-04-07T20:39:35.144972'
+    status: submitted
+    github_repo_name: find-vars-nlp-claude
+    github_repo_url: https://github.com/Hypogenic-AI/find-vars-nlp-claude
