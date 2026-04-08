@@ -1,0 +1,42 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{The ``Polite, Vague, and Hedged'' Default Profile}
+\label{sec:profile}
+
+Our results reveal a coherent pragmatic default profile in instruction-tuned LLMs. When generating messages, these models consistently prefer responses that are polite ($d{=}1.81$), vague ($d{=}1.02$), indirect ($d{=}0.94$), and formal ($d{=}0.68$). This profile describes a ``safe'' communication style that minimizes risk of causing offense but may not serve the user's actual communicative goals. A user asking for help drafting a complaint may want directness; a user writing to a close friend may want informality. The model's defaults systematically pull in the opposite direction.
+
+The one exception is emotional tone, where the model shows no stable default. This suggests that warmth vs.\ neutrality is either genuinely context-dependent in the training data (different situations call for different tones, and the model reflects this) or that RLHF training did not produce a consistent prior along this dimension. Either way, emotional tone behaves differently from the other four axes.
+
+\subsection{Interpreting the Behavioral--Introspective Gap}
+\label{sec:gap}
+
+The dissociation between perplexity-detected preferences and introspective self-reports reveals two distinct failure modes of self-awareness in LLMs.
+
+{\bf Blind spots.} Directness represents a case where the model has a strong behavioral default (preferring indirect, hedged responses in 80\% of scenarios) that it does not recognize or report. When asked what variables it considered, the model mentions politeness, formality, and specificity---but rarely directness. This suggests that the model's hedging behavior is ``baked in'' to its generation prior at a level that is not accessible to the model's reasoning about its own outputs. The hedging may originate from RLHF training, which rewards safe, non-committal responses, creating a strong but implicit prior.
+
+{\bf Performative consideration.} Emotional tone represents the opposite pattern: the model frequently claims to consider it (53.3\% of scenarios) but shows no consistent behavioral preference. One interpretation is that the model genuinely deliberates about tone on a per-scenario basis, sometimes choosing warmth and sometimes neutrality, resulting in no aggregate preference. An alternative interpretation is that ``tone'' is a socially expected thing to mention when discussing communication---the model has learned that good communicators consider tone, and it reports doing so even when the dimension does not meaningfully influence its generation.
+
+These patterns are consistent with \citet{trienes2025behavioral}'s finding that introspection is unreliable for information salience, extending the result to pragmatic variable consideration. Together, these findings suggest that LLM self-reports should not be treated as ground truth for understanding model behavior.
+
+\subsection{What ``Under Consideration'' Means}
+\label{sec:definition}
+
+Our results suggest a useful operational definition: a pragmatic variable is \emph{under consideration} by an LLM if the model's generation prior shows a statistically significant directional preference along that axis across contexts. This definition captures the idea that the model's training has instilled a default along that dimension---the model ``cares'' about politeness in the sense that its outputs are systematically more likely to be polite than blunt.
+
+This is importantly distinct from whether the model \emph{can reason about} the variable (it can, when prompted), whether it \emph{claims to consider} it (it does, inconsistently), or whether it \emph{adapts} when given explicit instructions (likely yes, but untested here). Perplexity sensitivity measures the model's default generation-time preferences, not its full pragmatic capabilities.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\para{Cross-axis contamination.} Despite constraints during variant generation, response pairs may differ on more than the target axis. For example, polite variants may also be slightly more formal, inflating apparent correlation between axes. Future work should use human annotation to validate axis isolation.
+
+\para{Model family scope.} Both evaluation models are from the Qwen family. While they show perfect rank-order correlation, testing on Llama, Mistral, and GPT models (via log-probability APIs) is needed to establish generalizability beyond a single model family.
+
+\para{Cross-model introspection.} Introspection was measured on \gptfour rather than the Qwen models used for perplexity, because smaller models do not produce reliable introspective reports. The ideal comparison would use the same model for both, which requires a model that provides both token-level log-probabilities and coherent self-reflection.
+
+\para{Axis coverage.} We tested five pragmatic axes. Other potentially relevant dimensions---urgency, confidence, humor, cultural register---were not tested. The framework extends naturally to additional axes.
+
+\para{Scenario scale.} Thirty scenarios across three domains provide sufficient power for our non-parametric tests but may not capture all communicative contexts. Domain-specific effects (\eg politeness mattering more in service scenarios) were not systematically analyzed.
+
+\para{Static defaults only.} We measure the model's unconditional preference, not whether it adapts when given explicit pragmatic instructions (\eg ``write a casual message''). The model likely exhibits different preferences under constrained prompts, which our method does not capture.

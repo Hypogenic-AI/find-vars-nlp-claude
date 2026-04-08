@@ -1,0 +1,188 @@
+dataset,pair_name,adj1,adj2,direction,scale_terms,gold_ranking,num_terms,num_ranked
+demelo,alarming-unalarming,alarming,unalarming,lower_to_upper,creepy | scary | frightening | terrifying | sinister,creepy | scary || frightening | terrifying | sinister,5,4
+demelo,ample-meager,ample,meager,lower_to_upper,sufficient | good | wide | full,sufficient | good || wide | full,4,3
+demelo,attractive-unattractive,attractive,unattractive,lower_to_upper,attractive | beautiful | mesmerizing | seductive,attractive | beautiful | mesmerizing || seductive,4,3
+demelo,available-unavailable,available,unavailable,lower_to_upper,available | accessible | visible,available | accessible | visible,3,3
+demelo,aware-incognizant,aware,incognizant,lower_to_upper,alive | awake | aware | conscious,alive | awake | aware || conscious,4,3
+demelo,beautiful-ugly,beautiful,ugly,lower_to_upper,handsome | lovely | gorgeous | beautiful | pretty | attractive,handsome || lovely || gorgeous | beautiful || pretty || attractive,6,2
+demelo,big-little,big,little,lower_to_upper,sizeable | big | large | huge | colossal,sizeable | big || large | huge | colossal,5,4
+demelo,bloody-bloodless,bloody,bloodless,lower_to_upper,violent | homicidal | murderous,violent | homicidal || murderous,3,2
+demelo,clean-dirty,clean,dirty,lower_to_upper,clean | spotless | immaculate,clean | spotless || immaculate,3,2
+demelo,composed-discomposed,composed,discomposed,lower_to_upper,calm | cool | serene,calm || cool | serene,3,2
+demelo,comprehensive-incomprehensive,comprehensive,incomprehensive,lower_to_upper,statewide | nationwide | worldwide,statewide | nationwide | worldwide,3,3
+demelo,comprehensive-incomprehensive2,comprehensive,incomprehensive2,lower_to_upper,general | extensive | complete | comprehensive | universal,general | extensive | complete || comprehensive | universal,5,4
+demelo,concerned-unconcerned,concerned,unconcerned,lower_to_upper,concerned | preoccupied | obsessed,concerned | preoccupied | obsessed,3,3
+demelo,content-discontent,content,discontent,lower_to_upper,content | satisfied | pleased | happy,content || satisfied | pleased || happy,4,2
+demelo,echt-counterfeit,echt,counterfeit,lower_to_upper,good | real | authentic,good | real | authentic,3,3
+demelo,far-close,far,close,lower_to_upper,far | further | farther | removed,far | further || farther | removed,4,3
+demelo,fat-lean,fat,lean,lower_to_upper,overweight | chubby | fat | obese,overweight | chubby | fat | obese,4,4
+demelo,friendly-unfriendly,friendly,unfriendly,lower_to_upper,friendly | cordial | warm | intimate,friendly || cordial | warm | intimate,4,3
+demelo,full-empty,full,empty,lower_to_upper,full | stuffed | overloaded | overflowing,full | stuffed | overloaded | overflowing,4,4
+demelo,general-specific,general,specific,lower_to_upper,broad | widespread | general | universal,broad || widespread | general | universal,4,3
+demelo,happy-unhappy,happy,unhappy,lower_to_upper,happy | content | euphoric,happy || content | euphoric,3,2
+demelo,high-low,high,low,lower_to_upper,high | higher | soaring,high | higher | soaring,3,3
+demelo,hot-cold,hot,cold,lower_to_upper,warm | hot | overheated | stifling | sultry,warm | hot | overheated | stifling || sultry,5,4
+demelo,intelligent-stupid,intelligent,stupid,lower_to_upper,bright | intelligent | smart | clever | brilliant,bright || intelligent || smart || clever | brilliant,5,2
+demelo,interesting-uninteresting,interesting,uninteresting,lower_to_upper,interesting | intriguing | amusing | entertaining | fascinating | exciting,interesting | intriguing | amusing || entertaining | fascinating || exciting,6,4
+demelo,involved-uninvolved,involved,uninvolved,lower_to_upper,interested | concerned | involved,interested | concerned | involved,3,3
+demelo,known-unknown,known,unknown,lower_to_upper,known | famous | legendary,known | famous | legendary,3,3
+demelo,like-unlike,like,unlike,lower_to_upper,like | equal | same,like | equal | same,3,3
+demelo,many-few,many,few,lower_to_upper,some | many | numerous | galore,some | many | numerous | galore,4,4
+demelo,mature-green,mature,green,lower_to_upper,mature | ripe | overripe,mature | ripe | overripe,3,3
+demelo,necessary-unnecessary,necessary,unnecessary,lower_to_upper,needed | necessary | required | essential | indispensable,needed | necessary | required || essential | indispensable,5,4
+demelo,noxious-innocuous,noxious,innocuous,lower_to_upper,harmful | toxic | deadly,harmful | toxic | deadly,3,3
+demelo,possible-impossible,possible,impossible,lower_to_upper,possible | realistic | feasible | practical,possible | realistic | feasible | practical,4,4
+demelo,private-public,private,public,lower_to_upper,personal | private | secret,personal | private | secret,3,3
+demelo,quiet-noisy,quiet,noisy,lower_to_upper,soft | quiet | inaudible | silent,soft | quiet | inaudible | silent,4,4
+demelo,satisfactory-unsatisfactory,satisfactory,unsatisfactory,lower_to_upper,acceptable | okay | alright | right,acceptable || okay || alright | right,4,2
+demelo,seductive-unseductive,seductive,unseductive,lower_to_upper,attractive | sexy | seductive,attractive | sexy | seductive,3,3
+demelo,serious-frivolous,serious,frivolous,lower_to_upper,real | solemn | serious | grave,real | solemn | serious | grave,4,4
+demelo,stimulating-unexciting,stimulating,unexciting,lower_to_upper,interesting | moving | exciting | thrilling,interesting | moving | exciting | thrilling,4,4
+demelo,strange-familiar,strange,familiar,lower_to_upper,strange | funny | unusual | weird | eerie,strange || funny | unusual | weird | eerie,5,4
+demelo,sugary-nonsweet,sugary,nonsweet,lower_to_upper,sweet | sugary | syrupy,sweet | sugary | syrupy,3,3
+demelo,surprising-unsurprising,surprising,unsurprising,lower_to_upper,unexpected | astonishing | stunning,unexpected | astonishing || stunning,3,2
+demelo,tasty-tasteless,tasty,tasteless,lower_to_upper,flavorful | zesty | hot | spicy,flavorful | zesty | hot || spicy,4,3
+demelo,thick-thin,thick,thin,lower_to_upper,thick | dense | impenetrable,thick | dense | impenetrable,3,3
+demelo,valid-invalid,valid,invalid,lower_to_upper,reasonable | valid | sound,reasonable | valid | sound,3,3
+demelo,attractive-unattractive,attractive,unattractive,upper_to_lower,plain | unattractive | ugly,plain | unattractive | ugly,3,3
+demelo,audible-inaudible,audible,inaudible,upper_to_lower,quiet | inaudible | imperceptible | silent,quiet | inaudible || imperceptible | silent,4,3
+demelo,big-little,big,little,upper_to_lower,small | smaller | midget | minute | tiny | minuscule | micro | microscopic,small | smaller | midget | minute | tiny || minuscule | micro || microscopic,8,6
+demelo,cardinal-ordinal,cardinal,ordinal,upper_to_lower,first | second | third | fourth | fifth | sixth | seventh | eighth,first | second | third | fourth | fifth | sixth | seventh | eighth,8,8
+demelo,careful-careless,careful,careless,upper_to_lower,negligent | careless | reckless,negligent | careless | reckless,3,3
+demelo,clean-dirty,clean,dirty,upper_to_lower,indecent | profane | obscene,indecent | profane | obscene,3,3
+demelo,comfortable-uncomfortable,comfortable,uncomfortable,upper_to_lower,uncomfortable | uneasy | painful,uncomfortable | uneasy | painful,3,3
+demelo,common-uncommon,common,uncommon,upper_to_lower,uncommon | unusual | rare | extraordinary | exceptional,uncommon | unusual | rare | extraordinary | exceptional,5,5
+demelo,current-noncurrent,current,noncurrent,upper_to_lower,old | obsolete | outdated,old | obsolete || outdated,3,2
+demelo,difficult-easy,difficult,easy,upper_to_lower,easy | simple | smooth | painless | effortless,easy || simple || smooth | painless | effortless,5,3
+demelo,dispensable-indispensable,dispensable,indispensable,upper_to_lower,necessary | vital | indispensable | critical,necessary | vital | indispensable | critical,4,4
+demelo,distant-close,distant,close,upper_to_lower,close | near | intimate,close | near | intimate,3,3
+demelo,expensive-cheap,expensive,cheap,upper_to_lower,affordable | inexpensive | cheap,affordable | inexpensive | cheap,3,3
+demelo,far-close,far,close,upper_to_lower,nearby | near | close | adjacent,nearby || near | close | adjacent,4,3
+demelo,fat-lean,fat,lean,upper_to_lower,lean | slim | thin | skinny | gaunt | emaciated | skeletal,lean | slim | thin | skinny | gaunt | emaciated | skeletal,7,7
+demelo,favorable-unfavorable,favorable,unfavorable,upper_to_lower,critical | negative | hostile,critical | negative | hostile,3,3
+demelo,fit-unfit,fit,unfit,upper_to_lower,sick | ill | impaired | disabled,sick || ill | impaired | disabled,4,3
+demelo,fortunate-unfortunate,fortunate,unfortunate,upper_to_lower,unfortunate | disastrous | fatal,unfortunate | disastrous | fatal,3,3
+demelo,friendly-unfriendly,friendly,unfriendly,upper_to_lower,cool | chilly | unfriendly | hostile,cool || chilly | unfriendly | hostile,4,3
+demelo,good-bad,good,bad,upper_to_lower,hard | painful | hopeless,hard | painful | hopeless,3,3
+demelo,honest-dishonest,honest,dishonest,upper_to_lower,misleading | deceptive | fraudulent | false,misleading | deceptive || fraudulent | false,4,3
+demelo,hopeful-hopeless,hopeful,hopeless,upper_to_lower,bleak | desperate | hopeless,bleak || desperate | hopeless,3,2
+demelo,hot-cold2,hot,cold2,upper_to_lower,cool | cold | frigid | icy | frozen,cool | cold | frigid | icy || frozen,5,4
+demelo,hot-cold,hot,cold,upper_to_lower,cool | refrigerated | chilly | cold | frigid | icy | frozen,cool || refrigerated || chilly | cold | frigid | icy || frozen,7,4
+demelo,light-dark,light,dark,upper_to_lower,dim | gloomy | dark | black,dim | gloomy | dark | black,4,4
+demelo,loose-tight,loose,tight,upper_to_lower,close | tight | snug,close | tight | snug,3,3
+demelo,loud-soft,loud,soft,upper_to_lower,low | subdued | quiet,low | subdued | quiet,3,3
+demelo,many-few,many,few,upper_to_lower,some | few | fewer,some | few | fewer,3,3
+demelo,mild-intense,mild,intense,upper_to_lower,strong | intense | terrible | overwhelming | violent,strong | intense | terrible | overwhelming | violent,5,5
+demelo,national-international,national,international,upper_to_lower,transnational | international | global,transnational | international | global,3,3
+demelo,noticed-unnoticed,noticed,unnoticed,upper_to_lower,neglected | ignored | overlooked | forgotten,neglected | ignored || overlooked | forgotten,4,3
+demelo,open-closed,open,closed,upper_to_lower,closed | shut | sealed,closed | shut | sealed,3,3
+demelo,possible-impossible,possible,impossible,upper_to_lower,impractical | impracticable | unrealistic | infeasible | impossible,impractical || impracticable | unrealistic | infeasible | impossible,5,4
+demelo,proud-humble,proud,humble,upper_to_lower,humbled | humiliated | crushed,humbled | humiliated | crushed,3,3
+demelo,realistic-unrealistic,realistic,unrealistic,upper_to_lower,impractical | unrealistic | impossible,impractical | unrealistic | impossible,3,3
+demelo,safe-dangerous,safe,dangerous,upper_to_lower,unreliable | dangerous | risky | suicidal,unreliable | dangerous || risky | suicidal,4,3
+demelo,sane-insane,sane,insane,upper_to_lower,unstable | crazy | insane,unstable | crazy | insane,3,3
+demelo,single-multiple,single,multiple,upper_to_lower,dual | double | doubled | triple | treble | quadruple,dual || double || doubled | triple || treble | quadruple,6,3
+demelo,smooth-rough,smooth,rough,upper_to_lower,cracked | broken | crushed,cracked | broken | crushed,3,3
+demelo,successful-unsuccessful,successful,unsuccessful,upper_to_lower,disappointed | frustrated | defeated,disappointed | frustrated | defeated,3,3
+demelo,superior-inferior,superior,inferior,upper_to_lower,cheap | mediocre | bad | worst,cheap || mediocre | bad | worst,4,3
+demelo,virtuous-wicked,virtuous,wicked,upper_to_lower,wrong | immoral | sinful | evil,wrong | immoral | sinful | evil,4,4
+crowd,abundant-plenty2,abundant,plenty2,upper_to_lower,considerable | abundant,considerable | abundant,2,2
+crowd,abundant-plenty,abundant,plenty,upper_to_lower,plenty | vast | abundant,plenty | vast | abundant,3,3
+crowd,admirable-noteworthy,admirable,noteworthy,upper_to_lower,fine | admirable | upstanding,fine | admirable || upstanding,3,2
+crowd,appropriate-excellent,appropriate,excellent,upper_to_lower,fine | satisfactory | excellent,fine | satisfactory | excellent,3,3
+crowd,awful-bad-looking,awful,bad-looking,upper_to_lower,awful | shitty,awful | shitty,2,2
+crowd,awful-dreadful,awful,dreadful,upper_to_lower,awful | dreadful,awful | dreadful,2,2
+crowd,bad-horrendous,bad,horrendous,upper_to_lower,bad | horrific | horrendous,bad | horrific | horrendous,3,3
+crowd,bad-ludicrous,bad,ludicrous,upper_to_lower,bad | ludicrous,bad | ludicrous,2,2
+crowd,beautiful-fairest,beautiful,fairest,upper_to_lower,fair | fairer | fairest | beautiful,fair | fairer | fairest | beautiful,4,4
+crowd,beneficial-nice,beneficial,nice,upper_to_lower,okay | incredible | awesome | terrific | marvelous,okay | incredible || awesome || terrific || marvelous,5,2
+crowd,better-exceptional,better,exceptional,upper_to_lower,good | better | remarkable | exceptional | perfect,good | better | remarkable | exceptional | perfect,5,5
+crowd,big-vast,big,vast,upper_to_lower,big | vast | extensive,big | vast || extensive,3,2
+crowd,bizarre-odd,bizarre,odd,upper_to_lower,odd | bizarre,odd | bizarre,2,2
+crowd,clear-prominent,clear,prominent,upper_to_lower,clear | prominent,clear | prominent,2,2
+crowd,competent-impressive,competent,impressive,upper_to_lower,competent | impressive,competent | impressive,2,2
+crowd,comprehensive-general,comprehensive,general,upper_to_lower,general | commonplace | comprehensive | universal | global,general || commonplace | comprehensive || universal || global,5,2
+crowd,content-pleased,content,pleased,upper_to_lower,content | satisfied | pleased,content || satisfied | pleased,3,2
+crowd,convenient-valuable,convenient,valuable,upper_to_lower,useful | worthwhile | valuable,useful | worthwhile | valuable,3,3
+crowd,costly-valuable,costly,valuable,upper_to_lower,costly | expensive | exorbitant,costly | expensive | exorbitant,3,3
+crowd,critical-gravest,critical,gravest,upper_to_lower,graver | critical | life-threatening,graver | critical | life-threatening,3,3
+crowd,cute-gorgeous,cute,gorgeous,upper_to_lower,cute | gorgeous,cute | gorgeous,2,2
+crowd,cute-lovelier,cute,lovelier,upper_to_lower,cute | pretty | lovely | lovelier | breathtaking,cute | pretty | lovely | lovelier | breathtaking,5,5
+crowd,daunting-formidable,daunting,formidable,upper_to_lower,tough | formidable | daunting,tough | formidable | daunting,3,3
+crowd,disappointing-obnoxious,disappointing,obnoxious,upper_to_lower,annoying | obnoxious,annoying | obnoxious,2,2
+crowd,distressing-bad,distressing,bad,upper_to_lower,bad | distressing,bad | distressing,2,2
+crowd,effective-potent,effective,potent,upper_to_lower,effective | potent,effective | potent,2,2
+crowd,efficient-functioning,efficient,functioning,upper_to_lower,functioning | efficient,functioning | efficient,2,2
+crowd,efficient-potent,efficient,potent,upper_to_lower,efficient | optimum,efficient | optimum,2,2
+crowd,embarrassed-uncomfortable,embarrassed,uncomfortable,upper_to_lower,uncomfortable | embarrassed,uncomfortable | embarrassed,2,2
+crowd,embarrassing-uncomfortable,embarrassing,uncomfortable,upper_to_lower,uncomfortable | embarrassing,uncomfortable | embarrassing,2,2
+crowd,enraged-irritated,enraged,irritated,upper_to_lower,upset | angry | enraged,upset | angry | enraged,3,3
+crowd,excessive-huge,excessive,huge,upper_to_lower,much | excessive | huge,much | excessive || huge,3,2
+crowd,excessive-valuable,excessive,valuable,upper_to_lower,costly | expensive | excessive | exorbitant,costly | expensive | excessive || exorbitant,4,3
+crowd,excited-delighted,excited,delighted,upper_to_lower,pleased | delighted,pleased | delighted,2,2
+crowd,few-least,few,least,upper_to_lower,few | little | least,few || little | least,3,2
+crowd,fine-remarkable2,fine,remarkable2,upper_to_lower,fine | remarkable | impressive,fine | remarkable | impressive,3,3
+crowd,fine-remarkable,fine,remarkable,upper_to_lower,fine | remarkable | spectacular,fine | remarkable | spectacular,3,3
+crowd,finest-excellent,finest,excellent,upper_to_lower,qualified | excellent | outstanding,qualified | excellent | outstanding,3,3
+crowd,guaranteed-adequate,guaranteed,adequate,upper_to_lower,fine | adequate | good,fine | adequate | good,3,3
+crowd,guaranteed-fitting,guaranteed,fitting,upper_to_lower,adequate | fine | fitting | good,adequate || fine || fitting | good,4,2
+crowd,high-higher,high,higher,upper_to_lower,high | higher,high | higher,2,2
+crowd,huge-broad,huge,broad,upper_to_lower,sizeable | big | huge | immense | enormous | tremendous,sizeable | big | huge | immense || enormous || tremendous,6,4
+crowd,huge-tremendous,huge,tremendous,upper_to_lower,sizeable | huge | major | immense | formidable | colossal | overwhelming | tremendous,sizeable | huge | major | immense || formidable | colossal || overwhelming || tremendous,8,5
+crowd,incorrect-unfavourable,incorrect,unfavourable,upper_to_lower,improper | poor | incorrect | unsatisfactory,improper || poor | incorrect || unsatisfactory,4,2
+crowd,inestimable-valuable,inestimable,valuable,upper_to_lower,valuable | immeasurable,valuable | immeasurable,2,2
+crowd,known-noteworthy,known,noteworthy,upper_to_lower,known | noteworthy | celebrated,known | noteworthy || celebrated,3,2
+crowd,limited-scarce,limited,scarce,upper_to_lower,low | limited | scarce,low | limited | scarce,3,3
+crowd,little-feeble,little,feeble,upper_to_lower,little | feeble,little | feeble,2,2
+crowd,lousy-miserable,lousy,miserable,upper_to_lower,lousy | miserable | horrible,lousy | miserable | horrible,3,3
+crowd,major-big,major,big,upper_to_lower,big | substantial | major | tremendous | staggering,big | substantial || major | tremendous || staggering,5,3
+crowd,major-staggering,major,staggering,upper_to_lower,big | substantial | tremendous | staggering,big | substantial | tremendous || staggering,4,3
+crowd,marvellous-spectacular,marvellous,spectacular,upper_to_lower,pretty | marvellous | breathtaking | spectacular,pretty | marvellous || breathtaking || spectacular,4,2
+crowd,miniscule-minute,miniscule,minute,upper_to_lower,small | minute | miniscule,small | minute | miniscule,3,3
+crowd,miserable-sad2,miserable,sad2,upper_to_lower,sad | miserable | terrible,sad | miserable || terrible,3,2
+crowd,miserable-sad,miserable,sad,upper_to_lower,unhappy | sad | miserable,unhappy || sad | miserable,3,2
+crowd,necessary-valuable,necessary,valuable,upper_to_lower,useful | relevant | necessary,useful | relevant | necessary,3,3
+crowd,odd-bizarre,odd,bizarre,upper_to_lower,unusual | rare,unusual | rare,2,2
+crowd,overwhelmed-happy,overwhelmed,happy,upper_to_lower,pleased | happy | excited | delighted | overwhelmed,pleased | happy | excited | delighted | overwhelmed,5,5
+crowd,perfect-fine,perfect,fine,upper_to_lower,a-okay | okay | fine | appropriate | faultless | perfect,a-okay || okay || fine | appropriate | faultless | perfect,6,4
+crowd,perfect-well,perfect,well,upper_to_lower,fine | well | terrific | awesome | perfect,fine || well | terrific || awesome | perfect,5,3
+crowd,poor-inadequate,poor,inadequate,upper_to_lower,low | scarce | inadequate | unacceptable,low | scarce | inadequate | unacceptable,4,4
+crowd,poor-indigent,poor,indigent,upper_to_lower,poor | indigent | bankrupt,poor | indigent | bankrupt,3,3
+crowd,precise-straightforward,precise,straightforward,upper_to_lower,clear | accurate | precise | exact,clear | accurate | precise | exact,4,4
+crowd,problematic-uncomfortable,problematic,uncomfortable,upper_to_lower,hard | problematic,hard | problematic,2,2
+crowd,proficient-trained,proficient,trained,upper_to_lower,capable | qualified | skilled | proficient,capable || qualified | skilled || proficient,4,2
+crowd,relevant-significant,relevant,significant,upper_to_lower,relevant | crucial,relevant | crucial,2,2
+crowd,rigorous-tougher,rigorous,tougher,upper_to_lower,tough | tougher | rigorous | stringent | severe,tough | tougher | rigorous | stringent | severe,5,5
+crowd,satisfactory-excellent,satisfactory,excellent,upper_to_lower,satisfactory | fine | appropriate | excellent,satisfactory || fine || appropriate | excellent,4,2
+crowd,scant-meagre,scant,meagre,upper_to_lower,few | limited | scant | meagre,few | limited | scant || meagre,4,3
+crowd,scarce-limited,scarce,limited,upper_to_lower,low | limited | scarce,low | limited | scarce,3,3
+crowd,scary-frightening,scary,frightening,upper_to_lower,scary | frightening | terrifying,scary || frightening | terrifying,3,2
+crowd,shaky-vulnerable,shaky,vulnerable,upper_to_lower,weak | shaky | vulnerable,weak | shaky | vulnerable,3,3
+crowd,shorter-tiny,shorter,tiny,upper_to_lower,little | tiny,little | tiny,2,2
+crowd,small-minute,small,minute,upper_to_lower,small | minute | miniscule,small | minute | miniscule,3,3
+crowd,sound-sturdy,sound,sturdy,upper_to_lower,intact | sturdy,intact | sturdy,2,2
+crowd,tenacious-tough,tenacious,tough,upper_to_lower,hardworking | tenacious | tough,hardworking | tenacious | tough,3,3
+crowd,terrific-outstanding,terrific,outstanding,upper_to_lower,positive | terrific,positive | terrific,2,2
+crowd,unfortunate-reprehensible,unfortunate,reprehensible,upper_to_lower,unfortunate | reprehensible,unfortunate | reprehensible,2,2
+crowd,wide-ranging-general,wide,ranging-general,upper_to_lower,general | broad | broader | wide-ranging | diverse,general | broad | broader | wide-ranging | diverse,5,5
+wilkinson,beautiful-ugly,beautiful,ugly,lower_to_upper,pretty | beautiful | gorgeous,pretty | beautiful | gorgeous,3,3
+wilkinson,bright-dark,bright,dark,lower_to_upper,light | bright,light | bright,2,2
+wilkinson,difficult-easy,difficult,easy,lower_to_upper,hard | difficult,hard | difficult,2,2
+wilkinson,dry-wet,dry,wet,lower_to_upper,dry | arid | parched,dry | arid | parched,3,3
+wilkinson,good-bad,good,bad,lower_to_upper,good | great | wonderful | awesome,good | great | wonderful | awesome,4,4
+wilkinson,hot-cold,hot,cold,lower_to_upper,warm | hot,warm | hot,2,2
+wilkinson,new-old,new,old,lower_to_upper,fresh | new,fresh | new,2,2
+wilkinson,small-large,small,large,lower_to_upper,small | tiny | miniscule,small | tiny | miniscule,3,3
+wilkinson,smart-stupid,smart,stupid,lower_to_upper,smart | intelligent,smart | intelligent,2,2
+wilkinson,beautiful-ugly,beautiful,ugly,upper_to_lower,ugly | hideous,ugly | hideous,2,2
+wilkinson,bright-dark,bright,dark,upper_to_lower,dim | dark,dim | dark,2,2
+wilkinson,different-same,different,same,upper_to_lower,similar | alike | same,similar | alike | same,3,3
+wilkinson,difficult-easy,difficult,easy,upper_to_lower,easy | simple,easy | simple,2,2
+wilkinson,dry-wet,dry,wet,upper_to_lower,damp | moist | wet,damp | moist | wet,3,3
+wilkinson,few-many,few,many,upper_to_lower,few | some | several | many,few | some | several | many,4,4
+wilkinson,good-bad,good,bad,upper_to_lower,bad | awful | terrible | horrible,bad | awful | terrible | horrible,4,4
+wilkinson,hot-cold,hot,cold,upper_to_lower,warm | cold | freezing,warm | cold | freezing,3,3
+wilkinson,new-old,new,old,upper_to_lower,old | ancient,old | ancient,2,2
+wilkinson,slow-fast,slow,fast,upper_to_lower,quick | fast | speedy,quick | fast | speedy,3,3
+wilkinson,small-large,small,large,upper_to_lower,big | large | huge | enormous | gigantic,big | large | huge | enormous | gigantic,5,5
+wilkinson,smart-stupid,smart,stupid,upper_to_lower,dumb | stupid | idiotic,dumb | stupid | idiotic,3,3

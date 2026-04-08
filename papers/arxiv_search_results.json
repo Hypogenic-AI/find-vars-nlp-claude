@@ -1,0 +1,296 @@
+[
+  {
+    "title": "HieroLM: Egyptian Hieroglyph Recovery with Next Word Prediction Language Model",
+    "arxiv_id": "2503.04996v1",
+    "abstract": "Egyptian hieroglyphs are found on numerous ancient Egyptian artifacts, but it is common that they are blurry or even missing due to erosion. Existing efforts to restore blurry hieroglyphs adopt computer vision techniques such as CNNs and model hieroglyph recovery as an image classification task, whi",
+    "year": "2025",
+    "query": "all:perplexity AND all:pragmatic AND all:language model"
+  },
+  {
+    "title": "An Open-Source Web-Based Tool for Evaluating Open-Source Large Language Models Leveraging Information Retrieval from Custom Documents",
+    "arxiv_id": "2502.10916v2",
+    "abstract": "In our work, we present the first-of-its-kind open-source web-based tool which is able to demonstrate the impacts of a user's speech act during discourse with conversational agents, which leverages open-source large language models. With this software resource, it is possible for researchers and exp",
+    "year": "2025",
+    "query": "all:perplexity AND all:pragmatic AND all:language model"
+  },
+  {
+    "title": "AI in Mental Health: Emotional and Sentiment Analysis of Large Language Models' Responses to Depression, Anxiety, and Stress Queries",
+    "arxiv_id": "2508.11285v1",
+    "abstract": "Depression, anxiety, and stress are widespread mental health concerns that increasingly drive individuals to seek information from Large Language Models (LLMs). This study investigates how eight LLMs (Claude Sonnet, Copilot, Gemini Pro, GPT-4o, GPT-4o mini, Llama, Mixtral, and Perplexity) reply to t",
+    "year": "2025",
+    "query": "all:perplexity AND all:pragmatic AND all:language model"
+  },
+  {
+    "title": "Point of Order: Action-Aware LLM Persona Modeling for Realistic Civic Simulation",
+    "arxiv_id": "2511.17813v2",
+    "abstract": "Large language models offer opportunities to simulate multi-party deliberation, but realistic modeling remains limited by a lack of speaker-attributed data. Transcripts produced via automatic speech recognition (ASR) assign anonymous speaker labels (e.g., Speaker_1), preventing models from capturing",
+    "year": "2025",
+    "query": "all:perplexity AND all:pragmatic AND all:language model"
+  },
+  {
+    "title": "Key-Conditioned Orthonormal Transform Gating (K-OTG): Multi-Key Access Control with Hidden-State Scrambling for LoRA-Tuned Models",
+    "arxiv_id": "2512.17519v1",
+    "abstract": "We present a simple, PEFT-compatible mechanism that enforces secret-key access control in instruction-tuned language models. K-OTG trains on a dual-path corpus: authorized examples (prefixed with a role key) learn the task output, while unauthorized examples learn a visible block token. At inference",
+    "year": "2025",
+    "query": "all:perplexity AND all:pragmatic AND all:language model"
+  },
+  {
+    "title": "Black-box language model explanation by context length probing",
+    "arxiv_id": "2212.14815v3",
+    "abstract": "The increasingly widespread adoption of large language models has highlighted the need for improving their explainability. We present context length probing, a novel explanation technique for causal language models, based on tracking the predictions of a model as a function of the length of availabl",
+    "year": "2022",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Unforgettable Generalization in Language Models",
+    "arxiv_id": "2409.02228v1",
+    "abstract": "When language models (LMs) are trained to forget (or \"unlearn'') a skill, how precisely does their behavior change? We study the behavior of transformer LMs in which tasks have been forgotten via fine-tuning on randomized labels. Such LMs learn to generate near-random predictions for individual exam",
+    "year": "2024",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "KGLens: Towards Efficient and Effective Knowledge Probing of Large Language Models with Knowledge Graphs",
+    "arxiv_id": "2312.11539v3",
+    "abstract": "Large Language Models (LLMs) might hallucinate facts, while curated Knowledge Graph (KGs) are typically factually reliable especially with domain-specific knowledge. Measuring the alignment between KGs and LLMs can effectively probe the factualness and identify the knowledge blind spots of LLMs. How",
+    "year": "2023",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Does Mapo Tofu Contain Coffee? Probing LLMs for Food-related Cultural Knowledge",
+    "arxiv_id": "2404.06833v3",
+    "abstract": "Recent studies have highlighted the presence of cultural biases in Large Language Models (LLMs), yet often lack a robust methodology to dissect these phenomena comprehensively. Our work aims to bridge this gap by delving into the Food domain, a universally relevant yet culturally diverse aspect of h",
+    "year": "2024",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Probing Large Language Models for Scalar Adjective Lexical Semantics and Scalar Diversity Pragmatics",
+    "arxiv_id": "2404.03301v1",
+    "abstract": "Scalar adjectives pertain to various domain scales and vary in intensity within each scale (e.g. certain is more intense than likely on the likelihood scale). Scalar implicatures arise from the consideration of alternative statements which could have been made. They can be triggered by scalar adject",
+    "year": "2024",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Information-Theoretic Probing for Linguistic Structure",
+    "arxiv_id": "2004.03061v2",
+    "abstract": "The success of neural networks on a diverse set of NLP tasks has led researchers to question how much these networks actually ``know'' about natural language. Probes are a natural way of assessing this. When probing, a researcher chooses a linguistic task and trains a supervised model to predict ann",
+    "year": "2020",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Social Bias Probing: Fairness Benchmarking for Language Models",
+    "arxiv_id": "2311.09090v4",
+    "abstract": "While the impact of social biases in language models has been recognized, prior methods for bias evaluation have been limited to binary association tests on small datasets, limiting our understanding of bias complexities. This paper proposes a novel framework for probing language models for social b",
+    "year": "2023",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Can Linguistic Knowledge Improve Multimodal Alignment in Vision-Language Pretraining?",
+    "arxiv_id": "2308.12898v2",
+    "abstract": "The multimedia community has shown a significant interest in perceiving and representing the physical world with multimodal pretrained neural network models, and among them, the visual-language pertaining (VLP) is, currently, the most captivating topic. However, there have been few endeavors dedicat",
+    "year": "2023",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Exploring Multilingual Probing in Large Language Models: A Cross-Language Analysis",
+    "arxiv_id": "2409.14459v2",
+    "abstract": "Probing techniques for large language models (LLMs) have primarily focused on English, overlooking the vast majority of the world's languages. In this paper, we extend these probing methods to a multilingual context, investigating the behaviors of LLMs across diverse languages. We conduct experiment",
+    "year": "2024",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Prompting as Probing: Using Language Models for Knowledge Base Construction",
+    "arxiv_id": "2208.11057v3",
+    "abstract": "Language Models (LMs) have proven to be useful in various downstream applications, such as summarisation, translation, question answering and text classification. LMs are becoming increasingly important tools in Artificial Intelligence, because of the vast quantity of information they can store. In ",
+    "year": "2022",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "TEXT2AFFORD: Probing Object Affordance Prediction abilities of Language Models solely from Text",
+    "arxiv_id": "2402.12881v3",
+    "abstract": "We investigate the knowledge of object affordances in pre-trained language models (LMs) and pre-trained Vision-Language models (VLMs). A growing body of literature shows that PTLMs fail inconsistently and non-intuitively, demonstrating a lack of reasoning and grounding. To take a first step toward q",
+    "year": "2024",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Amnesic Probing: Behavioral Explanation with Amnesic Counterfactuals",
+    "arxiv_id": "2006.00995v3",
+    "abstract": "A growing body of work makes use of probing to investigate the working of neural models, often considered black boxes. Recently, an ongoing debate emerged surrounding the limitations of the probing paradigm. In this work, we point out the inability to infer behavioral conclusions from probing result",
+    "year": "2020",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Counterfactually Probing Language Identity in Multilingual Models",
+    "arxiv_id": "2310.18862v1",
+    "abstract": "Techniques in causal analysis of language models illuminate how linguistic information is organized in LLMs. We use one such technique, AlterRep, a method of counterfactual probing, to explore the internal structure of multilingual models (mBERT and XLM-R). We train a linear classifier on a binary l",
+    "year": "2023",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Classifying German Language Proficiency Levels Using Large Language Models",
+    "arxiv_id": "2512.06483v1",
+    "abstract": "Assessing language proficiency is essential for education, as it enables instruction tailored to learners needs. This paper investigates the use of Large Language Models (LLMs) for automatically classifying German texts according to the Common European Framework of Reference for Languages (CEFR) int",
+    "year": "2025",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Probing Neural Topology of Large Language Models",
+    "arxiv_id": "2506.01042v3",
+    "abstract": "Probing large language models (LLMs) has yielded valuable insights into their internal mechanisms by linking neural activations to interpretable semantics. However, the complex mechanisms that link neuron's functional co-activation with the emergent model capabilities remains largely unknown, hinder",
+    "year": "2025",
+    "query": "all:probing AND all:language model AND all:variables AND all:consideration"
+  },
+  {
+    "title": "Pragmatic inference of scalar implicature by LLMs",
+    "arxiv_id": "2408.06673v1",
+    "abstract": "This study investigates how Large Language Models (LLMs), particularly BERT (Devlin et al., 2019) and GPT-2 (Radford et al., 2019), engage in pragmatic inference of scalar implicature, such as some. Two sets of experiments were conducted using cosine similarity and next sentence/token prediction as ",
+    "year": "2024",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "Implicature in Interaction: Understanding Implicature Improves Alignment in Human-LLM Interaction",
+    "arxiv_id": "2510.25426v1",
+    "abstract": "The rapid advancement of Large Language Models (LLMs) is positioning language at the core of human-computer interaction (HCI). We argue that advancing HCI requires attention to the linguistic foundations of interaction, particularly implicature (meaning conveyed beyond explicit statements through sh",
+    "year": "2025",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "Do Large Language Models Understand Conversational Implicature -- A case study with a chinese sitcom",
+    "arxiv_id": "2404.19509v2",
+    "abstract": "Understanding the non-literal meaning of an utterance is critical for large language models (LLMs) to become human-like social communicators. In this work, we introduce SwordsmanImp, the first Chinese multi-turn-dialogue-based dataset aimed at conversational implicature, sourced from dialogues in th",
+    "year": "2024",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "The Goldilocks of Pragmatic Understanding: Fine-Tuning Strategy Matters for Implicature Resolution by LLMs",
+    "arxiv_id": "2210.14986v2",
+    "abstract": "Despite widespread use of LLMs as conversational agents, evaluations of performance fail to capture a crucial aspect of communication: interpreting language in context -- incorporating its pragmatics. Humans interpret language using beliefs and prior knowledge about the world. For example, we intuit",
+    "year": "2022",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "Can Your Model Tell a Negation from an Implicature? Unravelling Challenges With Intent Encoders",
+    "arxiv_id": "2403.04314v1",
+    "abstract": "Conversational systems often rely on embedding models for intent classification and intent clustering tasks. The advent of Large Language Models (LLMs), which enable instructional embeddings allowing one to adjust semantics over the embedding space using prompts, are being viewed as a panacea for th",
+    "year": "2024",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "JP-TL-Bench: Anchored Pairwise LLM Evaluation for Bidirectional Japanese-English Translation",
+    "arxiv_id": "2601.00223v1",
+    "abstract": "We introduce JP-TL-Bench, a lightweight, open benchmark designed to guide the iterative development of Japanese-English translation systems. In this context, the challenge is often \"which of these two good translations is better?\" rather than \"is this translation acceptable?\" This distinction matter",
+    "year": "2026",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "They want to pretend not to understand: The Limits of Current LLMs in Interpreting Implicit Content of Political Discourse",
+    "arxiv_id": "2506.06775v1",
+    "abstract": "Implicit content plays a crucial role in political discourse, where speakers systematically employ pragmatic strategies such as implicatures and presuppositions to influence their audiences. Large Language Models (LLMs) have demonstrated strong performance in tasks requiring complex semantic and pra",
+    "year": "2025",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "PUB: A Pragmatics Understanding Benchmark for Assessing LLMs' Pragmatics Capabilities",
+    "arxiv_id": "2401.07078v1",
+    "abstract": "LLMs have demonstrated remarkable capability for understanding semantics, but they often struggle with understanding pragmatics. To demonstrate this fact, we release a Pragmatics Understanding Benchmark (PUB) dataset consisting of fourteen tasks in four pragmatics phenomena, namely, Implicature, Pre",
+    "year": "2024",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "Experimental Pragmatics with Machines: Testing LLM Predictions for the Inferences of Plain and Embedded Disjunctions",
+    "arxiv_id": "2405.05776v1",
+    "abstract": "Human communication is based on a variety of inferences that we draw from sentences, often going beyond what is literally said. While there is wide agreement on the basic distinction between entailment, implicature, and presupposition, the status of many inferences remains controversial. In this pap",
+    "year": "2024",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "P-ReMIS: Pragmatic Reasoning in Mental Health and a Social Implication",
+    "arxiv_id": "2507.23247v2",
+    "abstract": "Although explainability and interpretability have received significant attention in artificial intelligence (AI) and natural language processing (NLP) for mental health, reasoning has not been examined in the same depth. Addressing this gap is essential to bridge NLP and mental health through interp",
+    "year": "2025",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "The Pragmatic Mind of Machines: Tracing the Emergence of Pragmatic Competence in Large Language Models",
+    "arxiv_id": "2505.18497v3",
+    "abstract": "Current large language models (LLMs) have demonstrated emerging capabilities in social intelligence tasks, including implicature resolution and theory-of-mind reasoning, both of which require substantial pragmatic understanding. However, how LLMs acquire this pragmatic competence throughout the trai",
+    "year": "2025",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "Language Models Identify Ambiguities and Exploit Loopholes",
+    "arxiv_id": "2508.19546v2",
+    "abstract": "Studying the responses of large language models (LLMs) to loopholes presents a two-fold opportunity. First, it affords us a lens through which to examine ambiguity and pragmatics in LLMs, since exploiting a loophole requires identifying ambiguity and performing sophisticated pragmatic reasoning. Sec",
+    "year": "2025",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "Implicit Communication of Contextual Information in Human-Robot Collaboration",
+    "arxiv_id": "2502.05775v1",
+    "abstract": "Implicit communication is crucial in human-robot collaboration (HRC), where contextual information, such as intentions, is conveyed as implicatures, forming a natural part of human interaction. However, enabling robots to appropriately use implicit communication in cooperative tasks remains challeng",
+    "year": "2025",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "Neurosymbolic Graph Enrichment for Grounded World Models",
+    "arxiv_id": "2411.12671v1",
+    "abstract": "The development of artificial intelligence systems capable of understanding and reasoning about complex real-world scenarios is a significant challenge. In this work we present a novel approach to enhance and exploit LLM reactive capability to address complex problems and interpret deeply contextual",
+    "year": "2024",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "PragWorld: A Benchmark Evaluating LLMs' Local World Model under Minimal Linguistic Alterations and Conversational Dynamics",
+    "arxiv_id": "2511.13021v1",
+    "abstract": "Real-world conversations are rich with pragmatic elements, such as entity mentions, references, and implicatures. Understanding such nuances is a requirement for successful natural communication, and often requires building a local world model which encodes such elements and captures the dynamics of",
+    "year": "2025",
+    "query": "all:LLM AND all:implicature"
+  },
+  {
+    "title": "BOSE: A Systematic Evaluation Method Optimized for Base Models",
+    "arxiv_id": "2503.00812v2",
+    "abstract": "This paper poses two critical issues in evaluating base models (without post-training): (1) Unstable evaluation during training: in the early stages of pre-training, the models lack the capability to answer questions as required, leading to unstable evaluation results. This instability makes it diff",
+    "year": "2025",
+    "query": "all:perplexity AND all:pre-filling AND all:language model"
+  },
+  {
+    "title": "llm-jp-modernbert: A ModernBERT Model Trained on a Large-Scale Japanese Corpus with Long Context Length",
+    "arxiv_id": "2504.15544v1",
+    "abstract": "Encoder-only transformer models like BERT are widely adopted as a pre-trained backbone for tasks like sentence classification and retrieval. However, pretraining of encoder models with large-scale corpora and long contexts has been relatively underexplored compared to decoder-only transformers. In t",
+    "year": "2025",
+    "query": "all:perplexity AND all:pre-filling AND all:language model"
+  },
+  {
+    "title": "MixQuant: Pushing the Limits of Block Rotations in Post-Training Quantization",
+    "arxiv_id": "2601.22347v1",
+    "abstract": "Recent post-training quantization (PTQ) methods have adopted block rotations to diffuse outliers prior to rounding. While this reduces the overhead of full-vector rotations, the effect of block structure on outlier suppression remains poorly understood. To fill this gap, we present the first systema",
+    "year": "2026",
+    "query": "all:perplexity AND all:pre-filling AND all:language model"
+  },
+  {
+    "title": "Large Language Model probabilities cannot distinguish between possible and impossible language",
+    "arxiv_id": "2509.15114v1",
+    "abstract": "A controversial test for Large Language Models concerns the ability to discern possible from impossible language. While some evidence attests to the models' sensitivity to what crosses the limits of grammatically impossible language, this evidence has been contested on the grounds of the soundness o",
+    "year": "2025",
+    "query": "all:surprisal AND all:pragmatics AND all:language model"
+  },
+  {
+    "title": "Language Model Behavior: A Comprehensive Survey",
+    "arxiv_id": "2303.11504v2",
+    "abstract": "Transformer language models have received widespread public attention, yet their generated text is often surprising even to NLP researchers. In this survey, we discuss over 250 recent studies of English language model behavior before task-specific fine-tuning. Language models possess basic capabilit",
+    "year": "2023",
+    "query": "all:surprisal AND all:pragmatics AND all:language model"
+  },
+  {
+    "title": "Privacy-Respecting Type Error Telemetry at Scale",
+    "arxiv_id": "2403.02409v1",
+    "abstract": "Context: Roblox Studio lets millions of creators build interactive experiences by programming in a variant of Lua called Luau. The creators form a broad group, ranging from novices writing their first script to professional developers; thus, Luau must support a wide audience. As part of its efforts ",
+    "year": "2024",
+    "query": "all:surprisal AND all:pragmatics AND all:language model"
+  },
+  {
+    "title": "Opening Articulated Structures in the Real World",
+    "arxiv_id": "2402.17767v3",
+    "abstract": "What does it take to build mobile manipulation systems that can competently operate on previously unseen objects in previously unseen environments? This work answers this question using opening of articulated structures as a mobile manipulation testbed. Specifically, our focus is on the end-to-end p",
+    "year": "2024",
+    "query": "all:surprisal AND all:pragmatics AND all:language model"
+  }
+]

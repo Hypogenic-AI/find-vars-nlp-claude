@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "domain": "workplace",
+    "prompt": "Can you help me draft an email to my boss explaining that I'm running late due to a transportation issue?",
+    "sender": "Junior Analyst",
+    "recipient": "Direct Manager",
+    "context": "Employee informing manager about being late for work due to unexpected commute problems."
+  },
+  {
+    "id": 2,
+    "domain": "workplace",
+    "prompt": "Help me write a message to a colleague asking for assistance with a project deadline.",
+    "sender": "Project Coordinator",
+    "recipient": "Teammate",
+    "context": "Collaborating on an important project that is behind schedule."
+  },
+  {
+    "id": 3,
+    "domain": "workplace",
+    "prompt": "Can you help me compose an email to HR about updating my mailing address in the system?",
+    "sender": "Employee",
+    "recipient": "HR Department",
+    "context": "Requesting an administrative update after moving to a new place."
+  },
+  {
+    "id": 4,
+    "domain": "workplace",
+    "prompt": "Help me write a follow-up email to a client who hasn't responded to my previous proposal.",
+    "sender": "Account Manager",
+    "recipient": "Client",
+    "context": "Checking in with a client regarding an outstanding business proposal."
+  },
+  {
+    "id": 5,
+    "domain": "workplace",
+    "prompt": "Can you help me craft a message to my team announcing my promotion?",
+    "sender": "Team Lead",
+    "recipient": "Project Team",
+    "context": "Announcing a change in position to direct reports."
+  },
+  {
+    "id": 6,
+    "domain": "workplace",
+    "prompt": "Help me write a polite reminder email to a vendor about an overdue invoice.",
+    "sender": "Accounts Payable Specialist",
+    "recipient": "Vendor",
+    "context": "Requesting payment for an outstanding invoice."
+  },
+  {
+    "id": 7,
+    "domain": "workplace",
+    "prompt": "Can you assist me in writing an email to request feedback on my recent presentation?",
+    "sender": "Marketing Associate",
+    "recipient": "Supervisor",
+    "context": "Seeking constructive criticism for professional development."
+  },
+  {
+    "id": 8,
+    "domain": "workplace",
+    "prompt": "Help me draft an email to schedule a one-on-one meeting with my boss.",
+    "sender": "Software Engineer",
+    "recipient": "Engineering Manager",
+    "context": "Requesting time to discuss career growth."
+  },
+  {
+    "id": 9,
+    "domain": "workplace",
+    "prompt": "Can you help me write a message to formally resign from my position?",
+    "sender": "Employee",
+    "recipient": "Supervisor",
+    "context": "Informing manager of intent to leave the company."
+  },
+  {
+    "id": 10,
+    "domain": "workplace",
+    "prompt": "Help me compose a thank-you email to a colleague who covered my shift last week.",
+    "sender": "Store Associate",
+    "recipient": "Coworker",
+    "context": "Expressing gratitude for assistance with work coverage."
+  },
+  {
+    "id": 11,
+    "domain": "personal",
+    "prompt": "Can you help me write a birthday message for my grandmother?",
+    "sender": "Grandchild",
+    "recipient": "Grandmother",
+    "context": "Sending warm wishes on her birthday."
+  },
+  {
+    "id": 12,
+    "domain": "personal",
+    "prompt": "Help me draft a text apologizing to my friend for missing their party.",
+    "sender": "Friend",
+    "recipient": "Close Friend",
+    "context": "Expressing regret for missing an important social event."
+  },
+  {
+    "id": 13,
+    "domain": "personal",
+    "prompt": "Can you help me write a message introducing myself to a new neighbor?",
+    "sender": "Tenant",
+    "recipient": "New Neighbor",
+    "context": "Establishing a friendly relationship after moving in."
+  },
+  {
+    "id": 14,
+    "domain": "personal",
+    "prompt": "Help me write a note to thank my cousin for hosting me during the holidays.",
+    "sender": "Cousin",
+    "recipient": "Relative Host",
+    "context": "Expressing appreciation for hospitality."
+  },
+  {
+    "id": 15,
+    "domain": "personal",
+    "prompt": "Can you help me write a supportive message to a friend going through a breakup?",
+    "sender": "Friend",
+    "recipient": "Friend",
+    "context": "Offering comfort and encouragement during a difficult time."
+  },
+  {
+    "id": 16,
+    "domain": "personal",
+    "prompt": "Help me draft a message to my sibling asking to borrow their car this weekend.",
+    "sender": "Younger Sibling",
+    "recipient": "Older Sibling",
+    "context": "Requesting a favor from a family member."
+  },
+  {
+    "id": 17,
+    "domain": "personal",
+    "prompt": "Can you assist me in writing a heartfelt anniversary message to my spouse?",
+    "sender": "Spouse",
+    "recipient": "Spouse",
+    "context": "Celebrating a wedding anniversary."
+  },
+  {
+    "id": 18,
+    "domain": "personal",
+    "prompt": "Help me compose a message to my child\u2019s teacher thanking them for their hard work.",
+    "sender": "Parent",
+    "recipient": "Teacher",
+    "context": "Acknowledging a teacher's dedication."
+  },
+  {
+    "id": 19,
+    "domain": "personal",
+    "prompt": "Can you help me write a message to invite a neighbor over for dinner?",
+    "sender": "Homeowner",
+    "recipient": "Neighbor",
+    "context": "Building neighborly relationships."
+  },
+  {
+    "id": 20,
+    "domain": "personal",
+    "prompt": "Help me write a message to reconnect with an old classmate on social media.",
+    "sender": "Former Classmate",
+    "recipient": "Old Friend",
+    "context": "Reaching out after a long time."
+  },
+  {
+    "id": 21,
+    "domain": "service",
+    "prompt": "Can you help me write a complaint to my internet provider about frequent outages?",
+    "sender": "Customer",
+    "recipient": "Internet Service Provider",
+    "context": "Addressing dissatisfaction with unreliable internet service."
+  },
+  {
+    "id": 22,
+    "domain": "service",
+    "prompt": "Help me draft a request for a refund for a damaged item purchased online.",
+    "sender": "Online Shopper",
+    "recipient": "E-commerce Customer Service",
+    "context": "Seeking a refund for a faulty product."
+  },
+  {
+    "id": 23,
+    "domain": "service",
+    "prompt": "Can you assist me in composing feedback for a restaurant after a great dining experience?",
+    "sender": "Diner",
+    "recipient": "Restaurant Manager",
+    "context": "Providing positive feedback after a memorable meal."
+  },
+  {
+    "id": 24,
+    "domain": "service",
+    "prompt": "Help me write an application email for a volunteer position at a local animal shelter.",
+    "sender": "Potential Volunteer",
+    "recipient": "Shelter Coordinator",
+    "context": "Expressing interest in contributing as a volunteer."
+  },
+  {
+    "id": 25,
+    "domain": "service",
+    "prompt": "Can you help me draft a message to my landlord about a broken heater?",
+    "sender": "Tenant",
+    "recipient": "Landlord",
+    "context": "Requesting prompt repair for an essential home appliance."
+  },
+  {
+    "id": 26,
+    "domain": "service",
+    "prompt": "Help me write a message to schedule a doctor's appointment for next week.",
+    "sender": "Patient",
+    "recipient": "Medical Receptionist",
+    "context": "Arranging a routine health checkup."
+  },
+  {
+    "id": 27,
+    "domain": "service",
+    "prompt": "Can you assist me in writing a formal request for a transcript from my university?",
+    "sender": "Alumnus",
+    "recipient": "University Registrar",
+    "context": "Needing official transcripts for job application."
+  },
+  {
+    "id": 28,
+    "domain": "service",
+    "prompt": "Help me draft a message to a hotel requesting an early check-in.",
+    "sender": "Guest",
+    "recipient": "Hotel Front Desk",
+    "context": "Seeking accommodation flexibility for travel plans."
+  },
+  {
+    "id": 29,
+    "domain": "service",
+    "prompt": "Can you help me write a thank-you note to a customer support representative who resolved my issue?",
+    "sender": "Customer",
+    "recipient": "Customer Support Agent",
+    "context": "Expressing appreciation for excellent service."
+  },
+  {
+    "id": 30,
+    "domain": "service",
+    "prompt": "Help me compose an inquiry email about available swimming classes at my local community center.",
+    "sender": "Community Member",
+    "recipient": "Community Center Staff",
+    "context": "Requesting information about swim programs."
+  }
+]

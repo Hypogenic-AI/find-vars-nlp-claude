@@ -1,0 +1,17 @@
+\section{Introduction}
+\label{sec:intro}
+
+When a user asks a language model to ``write an email to my boss about missing the deadline,'' the model must make a series of pragmatic choices: How formal should the tone be? Should the message hedge or be direct? How much detail is appropriate? These choices are rarely specified by the user, yet they shape whether the resulting message comes across as professional or casual, assertive or meek, empathetic or cold. In effect, every generated message encodes a set of implicit pragmatic defaults---but which variables does the model actually \emph{consider} during generation, and which does it simply default on without deliberation?
+
+\para{The gap between knowledge and behavior.} Prior work has shown that LLMs possess substantial pragmatic knowledge: they can identify scalar implicatures \citep{cho2024pragmatic, ruis2024goldilocks}, reason about speech acts when prompted \citep{sato2025pragmatic}, and explain pragmatic dimensions of text when asked \citep{lin2024probing}. However, knowing \emph{about} a pragmatic variable is not the same as \emph{considering} it during generation. \citet{trienes2025behavioral} demonstrated that LLMs' self-reported information salience diverges from their actual content selection behavior---models claim to prioritize certain content but behaviorally do otherwise. We hypothesize that a similar gap exists for pragmatic variables: models can discuss formality, directness, and tone when asked, but do not necessarily deliberate over these dimensions when producing text.
+
+\para{Our approach.} We propose \emph{perplexity sensitivity analysis}, a method that operationalizes ``variables under consideration'' through the lens of conditional log-likelihood. For a given message-writing prompt, we construct response pairs that differ along a single pragmatic axis (\eg polite vs.\ blunt, direct vs.\ indirect) while holding other dimensions approximately constant. We then measure each variant's log-likelihood under the model. If the model assigns systematically different likelihoods to the two poles of an axis across diverse scenarios, we conclude that the model has a \emph{directional preference}---and thus that the axis is ``under consideration'' in the sense that the model's generation prior encodes a default along it.
+
+We apply this method to five pragmatic axes---formality, directness, politeness, emotional tone, and specificity---plus a synonym-substitution control, across 30 scenarios in three communicative domains (workplace, personal, service). We evaluate two models from the Qwen family (7B and 3B parameters) and compare behavioral detection against introspective probing of \gptfour.
+
+Our main findings are:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We find that LLMs exhibit a coherent pragmatic default profile---\textbf{polite, vague, indirect, and formal}---with effect sizes ranging from $d{=}0.68$ to $d{=}1.81$, while emotional tone shows no directional preference ($d{=}0.08$).
+    \item We demonstrate a dissociation between behavioral defaults and introspective reports: directness is strongly defaulted on but rarely self-reported (6.7\% introspection rate), while emotional tone is frequently mentioned (53.3\%) but not behaviorally detected.
+    \item We show perfect cross-model replication ($\rho{=}1.0$) across two model sizes, establishing perplexity sensitivity analysis as a reliable method for auditing LLM pragmatic defaults.
+\end{itemize}

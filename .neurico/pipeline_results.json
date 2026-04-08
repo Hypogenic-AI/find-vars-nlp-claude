@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/find-vars-nlp-claude/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/find-vars-nlp-claude/literature_review.md",
+        "resources_catalog": "/workspaces/find-vars-nlp-claude/resources.md",
+        "papers_dir": "/workspaces/find-vars-nlp-claude/papers",
+        "datasets_dir": "/workspaces/find-vars-nlp-claude/datasets",
+        "code_dir": "/workspaces/find-vars-nlp-claude/code"
+      },
+      "log_file": "/workspaces/find-vars-nlp-claude/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/find-vars-nlp-claude/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 2164.851344347
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 2180.7868387699127,
+      "log_file": "/workspaces/find-vars-nlp-claude/logs/execution_claude.log",
+      "transcript_file": "/workspaces/find-vars-nlp-claude/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/find-vars-nlp-claude"
+}

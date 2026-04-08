@@ -1,0 +1,38 @@
+\section{Experimental Details}
+\label{app:details}
+
+\subsection{Hardware and Software}
+
+All perplexity measurements were conducted on NVIDIA RTX A6000 GPUs (49GB VRAM) with CUDA~12.5, Python~3.12.8, PyTorch~2.5.1+cu124, and Hugging Face Transformers~5.5.0. Scenario and variant generation used the OpenAI API (\gptfour) with estimated cost of \$3--5.
+
+\subsection{Scenario Domains}
+
+\Tabref{tab:domains} lists example scenarios from each domain.
+
+\begin{table}[h]
+    \centering
+    \caption{Example scenarios from each communicative domain.}
+    \begin{tabular}{@{}lp{10cm}@{}}
+        \toprule
+        \textbf{Domain} & \textbf{Example Scenario} \\
+        \midrule
+        Workplace & ``Write an email to your manager explaining that you will miss Friday's deadline due to a family emergency.'' \\
+        Personal & ``Write a message to your neighbor asking them to keep the noise down during weeknight evenings.'' \\
+        Service & ``Write a complaint to customer support about a defective product you received last week.'' \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:domains}
+\end{table}
+
+\subsection{Variant Generation Prompts}
+
+For each axis, we instructed \gptfour to generate two response variants with the following template (abridged):
+
+\begin{quote}
+\small
+\texttt{Given the scenario below, write two responses to the user's request. Response~A should be [Pole~A description]. Response~B should be [Pole~B description]. Both responses should: (1) address the same scenario, (2) convey the same core message, (3) be similar in length ($\pm$20\%), and (4) differ primarily on the [axis name] dimension.}
+\end{quote}
+
+\subsection{Reproducibility}
+
+All experiments use NumPy and PyTorch random seed 42. \gptfour was called with temperature 0.7--0.8 for generation and 0.3 for introspection. Complete raw outputs, including all scenario texts, variant pairs, log-likelihood scores, and introspection responses, are available in the \texttt{results/} directory of our code repository.

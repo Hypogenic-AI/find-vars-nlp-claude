@@ -1,0 +1,22 @@
+# Ignore large binary files (parquet, zip) but keep JSON, CSV, and metadata
+*.parquet
+*.zip
+*.pkl
+*.pickle
+*.npy
+*.pt
+*.bin
+
+# Keep small sample files (override above with !)
+!*_sample.*
+!*_sample_*
+
+# Keep CSV and JSON data (usually small)
+# *.csv  # Do NOT ignore CSVs - they're the main data format
+# *.json
+# *.jsonl
+
+# Large auto-downloaded dirs
+__pycache__/
+*.pyc
+.cache/

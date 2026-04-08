@@ -1,0 +1,834 @@
+You are an academic paper writer. Generate a complete NEURIPS style paper
+based on the experiment results provided.
+
+════════════════════════════════════════════════════════════════════════════════
+                         IMPORTANT: BEFORE YOU START
+════════════════════════════════════════════════════════════════════════════════
+
+Before writing any content, you MUST complete these steps:
+
+1. READ THE SKILL: Review the paper-writer skill at .claude/skills/paper-writer/SKILL.md
+2. READ THE STYLE GUIDE: Study templates/paper_writing/lab_style_guide.md carefully
+3. REVIEW EXAMPLES: Browse paper_examples/ for formatting and language patterns:
+   - Look at sections/1.introduction.tex for language style
+   - Look at tables/*.tex for table formatting
+   - Look at commands/*.tex for macro usage
+4. VERIFY COMMAND TEMPLATES: Command templates (math.tex, general.tex, macros.tex) are pre-copied to paper_draft/commands/
+
+CRITICAL: Reference example papers for FORMATTING and LANGUAGE STYLE only.
+Do NOT copy content, phrasing, or narrative structure from the example papers.
+The examples are in a different research domain - focus only on presentation style.
+
+════════════════════════════════════════════════════════════════════════════════
+                            EXPERIMENT REPORT
+════════════════════════════════════════════════════════════════════════════════
+
+# Finding Variables Under Consideration: Probing LLM Pragmatic Awareness via Perplexity Sensitivity
+
+## 1. Executive Summary
+
+We investigated whether the pragmatic variables that LLMs &#34;consider&#34; during message generation can be detected by measuring perplexity sensitivity to systematic response variations. By constructing 30 message-writing scenarios and generating response pairs that differ along 5 pragmatic axes (formality, directness, politeness, emotional tone, specificity) plus a synonym control, we computed per-token log-likelihood differences using Qwen2.5-7B-Instruct and Qwen2.5-3B-Instruct.
+
+**Key finding**: LLMs show strong, statistically significant directional preferences for 4 of 5 pragmatic axes — they consistently prefer polite, indirect, vague, and formal responses. The lone exception is emotional tone, where the model shows no consistent preference. Critically, the model&#39;s self-reported variables (via introspection) only partially overlap with behaviorally-detected ones: directness is strongly &#34;considered&#34; behaviorally but rarely mentioned introspectively, while emotional tone is frequently mentioned but not behaviorally detected. These results replicate perfectly across both model sizes (Spearman ρ = 1.0).
+
+**Practical implication**: Perplexity sensitivity analysis is a viable method for detecting which pragmatic variables an LLM defaults on during generation, revealing a gap between behavioral defaults and self-aware reporting.
+
+## 2. Research Question &amp; Motivation
+
+### Hypothesis
+Large language models do not always consider the pragmatic implications of their suggestions when generating messages, even though they can identify such implications when prompted. By pre-filling different responses that vary certain axes and measuring whether perplexity changes significantly, we can probe which variables the LLM is actually &#34;considering.&#34;
+
+### Why This Matters
+When users ask LLMs to help write messages, the model makes implicit choices about pragmatic dimensions — how formal, direct, polite, emotional, or specific to be. These choices have real consequences for the user (an overly casual email to a boss, or an overly blunt complaint). Understanding which variables the model actively considers vs. ignores during generation could:
+1. Improve writing assistant interfaces (prompt users about unconsidered variables)
+2. Inform alignment work (what pragmatic defaults do models have?)
+3. Advance understanding of LLM pragmatic competence
+
+### Gap in Existing Work
+Prior work probes LLM *comprehension* of pragmatic phenomena (Lin et al. 2024; Cho &amp; Kim 2024; Ruis et al. 2024) but not what models actively *consider during generation*. Trienes et al. (2025) showed that LLM introspection diverges from behavior for salience — we extend this finding to pragmatic variable consideration using perplexity as the behavioral probe.
+
+## 3. Methodology
+
+### Experimental Design
+
+We designed a **perplexity sensitivity analysis** with three components:
+
+#### A. Scenario and Variant Construction (GPT-4.1)
+- Generated **30 message-writing scenarios** across 3 domains (10 each):
+  - **Workplace**: emails to boss, colleagues, clients, HR
+  - **Personal**: messages to friends, family, neighbors
+  - **Service**: complaints, requests, feedback, applications
+- For each scenario, generated **response pairs** along 6 axes:
+  - 5 pragmatic: formality, directness, politeness, emotional tone, specificity
+  - 1 control: synonym substitution (same meaning, different words)
+- Total: 30 scenarios × 6 axes = **180 variant pairs**
+- Constraint: each pair differs primarily on the target axis, with matched length
+
+#### B. Perplexity Measurement (Local Models, GPU)
+- For each (prompt, response) pair, computed conditional log-likelihood:
+  - Tokenize prompt + response using the model&#39;s chat template
+  - Forward pass to get logits
+  - Extract log-probabilities of response tokens only
+  - Compute mean per-token log-likelihood
+- **Signed difference** = LL(pole_b) - LL(pole_a) for each pair
+- Positive = model prefers pole_b, negative = model prefers pole_a
+
+#### C. Introspection Probing (GPT-4.1)
+- For each scenario, asked GPT-4.1 to write a response AND list all pragmatic variables it considered
+- Mapped self-reported variables to our 5 axes using keyword matching
+
+### Models
+| Model | Parameters | Purpose |
+|-------|-----------|---------|
+| Qwen/Qwen2.5-7B-Instruct | 7.6B | Primary perplexity measurement |
+| Qwen/Qwen2.5-3B-Instruct | 3.1B | Cross-model replication |
+| GPT-4.1 (OpenAI) | — | Scenario/variant generation, introspection |
+
+### Axis Definitions
+| Axis | Pole A | Pole B |
+|------|--------|--------|
+| Formality | casual/informal | formal/professional |
+| Directness | indirect/hedged | direct/assertive |
+| Politeness | blunt/terse | polite/courteous |
+| Emotional tone | neutral/factual | warm/empathetic |
+| Specificity | vague/general | detailed/specific |
+| Synonym (control) | version_a | version_b |
+
+### Statistical Tests
+- **Wilcoxon signed-rank test**: Whether signed differences ≠ 0 across scenarios
+- **Sign test (binomial)**: Whether directional preference significantly deviates from 50%
+- **Bonferroni correction**: α = 0.05 / 6 axes = 0.0083
+- **Cohen&#39;s d**: Effect size of signed differences from 0
+- **Bootstrap 95% CI**: 10,000 resamples of mean signed difference
+- **Spearman correlation**: Cross-model consistency of effect sizes
+
+### Reproducibility
+- Random seed: 42 (NumPy, PyTorch)
+- GPT-4.1 temperature: 0.7-0.8 for generation, 0.3 for introspection
+- Hardware: NVIDIA RTX A6000 (49GB VRAM), CUDA 12.5
+- Software: Python 3.12, PyTorch 2.5.1+cu124, Transformers 5.5.0
+- All raw outputs saved to `results/` directory
+
+## 4. Results
+
+### 4.1 Perplexity Sensitivity by Axis (Qwen2.5-7B-Instruct)
+
+| Axis | Mean Signed Δ LL | % Prefer Pole B | Preferred Pole | Consistency | Sign p | Wilcoxon p | Cohen&#39;s d | Significant? |
+|------|-------------------|-----------------|----------------|-------------|--------|------------|-----------|--------------|
+| **Politeness** | **+0.851** | **96.7%** | **polite** | **0.933** | **&lt;0.001** | **&lt;0.001** | **+1.81** | **YES** |
+| **Specificity** | **-0.374** | **13.3%** | **vague** | **0.733** | **&lt;0.001** | **&lt;0.001** | **-1.02** | **YES** |
+| **Directness** | **-0.313** | **20.0%** | **indirect** | **0.600** | **0.001** | **&lt;0.001** | **-0.94** | **YES** |
+| **Formality** | **+0.234** | **76.7%** | **formal** | **0.533** | **0.005** | **0.001** | **+0.68** | **YES** |
+| Emotional tone | -0.033 | 46.7% | neutral | 0.067 | 0.856 | 0.459 | -0.08 | no |
+| Synonym (ctrl) | -1.057 | 0.0% | version_a | 1.000 | &lt;0.001 | &lt;0.001 | -3.26 | — |
+
+**Key findings**:
+1. **Politeness** is the strongest variable under consideration (d = 1.81, 97% directional consistency). The model overwhelmingly prefers polite responses.
+2. **Specificity** shows a strong preference for vague/general responses (d = -1.02, 87% prefer vague).
+3. **Directness** shows a strong preference for indirect/hedged responses (d = -0.94, 80% prefer indirect).
+4. **Formality** shows a moderate preference for formal responses (d = 0.68, 77% prefer formal).
+5. **Emotional tone** shows NO significant directional preference (d = -0.08, ~50/50 split). This is the one axis the model does not &#34;consider.&#34;
+
+The synonym control shows the highest absolute magnitude (d = -3.26) due to surface-level token probability differences, but this is an artifact — it confirms that perplexity is sensitive to exact word choice. The pragmatic axes are meaningful because they show *directional consistency* (same pole preferred across diverse scenarios).
+
+### 4.2 Introspection vs. Behavioral Detection
+
+| Axis | Introspection Rate | PPL Consistency | PPL Detected? | Introspected? | Agreement? |
+|------|-------------------|-----------------|---------------|---------------|------------|
+| Formality | 76.7% | 0.533 | YES | YES | AGREE |
+| Directness | 6.7% | 0.600 | YES | no | **DIFF** |
+| Politeness | 63.3% | 0.933 | YES | YES | AGREE |
+| Emotional tone | 53.3% | 0.067 | no | YES | **DIFF** |
+| Specificity | 83.3% | 0.733 | YES | YES | AGREE |
+
+**Overall agreement: 3/5 axes (60%)**
+
+The two disagreements are highly informative:
+- **Directness**: Behaviorally, the model strongly defaults to indirect/hedged responses (80% consistency), yet it almost never mentions &#34;directness&#34; as a variable it considered (only 6.7% of scenarios). This is a *blind spot* — the model has a strong implicit preference it doesn&#39;t self-report.
+- **Emotional tone**: The model frequently reports considering &#34;tone&#34; or &#34;empathy&#34; (53% of scenarios), yet behaviorally shows no directional preference (47% vs 53% split). This is *performative consideration* — the model claims to think about it but doesn&#39;t actually default one way or the other.
+
+### 4.3 Cross-Model Replication (Qwen 7B vs 3B)
+
+| Axis | Qwen-7B Cohen&#39;s d | Qwen-3B Cohen&#39;s d | Same Direction? |
+|------|-------------------|--------------------|----------------|
+| Formality | +0.68 | +0.99 | YES |
+| Directness | -0.94 | -0.59 | YES |
+| Politeness | +1.81 | +2.18 | YES |
+| Emotional tone | -0.08 | -0.02 | YES |
+| Specificity | -1.02 | -1.36 | YES |
+
+**Directional agreement: 5/5 (100%)**
+**Spearman rank correlation: ρ = 1.000, p &lt; 0.001**
+
+The results replicate perfectly across model sizes. Both models show the same preference ordering: politeness &gt; specificity &gt; directness &gt; formality &gt; emotional tone (by |d|). The smaller model even shows slightly *stronger* effects for some axes, suggesting these are robust properties of the model family rather than emergent capabilities.
+
+### 4.4 Visualizations
+
+All figures are saved in `figures/`:
+- `directional_preferences.png`: Bar charts of directional consistency and signed ΔLL per axis
+- `effect_sizes.png`: Horizontal bar chart of |Cohen&#39;s d| with small/medium/large reference lines
+- `distribution_violin.png`: Violin plots showing full distribution of signed differences
+- `scenario_axis_heatmap.png`: Heatmap of per-scenario signed differences (30 × 6)
+- `introspection_vs_behavioral.png`: Side-by-side comparison of behavioral vs. introspective detection
+- `cross_model_comparison.png`: Scatter plot of Qwen-7B vs Qwen-3B effect sizes
+
+## 5. Analysis &amp; Discussion
+
+### 5.1 The &#34;Hedged, Polite, and Vague&#34; Default
+
+Our results reveal a coherent profile of LLM generation defaults. When writing messages, these models strongly prefer responses that are:
+- **Polite** (d = 1.81) — the strongest preference by far
+- **Vague/general** (d = 1.02) — avoids committing to specifics
+- **Indirect/hedged** (d = 0.94) — uses softeners and qualifiers
+- **Formal** (d = 0.68) — errs toward professional register
+
+This profile makes intuitive sense: it describes the &#34;safe,&#34; &#34;corporate&#34; communication style that LLMs are often criticized for. The model defaults to the least risky pragmatic choices — polite, non-committal, hedged, formal — which minimizes the chance of causing offense but may not serve the user&#39;s actual communicative goals.
+
+The exception is **emotional tone**, where the model has no clear default. This is noteworthy — the model doesn&#39;t systematically favor warmth or neutrality, suggesting this dimension is either genuinely context-dependent or not &#34;considered&#34; by the model&#39;s prior.
+
+### 5.2 Introspective Blind Spots
+
+The discrepancy between behavioral detection and introspection reveals two distinct failure modes:
+
+1. **Blind spots** (directness): The model has a strong behavioral default (indirect/hedged) that it doesn&#39;t recognize or report. When asked what it considered, it mentions politeness, formality, and specificity but rarely directness — even though directness is one of its strongest implicit preferences. This suggests the model&#39;s hedging behavior is deeply embedded in its generation prior, below the threshold of &#34;self-awareness.&#34;
+
+2. **Performative consideration** (emotional tone): The model frequently claims to consider emotional tone (53% of scenarios mention it) but shows no consistent behavioral preference. This could mean the model genuinely considers tone on a per-scenario basis (without a strong default), or it reports &#34;tone&#34; as a consideration because it&#39;s the expected answer, not because it actually influences generation.
+
+### 5.3 What &#34;Under Consideration&#34; Means
+
+Our results suggest a useful operational definition: a variable is **under consideration** by an LLM if the model&#39;s generation prior shows a significant directional preference along that axis across contexts. By this definition:
+- Politeness, specificity, directness, and formality are &#34;under consideration&#34; (strong defaults)
+- Emotional tone is &#34;not under consideration&#34; (no default)
+
+This is distinct from whether the model *can reason about* the variable (it can — when asked) or *claims to consider* it (it does, inconsistently). The perplexity sensitivity method reveals the model&#39;s actual generation-time preferences, not its reasoning-time knowledge.
+
+### 5.4 Methodological Notes
+
+**The synonym control paradox**: The synonym axis shows the highest absolute |Δ| (d = 3.26), with 100% preference for variant_a. This is expected — GPT-4.1 generates variant_a as the &#34;natural&#34; version and variant_b as the synonym-swapped version, so the evaluating model always finds the original more natural. This confirms perplexity is highly sensitive to surface form but validates using directional consistency rather than raw magnitude as our metric.
+
+**Per-token normalization**: We normalize by response token count to control for length effects. Both variants in each pair were constrained to similar length (~20% tolerance) during generation.
+
+## 6. Limitations
+
+1. **Variant quality**: Response pairs were generated by GPT-4.1, not human-authored. Despite the constraint to differ on only one axis, some cross-axis contamination is inevitable (e.g., polite variants may also be more formal).
+
+2. **Model family bias**: Both evaluation models are from the Qwen family. While they show perfect correlation, testing on models from different families (Llama, Mistral, GPT) would strengthen generalizability claims.
+
+3. **Axis selection**: We tested 5 pragmatic axes. Other potentially relevant axes (urgency, confidence, humor, register) were not tested.
+
+4. **Scenario coverage**: 30 scenarios across 3 domains may not capture all communicative contexts. Domain-specific effects (e.g., politeness mattering more in service scenarios) were not systematically analyzed.
+
+5. **GPT-4.1 as introspection model**: Introspection was measured on GPT-4.1, not on the same models used for perplexity. The ideal comparison would use the same model for both, but this requires an instruct model that provides both log-probabilities and coherent introspection.
+
+6. **Static analysis**: We measure the model&#39;s default preference, not whether it adapts when given explicit instructions (e.g., &#34;write a casual message&#34;). The model likely has different preferences when the prompt specifies a tone.
+
+## 7. Conclusions &amp; Next Steps
+
+### Answer to Research Question
+**Yes**, perplexity sensitivity analysis can detect which pragmatic variables an LLM &#34;considers&#34; during message generation. Four of five tested axes (politeness, specificity, directness, formality) show statistically significant directional preferences that replicate across model sizes (ρ = 1.0). The method also reveals a gap between behavioral and introspective awareness: the model has a strong hedging default it doesn&#39;t self-report, and claims to consider emotional tone without showing a behavioral preference.
+
+### Practical Implications
+- **For writing assistants**: Prompt users about variables the model defaults on (especially directness — users may want more direct messages than the model provides)
+- **For alignment**: The &#34;polite, vague, hedged&#34; default profile may not serve all users equally; consider making these preferences configurable
+- **For evaluation**: Perplexity sensitivity is a cheap, automated method for auditing LLM pragmatic defaults
+
+### Recommended Follow-Up
+1. **Cross-family replication**: Test on Llama 3, Mistral, GPT-4 (via logprobs API)
+2. **Context sensitivity**: Test whether pragmatic defaults change under different prompt conditions (e.g., &#34;write a casual message&#34;)
+3. **Human validation**: Correlate perplexity-detected preferences with human judgments of &#34;which version would the model generate?&#34;
+4. **More axes**: Test urgency, confidence, humor, hedging, cultural specificity
+5. **Fine-grained analysis**: Do preferences vary by domain (workplace vs personal)?
+
+## References
+
+- Cho &amp; Kim (2024). Pragmatic Inference of Scalar Implicature by LLMs. arXiv:2408.06673
+- Cifka &amp; Liutkus (2023). Black-box Language Model Explanation by Context Length Probing. arXiv:2212.14815
+- Lin, Altshuler &amp; Pierrehumbert (2024). Probing LLMs for Scalar Adjective Lexical Semantics. arXiv:2404.03301
+- Ruis et al. (2024). The Goldilocks of Pragmatic Understanding. arXiv:2210.14986
+- Sato, Kawano &amp; Yoshino (2025). Pragmatic Theories Enhance Understanding of Implied Meanings. arXiv:2510.26253
+- Trienes et al. (2025). Behavioral Analysis of Information Salience in LLMs. arXiv:2502.14613
+- Unger &amp; Buschmeier (2025). Conversational Implicatures: Modelling Relevance Theory. arXiv:2509.22354
+
+## Appendix: Environment Details
+
+```
+Hardware: NVIDIA RTX A6000 (49GB VRAM) × 4
+Python: 3.12.8
+PyTorch: 2.5.1+cu124
+Transformers: 5.5.0
+Random seed: 42
+Execution time: ~15 min total (scenario generation ~8 min, perplexity ~15s per model)
+Estimated API cost: ~$3-5 (GPT-4.1 for scenario generation + introspection)
+```
+
+
+════════════════════════════════════════════════════════════════════════════════
+                            RESEARCH PLAN
+════════════════════════════════════════════════════════════════════════════════
+
+# Research Plan: Finding Variables Under Consideration
+
+## Motivation &amp; Novelty Assessment
+
+### Why This Research Matters
+When LLMs help users write messages, they make implicit choices about pragmatic variables (formality, directness, politeness, emotional tone) without explicitly reasoning about them. Yet when asked, LLMs can readily identify and discuss these pragmatic dimensions. This gap between *latent knowledge* and *active consideration during generation* has practical implications: if we can detect which variables a model is actively &#34;considering,&#34; we can improve generation quality, build better human-AI writing tools, and understand LLM pragmatic competence more deeply.
+
+### Gap in Existing Work
+The literature review reveals three key gaps:
+1. **Production vs. comprehension**: Existing probing work (Lin et al. 2024, Cho &amp; Kim 2024) focuses on whether LLMs *understand* pragmatic phenomena, not on what they *actively consider* during generation.
+2. **Pre-filling as a probing tool**: While forced decoding is used in evaluation, no one has systematically used pre-filled response variants to probe which axes of variation the model is sensitive to.
+3. **Cross-axis comparison**: No unified framework compares model sensitivity across multiple pragmatic dimensions simultaneously.
+
+Trienes et al. (2025) showed that LLM self-reported salience diverges from behavioral salience — our method provides a new behavioral probe via perplexity sensitivity.
+
+### Our Novel Contribution
+We propose **perplexity sensitivity analysis** as a method to detect &#34;variables under consideration&#34; by an LLM. Given a message-writing prompt, we:
+1. Generate response variants that systematically differ along pragmatic axes
+2. Measure log-likelihood (perplexity) of each variant under the model
+3. Test whether perplexity is significantly sensitive to each axis
+4. Compare behavioral sensitivity (perplexity) against introspective reports (what the model says it considered)
+
+A variable is &#34;under consideration&#34; if the model assigns meaningfully different likelihoods to responses that differ along that axis (controlling for surface-level changes).
+
+### Experiment Justification
+- **Experiment 1 (Perplexity Sensitivity)**: Core test — do models show differential perplexity across pragmatic axis variations? This directly tests the hypothesis.
+- **Experiment 2 (Introspection Comparison)**: Tests whether self-reported variables match perplexity-detected variables, validating the behavioral probing approach.
+- **Experiment 3 (Cross-Model Comparison)**: Tests generalizability across model families.
+
+## Research Question
+Can we identify which pragmatic variables an LLM &#34;considers&#34; during message generation by measuring whether systematically varying those variables in pre-filled responses produces significant perplexity changes?
+
+## Hypothesis Decomposition
+- **H1**: Pre-filled responses varying along pragmatic axes (formality, directness, politeness, emotion, specificity) will show significantly different perplexities under the generating model.
+- **H2**: Not all axes will show equal sensitivity — some variables are more &#34;under consideration&#34; than others.
+- **H3**: The set of variables detected via perplexity sensitivity will differ from variables the model reports when asked directly (introspection ≠ behavior).
+- **H4**: Perplexity sensitivity patterns will be partially consistent across different model families.
+
+## Proposed Methodology
+
+### Approach
+We use **perplexity sensitivity analysis** — a black-box behavioral probing method. For each scenario, we construct response pairs that differ along one pragmatic axis while holding others constant. We then compute the log-likelihood of each response under the model and test whether the axis-specific difference is statistically significant across scenarios.
+
+### Pragmatic Axes to Test
+1. **Formality**: casual/conversational ↔ formal/professional
+2. **Directness**: hedged/indirect ↔ direct/assertive
+3. **Politeness**: blunt/terse ↔ polite/courteous
+4. **Emotional tone**: neutral/factual ↔ warm/empathetic
+5. **Specificity**: vague/general ↔ detailed/specific
+
+### Control Axes
+6. **Synonym substitution**: Replace words with synonyms (surface change, no pragmatic change)
+7. **Length padding**: Add filler phrases (controls for length effects)
+
+### Experimental Steps
+
+1. **Scenario Construction** (using GPT-4.1):
+   - Generate 30 diverse message-writing scenarios across domains:
+     - Workplace (emails to boss, colleagues, clients)
+     - Personal (messages to friends, family, acquaintances)
+     - Service (complaints, requests, feedback)
+   - Each scenario = a user prompt asking the LLM to write a message
+
+2. **Baseline Response Generation**:
+   - For each scenario, generate a default response from the local model
+   - This serves as the &#34;natural&#34; response
+
+3. **Axis Variant Generation** (using GPT-4.1):
+   - For each scenario, generate response pairs along each axis:
+     - High-formality vs. low-formality version
+     - Direct vs. indirect version
+     - etc.
+   - Constraint: variants should differ primarily on the target axis
+   - Also generate control variants (synonym swap, length padding)
+
+4. **Perplexity Computation** (local model on GPU):
+   - For each (scenario, variant) pair, compute the conditional log-likelihood of the response given the prompt
+   - Use token-level log-probabilities from the model
+   - Normalize by response length (per-token log-likelihood)
+
+5. **Introspection Probing** (using GPT-4.1):
+   - For each scenario, ask the model: &#34;What pragmatic variables did you consider when writing this message?&#34;
+   - Code the self-reported variables
+
+6. **Statistical Analysis**:
+   - For each axis: paired t-test (or Wilcoxon) comparing perplexity of high vs. low variants across scenarios
+   - Effect sizes (Cohen&#39;s d) for each axis
+   - Comparison of perplexity-sensitive axes vs. introspection-reported axes
+
+### Models
+- **Primary**: Qwen/Qwen2.5-7B-Instruct (local, GPU) — for perplexity measurement
+- **Secondary**: microsoft/Phi-3.5-mini-instruct (local, GPU) — cross-model comparison
+- **Scenario generation**: GPT-4.1 via OpenAI API
+
+### Baselines
+1. Control axes (synonym, length) should show minimal perplexity sensitivity
+2. Random text modifications as noise baseline
+3. Compare effect sizes across pragmatic vs. control axes
+
+### Evaluation Metrics
+- **Per-token log-likelihood** (negative = perplexity proxy)
+- **Perplexity ratio**: PPL(variant_A) / PPL(variant_B) for each axis
+- **Effect size** (Cohen&#39;s d) per axis across scenarios
+- **Statistical significance** (Wilcoxon signed-rank test, corrected for multiple comparisons)
+- **Introspection agreement**: % of perplexity-detected axes also self-reported
+
+### Statistical Analysis Plan
+- Wilcoxon signed-rank test for each axis (non-parametric, handles non-normal perplexity distributions)
+- Bonferroni correction for 5 pragmatic axes + 2 controls = 7 comparisons
+- α = 0.05 (corrected: α = 0.007)
+- Report effect sizes and 95% bootstrap CIs
+
+## Expected Outcomes
+- **Supporting H1**: Pragmatic axes show statistically significant perplexity differences (p &lt; 0.007 after correction)
+- **Supporting H2**: Effect sizes vary across axes (e.g., formality may show stronger sensitivity than specificity)
+- **Supporting H3**: Introspection mentions variables (e.g., &#34;tone&#34;) that don&#39;t show perplexity sensitivity, and misses variables that do
+- **Refuting hypothesis**: If control axes show similar effect sizes to pragmatic axes, or if no axis shows significant perplexity sensitivity
+
+## Timeline and Milestones
+1. Environment setup + dependency installation: 10 min
+2. Scenario + variant generation via GPT-4.1: 20 min
+3. Local model setup + perplexity computation: 30 min
+4. Introspection probing: 10 min
+5. Statistical analysis + visualization: 20 min
+6. Documentation: 20 min
+
+## Potential Challenges
+- **Variant quality**: GPT-4.1-generated variants may differ on multiple axes simultaneously → mitigate with manual inspection and quality filtering
+- **Length confound**: Different-length responses have different perplexities → normalize per-token
+- **Model tokenization**: Token boundaries may differ across models → report both per-token and per-character metrics
+- **Small N**: 30 scenarios × 7 axes may have limited statistical power → use non-parametric tests and report effect sizes
+
+## Success Criteria
+1. At least one pragmatic axis shows significantly larger perplexity sensitivity than control axes
+2. Perplexity-detected variables partially diverge from introspection-reported variables
+3. Results replicate across at least 2 model families
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          LITERATURE REVIEW
+════════════════════════════════════════════════════════════════════════════════
+
+# Literature Review: Finding Variables Under Consideration
+
+## Research Area Overview
+
+This literature review covers research relevant to probing which variables LLMs actually consider when generating messages. The hypothesis is that LLMs do not always consider the pragmatic implications of their suggestions, even though they can identify such implications when prompted. By pre-filling different responses that vary certain axes and measuring perplexity changes, it may be possible to determine which variables the LLM is &#34;attending to&#34; during generation.
+
+The relevant literature spans three interconnected areas: (1) LLM pragmatic competence and implicature, (2) probing and explanation methods using perplexity/surprisal, and (3) Questions Under Discussion (QUD) and information salience frameworks.
+
+---
+
+## Key Papers
+
+### 1. Lin, Altshuler &amp; Pierrehumbert (2024) — &#34;Probing LLMs for Scalar Adjective Lexical Semantics and Scalar Diversity Pragmatics&#34;
+- **Source**: arXiv 2404.03301
+- **Key Contribution**: Probes LLMs (BERT, RoBERTa, GPT-4, Flan-T5, Falcon) for scalar adjective knowledge using both direct (embedding-based) and indirect (perplexity-based) methods.
+- **Methodology**: **Perplexity comparison of minimal pairs** — compares perplexity of correct vs. incorrect scalar constructions (e.g., &#34;good but not awesome&#34; vs. &#34;awesome but not good&#34;). Lower perplexity for correct order = model encodes intensity knowledge.
+- **Datasets**: DEMELO, CROWD, WILKINSON scalar adjective datasets; ukWac context sentences.
+- **Key Results**: LLMs encode rich lexical-semantic info about scalar adjectives but have **unsatisfying performance on scalar diversity** (pragmatic aspect). Larger models are not always better. GPT-4 best overall.
+- **Relevance**: **Directly demonstrates the perplexity-based probing methodology** central to our hypothesis. Shows that semantic knowledge ≠ pragmatic competence.
+- **Code**: https://github.com/fangru-lin/llm_scalar_adj
+
+### 2. Cho &amp; Kim (2024) — &#34;Pragmatic Inference of Scalar Implicature by LLMs&#34;
+- **Source**: arXiv 2408.06673
+- **Key Contribution**: Tests whether BERT and GPT-2 engage in pragmatic inference of &#34;some&#34; → &#34;not all&#34; implicature, and whether QUD context modulates this.
+- **Methodology**: (1) Cosine similarity between &#34;some&#34;-sentences and semantic/pragmatic paraphrases; (2) **Surprisal measurement** under different QUD contexts (upper-bound &#34;all&#34; vs. lower-bound &#34;any&#34; questions).
+- **Datasets**: 198 sentences from BNC with &#34;some + NP&#34; structures.
+- **Key Results**: Both models prefer pragmatic interpretation without context. GPT-2 shows **higher surprisal when pragmatic inference is required** (upper-bound QUD), suggesting processing difficulty. BERT is insensitive to QUD type.
+- **Relevance**: **Directly uses surprisal/perplexity as a probe for pragmatic processing**, and manipulates context (QUD) to test variable sensitivity — very close to our proposed approach.
+- **Code**: https://github.com/joyennn/scalar-implicature
+
+### 3. Cífka &amp; Liutkus (2023) — &#34;Black-box Language Model Explanation by Context Length Probing&#34;
+- **Source**: arXiv 2212.14815
+- **Key Contribution**: Novel explanation technique for causal LMs based on tracking predictions as a function of context length, assigning **differential importance scores** (Δ-scores).
+- **Methodology**: Runs model on sliding windows of varying context length c. Computes KL divergence D(c) = DKL[P_max || P_c] to quantify information loss from shorter context. **Δ-score** = change in KL when adding one more token to context.
+- **Datasets**: English LinES treebank (Universal Dependencies).
+- **Key Results**: Power-law-like inverse relationship between context length and importance. Proper nouns are most informative in distant context. Larger models rely more on shorter contexts.
+- **Relevance**: **Core methodological inspiration** — demonstrates how to use probability distributions over the vocabulary (not just single-token likelihood) to probe what the model &#34;considers.&#34; Model-agnostic, black-box approach.
+- **Code**: https://github.com/cifkao/context-probing
+
+### 4. Sato, Kawano &amp; Yoshino (2025) — &#34;Pragmatic Theories Enhance Understanding of Implied Meanings in LLMs&#34;
+- **Source**: arXiv 2510.26253
+- **Key Contribution**: Providing pragmatic theory summaries (Grice, Relevance Theory) as prompts improves LLM performance on implied meaning tasks by up to 9.6%.
+- **Methodology**: Zero-shot prompting with theory descriptions; tests on multiple pragmatic reasoning benchmarks.
+- **Key Results**: Even just mentioning theory names (without full descriptions) improves performance by 1-3% in larger models. Particularly effective for maxim-flouting utterances and irony.
+- **Relevance**: Shows LLMs have latent pragmatic knowledge that can be activated — supports the idea that models &#34;know&#34; about pragmatic variables but don&#39;t always &#34;use&#34; them during generation.
+
+### 5. Trienes, Schlötterer, Li &amp; Seifert (2025) — &#34;Behavioral Analysis of Information Salience in LLMs&#34;
+- **Source**: arXiv 2502.14613
+- **Key Contribution**: Uses **length-constrained summarization as a behavioral probe** into LLMs&#39; content selection, tracked via QUD answerability.
+- **Methodology**: Generate summaries at different length budgets (10-200 words). Track which QUDs remain answerable at each length → Content Salience Maps. 13 models, 4 datasets.
+- **Key Results**: LLMs have a **nuanced, hierarchical notion of salience** consistent across model families. **Salience cannot be accessed through introspection** (asking models directly gives different answers than behavior shows). Weak correlation with human salience perception.
+- **Relevance**: **Critical methodological parallel** — uses behavioral probing (output variation) rather than introspection to determine what models &#34;consider important.&#34; The finding that introspection ≠ behavior directly motivates our perplexity-based probing approach.
+- **Code**: https://github.com/jantrienes/llm-salience
+
+### 6. Unger &amp; Buschmeier (2025) — &#34;Conversational Implicatures: Modelling Relevance Theory Probabilistically&#34;
+- **Source**: arXiv 2509.22354
+- **Key Contribution**: Bayesian probabilistic model of implicature comprehension implementing Relevance Theory in ProbLog.
+- **Methodology**: Formalizes Relevance Theory concepts (manifestness, cognitive effects, processing effort) probabilistically. Models how listeners derive implicatures through intention attribution.
+- **Relevance**: Provides formal probabilistic framework connecting pragmatic theory to computational models — could inform how to formalize &#34;variables under consideration&#34; in terms of cognitive effects and manifestness.
+
+### 7. Ruis et al. (2024) — &#34;The Goldilocks of Pragmatic Understanding&#34;
+- **Source**: arXiv 2210.14986
+- **Key Contribution**: Comprehensive benchmark testing LLMs on conversational implicature understanding. GPT-4 achieves 88.7% with 30-shot CoT prompting.
+- **Datasets**: &#34;do-pigs-fly&#34; / LUDWIG dataset — 629 test examples of conversational implicatures.
+- **Relevance**: Provides primary benchmark dataset for evaluating pragmatic understanding, and establishes that instruction tuning and CoT are needed for good pragmatic performance.
+
+### 8. Hu et al. (2022, 2023) — Scalar Diversity and Surprisal
+- **Key Contribution**: Uses **string-based and concept-based surprisal** from GPT-2 to predict scalar diversity ratings.
+- **Methodology**: Measures surprise of a strong word appearing as alternative to a weak word. Concept-based surprisal averages over semantically similar alternatives.
+- **Key Results**: Scalar diversity correlates with both surprisal measures. Stronger correlations than many feature-based predictors.
+- **Relevance**: Demonstrates that **surprisal/perplexity can capture pragmatic phenomena** (scalar diversity) that simpler features miss.
+
+### 9. QUD Framework Papers (2022-2025)
+- **Discourse Analysis via QUD** (2210.05905): QUD parsing as dependency structure.
+- **QUDEVAL** (2310.14520): Evaluation framework for QUD discourse parsing.
+- **QUDSELECT** (2408.01046): Selective decoding for QUD parsing.
+- **Survey of QUD Models** (2502.15573): Comprehensive survey of QUD applications.
+- **Relevance**: QUD provides the theoretical framework for understanding what is &#34;under consideration&#34; in a discourse. A variable is &#34;under consideration&#34; if it relates to the current QUD.
+
+### 10. Additional Pragmatics + LLM Papers
+- **PUB** (2401.07078): Pragmatics Understanding Benchmark covering implicature, presupposition, deixis.
+- **Gricean Norms as Basis for Collaboration** (2503.14484): Gricean maxims for human-AI collaboration.
+- **PragWorld** (2511.13021): Benchmark evaluating LLMs&#39; world models under minimal linguistic alterations.
+- **Pragmatic Mind of Machines** (2505.18497): Traces emergence of pragmatic competence in LLMs.
+- **LLM Limits on Implicit Content** (2506.06775): LLMs struggle with implicit content in political discourse.
+
+---
+
+## Common Methodologies
+
+### Perplexity/Surprisal-Based Probing
+- **Minimal pair comparison**: Compare perplexity of correct vs. incorrect constructions (Lin et al., 2024; Hu et al., 2022).
+- **Surprisal under context manipulation**: Vary context (e.g., QUD type) and measure surprisal changes in a fixed response (Cho &amp; Kim, 2024).
+- **Context length probing**: Track how predictions change as context length varies (Cífka &amp; Liutkus, 2023).
+- **Self-aligned perplexity**: Measure how well outputs match a model&#39;s own &#34;style&#34; (Ren et al., 2025).
+
+### Direct vs. Indirect Probing
+- **Direct probing**: Analyze hidden representations/embeddings (requires open-source models).
+- **Indirect probing**: Use behavioral tests — prompting, generation, perplexity comparison (works for all models).
+- Key finding: indirect probing underperforms direct probing but reveals valid relative rankings (Lin et al., 2024).
+
+### Behavioral vs. Introspective Assessment
+- **Behavioral**: What the model actually does (generation, perplexity, etc.).
+- **Introspective**: What the model says it would do when asked directly.
+- Critical finding: **these diverge** — models&#39; self-reported salience doesn&#39;t match their actual behavior (Trienes et al., 2025).
+
+---
+
+## Standard Baselines
+- **Random/majority baseline**: For classification tasks (implicature yes/no).
+- **Google Ngram**: Frequency-based baseline for perplexity comparisons (Lin et al., 2024).
+- **Fast-text embeddings**: Static embedding baseline for probing tasks.
+- **Zero-shot prompting**: Standard LLM baseline without pragmatic guidance.
+- **Chain-of-Thought (CoT)**: Step-by-step reasoning baseline.
+- **RSA (Rational Speech Act)**: Formal pragmatic baseline from computational linguistics.
+
+---
+
+## Evaluation Metrics
+- **Perplexity / Surprisal**: Core metric for probing — measures how &#34;surprised&#34; the model is by a given continuation.
+- **KL Divergence**: Measures distributional shift between conditions (Cífka &amp; Liutkus, 2023).
+- **Pairwise Accuracy**: Whether correct ordering/interpretation has lower perplexity than incorrect.
+- **Cosine Similarity**: Between sentence embeddings for semantic/pragmatic alignment.
+- **MRR (Mean Reciprocal Rank)**: For scale membership probing.
+- **Correlation**: Between model perplexity patterns and human judgments (scalar diversity ratings).
+
+---
+
+## Datasets in the Literature
+| Dataset | Used By | Task | Size |
+|---------|---------|------|------|
+| DEMELO, CROWD, WILKINSON | Lin et al. 2024; Garí Soler &amp; Apidianaki 2020 | Scalar adjective probing | 185 half-scales |
+| ukWac context sentences | Lin et al. 2024 | Context for SA probing | 10 per half-scale |
+| BNC &#34;some&#34; sentences | Cho &amp; Kim 2024 | Scalar implicature | 198 sentences |
+| do-pigs-fly / LUDWIG | Ruis et al. 2024 | Conversational implicature | 629 test |
+| BIG-bench Implicatures | Google | Implicature classification | 492 examples |
+| PUB | Hu et al. 2024 | Pragmatics benchmark | 5,000+ |
+| PRAGMEGA | Sato et al. 2025 | Pragmatic reasoning | Multi-task |
+| LinES treebank | Cífka &amp; Liutkus 2023 | Context probing | 20K tokens |
+| Van Tiel et al. 2016 | Multiple | Scalar diversity ratings | 43 pairs |
+
+---
+
+## Gaps and Opportunities
+
+1. **No work directly probes which variables LLMs &#34;consider&#34; during generation** using systematic perplexity measurement across response variations. Existing work probes comprehension, not production.
+
+2. **Pre-filling / forced decoding as probing tool** is underexplored. While forced decoding is used in translation and evaluation, it hasn&#39;t been systematically used to probe which axes of variation the model is sensitive to.
+
+3. **The gap between model knowledge and model behavior** (identified by Trienes et al. 2025 and Lin et al. 2024) is precisely what our hypothesis targets — models &#34;know&#34; about pragmatic variables but don&#39;t always &#34;use&#34; them.
+
+4. **Cross-axis comparison** — comparing sensitivity across different variable types (formality, politeness, sentiment, specificity, etc.) — has not been done in a unified framework.
+
+5. **Connection between QUD framework and LLM generation** — QUDs provide a principled way to define what &#34;should&#34; be under consideration, but this hasn&#39;t been connected to perplexity-based probing of generation behavior.
+
+---
+
+## Recommendations for Our Experiment
+
+### Recommended Datasets
+1. **LUDWIG / do-pigs-fly** (Ruis et al. 2024) — Primary implicature benchmark with rich context.
+2. **BIG-bench Implicatures** — Simple yes/no implicature task for baseline evaluation.
+3. **Scalar adjective datasets** (DEMELO/CROWD/WILKINSON) — For scalar diversity experiments.
+4. **Van Tiel et al. scalar diversity ratings** — Human judgments for correlation analysis.
+5. **Custom prompt sets** — Create scenarios where responses vary along specific axes (formality, politeness, directness, etc.) and measure perplexity differences.
+
+### Recommended Baselines
+1. **Perplexity of unmodified responses** — Baseline for comparison.
+2. **Random axis variation** — Control condition showing perplexity changes for irrelevant modifications.
+3. **RSA predictions** — Formal pragmatic baseline for what &#34;should&#34; be under consideration.
+
+### Recommended Metrics
+1. **Perplexity difference** (or ratio) across axis variations — primary measure.
+2. **KL divergence** between output distributions under different pre-fills.
+3. **Statistical significance** of perplexity differences (paired tests across items).
+4. **Correlation with human judgments** of variable relevance.
+
+### Methodological Considerations
+- Use **multiple models** (open-source: Llama, Mistral; closed: GPT-4) to test generalizability.
+- Use **multiple prompt contexts** to avoid confounds.
+- Control for **surface-level changes** (token count, word frequency) vs. pragmatic changes.
+- The **context-probing** codebase provides a ready-made framework for computing KL divergence over vocabulary distributions.
+- The **scalar-adj-probing** codebase demonstrates forced-decoding probability extraction.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          PAPER REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+Generate a complete academic paper with the following structure:
+
+1. TITLE
+   - Clear, specific, informative
+   - Should convey main finding or contribution
+
+2. AUTHOR
+   - Use this exact author line in the \author{} block: Ari Holtzman and NeuriCo
+
+3. ABSTRACT (150-250 words)
+   - Problem statement
+   - Approach
+   - Key results
+   - Significance
+
+4. INTRODUCTION
+   - Research problem and motivation
+   - Gap in existing work
+   - Our contribution (be specific)
+   - Paper organization
+
+5. RELATED WORK
+   - Organized by theme/approach
+   - Position our work relative to prior work
+   - Cite papers from literature review
+
+6. METHODOLOGY
+   - Clear description of approach
+   - Experimental setup
+   - Datasets used
+   - Evaluation metrics
+   - Baselines
+
+7. RESULTS
+   - Present results with tables and figures
+   - Statistical analysis
+   - Comparison to baselines
+   - Ablation studies (if applicable)
+
+8. DISCUSSION
+   - Interpretation of results
+   - Limitations
+   - Broader implications
+
+9. CONCLUSION
+   - Summary of contributions
+   - Key findings
+   - Future work
+
+10. REFERENCES
+   - BibTeX format
+   - All cited papers
+
+════════════════════════════════════════════════════════════════════════════════
+                          OUTPUT FORMAT
+════════════════════════════════════════════════════════════════════════════════
+
+Create a MODULAR LaTeX project with the following directory structure:
+
+paper_draft/
+├── main.tex              # Main file that imports all sections
+├── references.bib        # BibTeX references
+├── sections/
+│   ├── abstract.tex      # Abstract content
+│   ├── introduction.tex  # Introduction section
+│   ├── related_work.tex  # Related work section
+│   ├── methodology.tex   # Methodology section
+│   ├── results.tex       # Results section
+│   ├── discussion.tex    # Discussion section
+│   └── conclusion.tex    # Conclusion section
+├── figures/              # Directory for any generated figures
+├── tables/               # Directory for complex standalone tables
+└── appendix/             # Directory for appendix sections (if needed)
+
+INSTRUCTIONS:
+1. First, create the directory structure above (mkdir -p paper_draft/sections paper_draft/figures paper_draft/tables paper_draft/appendix)
+2. Write main.tex using the EXACT preamble for NEURIPS:
+
+   \documentclass{article}
+   \usepackage[final]{neurips_2025}  % NEURIPS style (neurips_2025.sty is in paper_draft/)
+   \usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+   \usepackage{booktabs}  % REQUIRED: professional tables
+   \usepackage{graphicx}
+   \usepackage{amsmath,amssymb}
+
+   % Import command files
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+   % Use this bibliography style:
+   \bibliographystyle{plainnat}
+
+   \author{Ari Holtzman and NeuriCo}
+
+   - Use \input{sections/...} to include each section
+   - Use \bibliography{references} for references
+3. Write each section file with COMPLETE content (no placeholders)
+4. Each section file should include its \section{} command
+5. Write references.bib with all citations in BibTeX format
+6. After writing all files, compile the paper:
+   cd paper_draft && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex
+
+This modular structure allows humans to easily:
+- Edit individual sections without navigating a large file
+- Track changes per section
+- Reuse sections across different paper versions
+
+════════════════════════════════════════════════════════════════════════════════
+                          QUALITY REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+- Academic tone throughout
+- All claims must be supported by data from the experiment report
+- Proper citations using \cite{} commands
+- Clear figures and tables with proper captions
+- NO placeholder text - every section must have real content
+- The paper MUST compile without errors
+- If compilation fails, debug and fix the LaTeX errors
+
+════════════════════════════════════════════════════════════════════════════════
+                          LAB WRITING STYLE
+════════════════════════════════════════════════════════════════════════════════
+
+Follow these lab-specific conventions to match our paper style:
+
+1. LANGUAGE STYLE:
+   - Use active voice: "We propose", "We examine", "We focus on"
+   - Be direct and confident: "Our main question is...", "We hypothesize that..."
+   - State things clearly and simply - prefer plain language over jargon
+   - Use bold questions as paragraph organizers: {\bf what is X?}
+   - Include specific quantitative claims: "8.97% over baseline"
+   - Avoid fancy wording: "utilize" → "use", "facilitate" → "help"
+
+2. INTRODUCTION STRUCTURE:
+   - Engaging hook (get to the point quickly)
+   - Problem importance
+   - Gap identification
+   - Your approach with method figure reference
+   - Quantitative preview of results
+   - Contribution bullets (3-4 items, action verbs)
+
+3. CONTRIBUTION LISTS:
+   \begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+       \item We propose...
+       \item We conduct...
+       \item We complement...
+   \end{itemize}
+
+4. MODULAR COMMANDS STRUCTURE:
+   Command templates are pre-copied to paper_draft/commands/:
+   - math.tex: Math notation macros
+   - general.tex: Formatting macros
+   - macros.tex: Project-specific term definitions (customize this for your paper)
+
+   In main.tex, include:
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+5. REFERENCE CONVENTIONS:
+   Use reference macros from math.tex:
+   - \figref{fig:name} for "figure 1" (lowercase, in-sentence)
+   - \Figref{fig:name} for "Figure 1" (capitalized, start of sentence)
+   - \secref{sec:name} for "section 2"
+
+6. TEXT FORMATTING:
+   - Use \para{Header text} for bold paragraph headers
+   - Define method/dataset names with \textsc and \xspace:
+     \newcommand{\methodname}{\textsc{MethodName}\xspace}
+
+7. TABLE FORMATTING:
+   - Use booktabs package (no vertical lines)
+   - Use \resizebox{\textwidth}{!}{...} for wide tables
+   - Use @{} to remove padding at table edges
+   - Use \cmidrule(lr){x-y} for sub-headers
+   - Use \textsc{} for dataset/method names in headers
+   - Bold best results with {\bf ...}
+
+8. FIGURE FORMATTING:
+   - Use 0.32\textwidth for 3-column subfigures
+   - Use 0.95\linewidth for full-width figures
+   - Use \input{figures/legend} for shared legends
+   - Write self-contained captions explaining key observations
+
+9. RESULTS PRESENTATION:
+   - Define \increase and \decrease for colored arrows (green up, red down)
+   - Bold best results in tables
+   - Report confidence intervals when available
+
+10. ALGORITHM STYLING:
+    - Use algpseudocode with [noend]
+    - Use \triangleright for comments
+
+11. HYPERLINKS (REQUIRED):
+    - Always use \usepackage[hidelinks]{hyperref} or with colored links
+    - All citations, section refs, figure refs, table refs must be clickable
+    - This is essential for reader navigation
+
+════════════════════════════════════════════════════════════════════════════════
+                          WORKFLOW: REVIEW AND REFLECT
+════════════════════════════════════════════════════════════════════════════════
+
+Before calling finish, you MUST complete these review steps:
+
+1. REVIEW RESOURCES (at the start):
+   - Read .claude/skills/paper-writer/SKILL.md for detailed guidance
+   - Study templates/paper_writing/lab_style_guide.md for style conventions
+   - Browse paper_examples/ for formatting and language patterns
+
+2. SELF-REFLECTION (before finishing):
+   After writing all sections, review your work against these criteria:
+
+   LANGUAGE CHECK:
+   - [ ] Is the writing clear and jargon-free?
+   - [ ] Are claims specific with quantitative support?
+   - [ ] Is active voice used throughout?
+
+   FORMATTING CHECK:
+   - [ ] Does main.tex include \input{commands/math}, \input{commands/general}, \input{commands/macros}?
+   - [ ] Is hyperref package included for clickable references?
+   - [ ] Do tables use booktabs (no vertical lines)?
+   - [ ] Are best results bolded in tables?
+   - [ ] Are figures/tables properly captioned?
+
+   STRUCTURE CHECK:
+   - [ ] Does introduction follow: hook → importance → gap → approach → preview → contributions?
+   - [ ] Are contribution bullets specific with action verbs?
+   - [ ] Does the paper compile without errors?
+
+3. FIX ISSUES:
+   - Address any issues found in the self-reflection
+   - Re-compile and verify the PDF looks correct
+
+Only after completing this review should you consider the paper finished.

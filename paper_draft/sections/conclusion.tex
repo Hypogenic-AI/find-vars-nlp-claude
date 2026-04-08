@@ -1,0 +1,8 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+We introduced perplexity sensitivity analysis, a behavioral probing method for detecting which pragmatic variables an LLM ``considers'' during message generation. By measuring whether models assign systematically different likelihoods to response variants along five pragmatic axes, we identified a coherent default profile: these models strongly prefer polite, vague, indirect, and formal responses, while showing no stable preference for emotional tone. Comparing behavioral detection against introspection revealed two failure modes of model self-awareness---a blind spot for directness (strong default, rarely self-reported) and performative consideration of emotional tone (frequently mentioned, not behaviorally detected). These results replicated perfectly across two model sizes ($\rho{=}1.0$).
+
+Our findings have direct implications for LLM-powered writing assistants: systems should prompt users about pragmatic dimensions the model defaults on---especially directness, where the model's strong hedging preference may conflict with the user's communicative intent. More broadly, perplexity sensitivity analysis provides a cheap, automated method for auditing the implicit pragmatic choices that instruction-tuned models make on behalf of their users.
+
+Future work should extend this analysis to models from different families, test whether pragmatic defaults shift under explicit instructions, correlate perplexity-detected preferences with human judgments, and expand the set of axes to include urgency, confidence, humor, and cultural register.

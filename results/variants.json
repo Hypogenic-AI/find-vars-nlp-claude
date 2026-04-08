@@ -1,0 +1,1442 @@
+[
+  {
+    "variant_a": "Hey! Just wanted to let you know that I\u2019m running a bit late this morning because my train got delayed. I\u2019m on my way and should be in as soon as possible\u2014looks like I\u2019ll be about 20 minutes behind schedule. Sorry for the hold up! I\u2019ll catch up on anything I missed when I get in. Thanks for understanding.",
+    "variant_b": "Dear [Boss's Name],\n\nI wanted to inform you that I am currently experiencing a transportation delay due to an issue with my train. As a result, I expect to arrive approximately 20 minutes later than usual. I apologize for any inconvenience this may cause and will ensure that I promptly address any missed responsibilities upon my arrival. Thank you for your understanding.\n\nBest regards,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 1,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi [Boss's Name],\n\nI wanted to let you know that I\u2019m experiencing some unexpected delays with my transportation this morning. I\u2019m really sorry for the inconvenience\u2014public transit seems to be running behind schedule today. I\u2019m doing my best to get to the office as soon as I can, but I may be a bit late. Please let me know if there\u2019s anything urgent I should address remotely in the meantime. Thank you for your understanding.\n\nBest,\n[Your Name]",
+    "variant_b": "Hi [Boss's Name],\n\nI\u2019m running late this morning due to a transportation issue. The train is delayed, so I won\u2019t arrive at the office at my usual time. I\u2019ll update you if anything changes, and I\u2019ll get started on my work remotely until I arrive. Let me know if you need anything from me urgently before I get in.\n\nThanks,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 1,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I'm running late because of a transportation issue. I'll be in as soon as possible and will catch up on anything I miss. Let me know if there's anything urgent you need me to handle remotely before I arrive.",
+    "variant_b": "Good morning, I wanted to let you know that I'm running late due to an unexpected transportation issue. I apologize for any inconvenience this may cause and will do my best to arrive as soon as possible. If there's anything urgent that I should address remotely before I get in, please let me know. Thank you for your understanding.",
+    "axis": "politeness",
+    "scenario_id": 1,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hello, I wanted to inform you that I am experiencing a transportation issue this morning and will be running late. I am working to resolve the situation as quickly as possible and will keep you updated on my estimated arrival time. Please let me know if there is anything urgent I should address remotely in the meantime. Thank you for your understanding.",
+    "variant_b": "Good morning, I wanted to let you know that I'm running late today due to an unexpected transportation problem. I'm so sorry for any inconvenience this may cause and am doing my best to get to the office as soon as possible. If there's anything important I can handle remotely while I'm on my way, please let me know. Thank you so much for your patience and understanding.",
+    "axis": "emotional_tone",
+    "scenario_id": 1,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi, I wanted to let you know that I'm running late this morning due to some unexpected transportation issues. I'm doing my best to get to the office as soon as I can, but there may be a delay in my arrival. I apologize for any inconvenience this may cause and will keep you updated if anything changes. Please let me know if there's anything urgent I should address as soon as I get in. Thank you for your understanding.",
+    "variant_b": "Hi, I wanted to let you know that I'm running late this morning because my train was delayed by about 30 minutes due to a signal issue at my station. I expect to arrive at the office by around 9:45 AM instead of my usual 9:00 AM. I apologize for the inconvenience and will check my email on my phone in case there are any urgent matters that need my attention before I get in. I'll keep you updated if there are further delays. Thank you for your understanding.",
+    "axis": "specificity",
+    "scenario_id": 1,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hi [Boss's Name],\n\nI wanted to let you know that I'm running late this morning due to a transportation issue. My train was unexpectedly delayed, and I'm doing my best to get to the office as soon as possible. I anticipate arriving in approximately 30 minutes, but I'll keep you updated if anything changes. Please let me know if there's anything urgent I should address remotely in the meantime. Sorry for any inconvenience, and thank you for your understanding.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hello [Boss's Name],\n\nI wanted to inform you that I'll be arriving late today because of a transit problem. My subway experienced an unplanned holdup, and I'm making every effort to reach the workplace promptly. I expect to be there in about half an hour, but I'll update you if circumstances shift. Please advise if there's anything pressing I should handle online for now. Apologies for any trouble, and I appreciate your patience.\n\nKind regards,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 1,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey! Hope you\u2019re doing well. I wanted to check if you could help me out with the project deadline coming up. I\u2019m running into a few snags and could really use another set of hands, especially with some of the last pieces. If you have some time this week, maybe we could meet up and go over what still needs to get done? Let me know what works for you, and thanks a ton for considering it!",
+    "variant_b": "Hello, I hope you are well. I am reaching out to request your assistance with meeting the upcoming project deadline. I have encountered a few challenges and would greatly appreciate your support, particularly in addressing the remaining tasks. If you are available this week, could we schedule a meeting to review the outstanding items? Please let me know your availability, and thank you in advance for your consideration.",
+    "axis": "formality",
+    "scenario_id": 2,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi [Colleague],\n\nI hope you\u2019re doing well. I wanted to touch base because I\u2019m finding it a bit challenging to meet the upcoming project deadline on my own. If you happen to have some availability, would you possibly be able to lend a hand with a few of the tasks? I completely understand if your schedule is tight, but any support you might be able to offer would be greatly appreciated. Please let me know if this might be doable for you.\n\nThanks so much,\n[Your Name]",
+    "variant_b": "Hi [Colleague],\n\nI need some help meeting our upcoming project deadline. I\u2019m not able to finish all the tasks on my own and would appreciate your assistance with a few specific items. If you can support me, please let me know when you\u2019re available to discuss next steps. Your help will make a big difference in getting everything done on time. Thanks in advance for your support.\n\nBest,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 2,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I need help meeting the project deadline. There are a few tasks I can't finish on my own, specifically compiling the final report and double-checking the data analysis. Can you take on those items and get them done by Friday? Let me know if you have questions or need more details.",
+    "variant_b": "Hi, I hope you\u2019re doing well. I\u2019m reaching out because I\u2019m having difficulty meeting the upcoming project deadline, and I would really appreciate your help. Would you be able to assist with compiling the final report and double-checking the data analysis by Friday? Please let me know if you have any questions or if you need additional information from me. Thank you so much for considering this.",
+    "axis": "politeness",
+    "scenario_id": 2,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hi [Colleague],\n\nI\u2019m reaching out to request your assistance with the [Project Name] deadline. The workload has increased, and I believe your expertise could help ensure we meet our target date. If you have capacity, could you support by taking on some of the outstanding tasks or providing input on the current deliverables? Please let me know your availability and whether you have any constraints. Your help would be appreciated to keep the project on track.\n\nThank you,\n[Your Name]",
+    "variant_b": "Hi [Colleague],\n\nI hope you're doing well! I wanted to ask if you might be able to help me with the [Project Name] deadline. Things have gotten a bit overwhelming on my end, and I would really value your support\u2014your insights always make a big difference. If you have some time, could we connect about how you might be able to pitch in? I\u2019d really appreciate any help you can offer, and I\u2019m happy to work around your schedule.\n\nThanks so much,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 2,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi, I hope you\u2019re doing well. I was wondering if you\u2019d be able to help me with a project I\u2019m working on. I\u2019m facing a bit of a tight schedule and could really use some assistance to make sure everything is finished on time. If you\u2019re available, I\u2019d really appreciate your support with some of the tasks. Let me know if you can lend a hand and we can figure out the best way to move forward together.",
+    "variant_b": "Hi, I hope you\u2019re doing well. I\u2019m reaching out because I need help meeting the June 21st deadline for the Q2 marketing report. Specifically, I\u2019m struggling with compiling the analytics for the email campaign and double-checking the budget summary. If you\u2019re available this week, even just for an hour or two, your expertise would be invaluable. Please let me know if you can assist, and we can set up a time to review the sections together before next Wednesday.",
+    "axis": "specificity",
+    "scenario_id": 2,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hi, I hope you're doing well. I'm reaching out because I'm working on the current project, and I'm a bit concerned about meeting the upcoming deadline. Would you be able to help me with some of the tasks to ensure we finish everything on time? Your expertise would make a big difference. Please let me know if you have some availability to discuss this further. Thanks so much for considering it\u2014I really appreciate your support.",
+    "variant_b": "Hello, I hope all is well with you. I'm contacting you because I'm handling the ongoing project, and I'm somewhat worried about hitting the approaching due date. Could you assist me with a few of the responsibilities to make sure we complete everything punctually? Your knowledge would be really valuable. Kindly let me know if you have some time to talk about this more. Thank you very much for considering\u2014I truly appreciate your assistance.",
+    "axis": "synonym",
+    "scenario_id": 2,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi HR team,\n\nHope you\u2019re doing well! I recently moved and need to update my mailing address in the system. Could you let me know what info you need from me to make the change, or if there\u2019s a specific form I should fill out? My new address is:\n\n[Your New Address Here]\n\nThanks a lot for your help! Let me know if you need anything else from me.\n\nBest,\n[Your Name]",
+    "variant_b": "Dear Human Resources,\n\nI am writing to request an update to my mailing address in the company records. I have recently relocated and would appreciate your assistance in ensuring my information is current. Please advise if there are any forms or additional documentation required to process this change. My new mailing address is as follows:\n\n[Your New Address Here]\n\nThank you very much for your attention to this matter. Please let me know if you need any further information.\n\nSincerely,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 3,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "I hope this message finds you well. I wanted to check if it would be possible to have my mailing address in the system updated at your earliest convenience. I recently moved and would like to make sure my records are current to avoid any issues with future correspondence. Please let me know if there\u2019s any specific information or documentation you need from me to process this update. Thank you so much for your help.",
+    "variant_b": "Please update my mailing address in the system. I have recently moved and want to make sure my records are current to ensure I receive all correspondence. Let me know if you need any additional information or documentation from me to complete this update. Thank you.",
+    "axis": "directness",
+    "scenario_id": 3,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I need to update my mailing address in the HR system. My new address is below. Update it as soon as possible and confirm when it\u2019s done.\n\n[Insert new address here]\n\nLet me know if you need more details.",
+    "variant_b": "Hello,\n\nI hope you\u2019re doing well. I\u2019d like to request an update to my mailing address in the HR system. My new address is provided below. Could you please make this change at your earliest convenience and let me know once it has been updated?\n\n[Insert new address here]\n\nThank you very much for your assistance.",
+    "axis": "politeness",
+    "scenario_id": 3,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Dear HR Team,\n\nI am writing to request an update to my mailing address in the company records. Please let me know what information or documentation you require from me to complete this change. I appreciate your assistance in ensuring my contact information is current.\n\nThank you.",
+    "variant_b": "Hello HR Team,\n\nI hope you're doing well! I wanted to reach out and ask for your help updating my mailing address in the system. Please let me know if there\u2019s anything I need to provide to make this process smooth. Thank you so much for your support\u2014I really appreciate your help!\n\nBest regards,",
+    "axis": "emotional_tone",
+    "scenario_id": 3,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hello HR Team,\n\nI hope you are well. I am writing to ask for my mailing address to be updated in the company records. I have recently moved and want to make sure my information is current in your system. Please let me know if you need any further details or forms from me to complete this change. Thank you in advance for your assistance.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hello HR Team,\n\nI recently moved to a new residence and would like to update my mailing address in the company system. My previous address was 456 Oak Street, Apt 4B, Springfield, IL 62704, and my new address is 123 Maple Avenue, Unit 12, Springfield, IL 62705. Please let me know if you require any supporting documentation or if I need to complete any specific forms to finalize this update. I appreciate your help in ensuring my records are current.\n\nThank you,\n[Your Name]",
+    "axis": "specificity",
+    "scenario_id": 3,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear HR Team,\n\nI hope this message finds you well. I am writing to request an update to my mailing address in the company records. My previous address has changed, and I would like to ensure that all correspondence is sent to my current location. Please let me know if you require any additional information or documentation from my end to process this update.\n\nThank you very much for your assistance.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Dear HR Team,\n\nI hope this email reaches you in good health. I am contacting you to ask for a revision of my postal address in the organization's files. My former address is no longer valid, and I want to make sure that all mail is directed to my updated residence. Kindly inform me if you need any further details or paperwork from my side to complete this change.\n\nThank you for your support.\n\nKind regards,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 3,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi there,\n\nHope you\u2019re doing well! Just wanted to check in and see if you had any thoughts on the proposal I sent over last week. If you have any questions or need more info, I\u2019m happy to help. No rush\u2014just wanted to make sure it didn\u2019t get buried in your inbox!\n\nLooking forward to hearing from you.\n\nThanks,\n[Your Name]",
+    "variant_b": "Dear [Client Name],\n\nI hope this message finds you well. I am writing to follow up regarding the proposal I shared with you last week. Please let me know if you have any questions or require further clarification on any aspect of the document. I would appreciate any feedback you may have at your earliest convenience.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 4,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "I hope this message finds you well. I wanted to gently follow up regarding the proposal I sent over last week. I understand you have a busy schedule, but I wanted to check in and see if you had any thoughts or questions about it. If there\u2019s anything I can clarify or if you need more information, please let me know. Whenever you have a moment, I\u2019d appreciate your feedback so we can determine next steps. Thank you for your time, and I look forward to hearing from you.",
+    "variant_b": "I\u2019m following up on the proposal I sent last week, as I haven\u2019t received a response yet. Please let me know if you have any questions or if you\u2019re ready to move forward. Your feedback is important so we can decide on the next steps. If I don\u2019t hear back by Friday, I\u2019ll assume you\u2019re not interested at this time. Let me know how you\u2019d like to proceed. Looking forward to your reply.",
+    "axis": "directness",
+    "scenario_id": 4,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I'm following up on the proposal I sent last week. I haven't received a response yet, and I need to know your decision so I can plan our next steps. Let me know if you have questions or if you need more information. Please respond as soon as possible so we can move forward.",
+    "variant_b": "I hope this message finds you well. I wanted to kindly follow up regarding the proposal I sent last week, as I haven\u2019t yet received a response. If you have any questions or need additional information, please let me know\u2014I\u2019m happy to assist. I would greatly appreciate an update at your convenience, so we can determine the best way to move forward. Thank you very much for your time.",
+    "axis": "politeness",
+    "scenario_id": 4,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Dear [Client Name],\n\nI am following up regarding the proposal I sent on [date]. I wanted to check if you have had a chance to review it and if there are any questions or additional information needed. Please let me know if you require further clarification or would like to discuss any aspect of the proposal in more detail. I look forward to your feedback and next steps.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hi [Client Name],\n\nI hope this message finds you well! I wanted to follow up on the proposal I sent over on [date] and see if you had any questions or thoughts. I\u2019m happy to discuss any details or provide more information if needed. Your feedback is important to me, and I\u2019m looking forward to working together. Please let me know how I can help move things forward.\n\nWarm regards,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 4,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi,\n\nI hope this message finds you well. I wanted to follow up regarding the proposal I sent you a little while ago. I\u2019m just checking in to see if you had any questions or feedback, or if there\u2019s anything else I can provide to help with your decision. Please let me know your thoughts when you have a moment. Looking forward to hearing from you soon.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hi [Client Name],\n\nI hope you\u2019re doing well. I\u2019m following up on the proposal I sent on June 6th regarding the website redesign project. I wanted to check if you had any questions about the timeline, pricing, or deliverables outlined in the document. If there\u2019s anything I can clarify or additional information you need, please let me know. I\u2019d appreciate any feedback, and I\u2019m happy to schedule a call this week if that would be helpful. Looking forward to your response.\n\nBest regards,\n[Your Name]",
+    "axis": "specificity",
+    "scenario_id": 4,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hello [Client Name],\n\nI hope this email finds you well. I wanted to follow up regarding the proposal I sent over last week. Please let me know if you have any questions or need any additional information. I am eager to hear your thoughts and would be happy to discuss any concerns you might have. Looking forward to your response.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hi [Client Name],\n\nI hope you are doing well. I'm reaching out to check in about the proposal I shared with you recently. Please inform me if you have any inquiries or require further details. I am keen to get your feedback and would be glad to talk through any issues you may have. Awaiting your reply.\n\nKind regards,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 4,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey team! I wanted to share some exciting news\u2014I've been promoted to [New Position]! I\u2019m really grateful for all your support and hard work that helped make this possible. I\u2019m looking forward to taking on this new role and working with you all to keep things moving forward. Thanks for being such a great team, and let\u2019s keep up the awesome work together! If you have any questions or want to chat about what this means, just let me know.",
+    "variant_b": "Dear Team,\n\nI am pleased to announce that I have been promoted to the position of [New Position]. I would like to express my sincere gratitude for your dedication and support, which have contributed greatly to this achievement. As I take on these new responsibilities, I look forward to continuing our collaboration and building on our shared success. Please feel free to reach out if you have any questions regarding this transition.\n\nThank you all for your continued commitment.",
+    "axis": "formality",
+    "scenario_id": 5,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi team,\n\nI wanted to share some news with you all that I hope you\u2019ll receive positively. After some recent conversations and developments, I have been offered a promotion within the company. While I\u2019m grateful for this opportunity, I know it means some changes ahead for us, and I hope to continue working closely together as I transition into this new role. I truly appreciate everyone\u2019s hard work and support, and I\u2019m looking forward to how we can continue growing as a team.\n\nThank you for your understanding and encouragement!",
+    "variant_b": "Hi team,\n\nI\u2019m excited to announce that I\u2019ve been promoted to a new role within the company. I appreciate all of your hard work and collaboration that helped make this possible. As I take on these new responsibilities, I\u2019ll continue to support you and ensure a smooth transition. I look forward to leading our team into this next chapter and achieving even more together. Thank you for your continued dedication and commitment.\n\nLet\u2019s keep up the great work!",
+    "axis": "directness",
+    "scenario_id": 5,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Team, I wanted to let you know that I've been promoted to [new position], effective immediately. This means I'll be taking on new responsibilities and leading the team going forward. I'm expecting everyone to continue working hard as we adjust to these changes. If you have questions about how this impacts your role or our projects, reach out directly. Let's stay focused and keep moving forward.",
+    "variant_b": "Hi Team,\n\nI\u2019m excited to share that I have been promoted to [new position], effective immediately. I want to thank each of you for your hard work and support, which made this possible. As I take on these new responsibilities and leadership of the team, I\u2019m eager to continue collaborating closely with all of you. Please feel free to reach out if you have any questions or concerns about this transition. Let\u2019s work together to make this next chapter a success.\n\nThank you!",
+    "axis": "politeness",
+    "scenario_id": 5,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "I am writing to inform you that I have accepted a new position as [New Title], effective [date]. I appreciate the work we have accomplished together and am committed to maintaining a high standard as I transition into this new role. I will continue to support the team's ongoing projects and ensure a smooth handover of responsibilities where applicable. Please let me know if you have any questions regarding this change. Thank you for your continued professionalism and collaboration.",
+    "variant_b": "I'm excited to share some personal news with all of you\u2014I\u2019ve accepted a promotion to [New Title], starting [date]. I\u2019m truly grateful for the hard work, support, and dedication you\u2019ve shown, which has made this journey possible. As I step into this new role, I\u2019m looking forward to continuing our collaboration and supporting each of you as we take on new challenges together. Please feel free to reach out with any questions\u2014I\u2019m here for you. Thank you for being an amazing team!",
+    "axis": "emotional_tone",
+    "scenario_id": 5,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi team,\n\nI wanted to share some exciting news with you. I\u2019ve recently been given the opportunity to move into a new role within our organization. I\u2019m grateful for all the support and collaboration from each of you that helped make this possible. I look forward to continuing to work together in this new capacity and am eager to see what we\u2019ll accomplish as a team going forward. Please feel free to reach out with any questions or thoughts you might have. Thank you all for your hard work and dedication!",
+    "variant_b": "Hi team,\n\nI\u2019m excited to announce that, as of June 1st, I\u2019ve been promoted to Senior Project Manager. Over the past three years working with you, your support has been instrumental in helping me reach this milestone. In my new role, I\u2019ll be leading the upcoming Q3 product launch and overseeing cross-team coordination. I\u2019m looking forward to tackling these new responsibilities alongside you. If you have any questions about how this change might affect our projects or workflows, please let me know. Thanks again for your dedication and teamwork!",
+    "axis": "specificity",
+    "scenario_id": 5,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hi team,\n\nI\u2019m excited to share that I\u2019ve been promoted to a new role within our department. I want to thank each of you for your dedication and support, which have played a big part in this achievement. I\u2019m looking forward to continuing our work together and tackling new challenges as a group. Please feel free to reach out if you have any questions or would like to talk about what this means for our projects. I\u2019m grateful to be part of such a strong team and am eager to keep moving forward together.\n\nThank you all!\n",
+    "variant_b": "Hello team,\n\nI\u2019m pleased to announce that I\u2019ve been elevated to a new position within our division. I want to express my gratitude to everyone for your commitment and encouragement, which have contributed greatly to this accomplishment. I\u2019m eager to keep collaborating and facing upcoming opportunities as a unit. Don\u2019t hesitate to connect if you have any inquiries or want to discuss how this affects our ongoing work. I appreciate being among such a capable group and look forward to progressing together.\n\nThanks, everyone!\n",
+    "axis": "synonym",
+    "scenario_id": 5,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi there,\n\nHope you're doing well! Just wanted to follow up on invoice #1234, which was due last week. I understand things can get busy, so I wanted to check in and see if you had a chance to look at it. If you need any details from my side or if there\u2019s an issue, just let me know. Thanks a lot for your help!\n\nBest,\nSam",
+    "variant_b": "Dear Vendor,\n\nI hope this message finds you well. I am writing to remind you regarding invoice #1234, which became overdue as of last week. Kindly let us know if there are any issues or additional information required on our end to process the payment. We appreciate your prompt attention to this matter and look forward to your response.\n\nSincerely,\nSam",
+    "axis": "formality",
+    "scenario_id": 6,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "I hope this message finds you well. I wanted to gently follow up regarding Invoice #12345, which, according to our records, appears to be outstanding. We understand that things can sometimes get busy, so if payment has already been processed, please disregard this note. Otherwise, we would appreciate it if you could let us know when we might expect the payment, or if there are any issues we can assist with. Thank you very much for your attention, and please feel free to reach out if you have any questions.",
+    "variant_b": "I am following up regarding Invoice #12345, which is now overdue. According to our records, payment has not yet been received. Please arrange for payment as soon as possible, or let us know if there is any issue preventing completion. Your prompt attention to this matter is appreciated. If you have already sent the payment, please confirm so we can update our records. Thank you.",
+    "axis": "directness",
+    "scenario_id": 6,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "This is a reminder that invoice #12345, dated May 10, is now overdue. Please process the payment as soon as possible. If there are any issues causing the delay, let us know immediately. We expect this matter to be resolved without further delay.",
+    "variant_b": "I hope this message finds you well. I wanted to gently remind you that invoice #12345, dated May 10, appears to be overdue. We would appreciate it if you could process the payment at your earliest convenience. If there are any questions or issues, please feel free to reach out. Thank you very much for your attention to this matter.",
+    "axis": "politeness",
+    "scenario_id": 6,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Dear [Vendor Name],\n\nI am writing to remind you that Invoice #[Invoice Number], dated [Invoice Date], remains outstanding as of today. According to our records, the payment was due on [Due Date], and we have not yet received it. Please let us know if there are any issues or if further information is needed to process this payment. We would appreciate your prompt attention to this matter.\n\nThank you.",
+    "variant_b": "Hello [Vendor Name],\n\nI hope this message finds you well. I wanted to gently remind you about Invoice #[Invoice Number], which appears to be overdue as of today. If there are any questions or issues regarding this payment, please let me know\u2014I'm happy to help however I can. We value our partnership and appreciate your attention to this matter. Thank you so much in advance!\n\nBest regards,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 6,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hello,\n\nI hope this message finds you well. I wanted to gently remind you about an outstanding invoice that is currently past due. We would appreciate it if you could look into this matter at your earliest convenience and let us know if there are any issues or updates regarding the payment. Please feel free to reach out if you have any questions or need any additional information from our side.\n\nThank you for your attention to this matter.\n\nBest regards,\n\n[Your Name]",
+    "variant_b": "Hello,\n\nI hope you are doing well. I am writing to remind you about invoice #1024, which was due on June 3, 2024, and is now past due. We would appreciate it if you could process the payment of $2,500 as soon as possible, or let us know if there are any issues or questions regarding this invoice. Attached you will find a copy for your reference. Please let me know if you need any further details from our end.\n\nThank you very much for your prompt attention.\n\nBest regards,\n\n[Your Name]",
+    "axis": "specificity",
+    "scenario_id": 6,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear [Vendor Name],\n\nI hope this message finds you well. I am writing to gently remind you about invoice #[Invoice Number], which was due on [Due Date] and still appears to be outstanding. We would appreciate it if you could provide us with an update on the status of this payment at your earliest convenience. Please let us know if there are any issues or if you require any additional information from our side.\n\nThank you for your attention to this matter. We look forward to your response.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Dear [Vendor Name],\n\nI hope this email finds you well. I am reaching out to kindly remind you about invoice #[Invoice Number], which was payable on [Due Date] and seems to remain unpaid. We would be grateful if you could share an update on the progress of this payment as soon as possible. Kindly inform us if there are any concerns or if you need any further details from us.\n\nThank you for your consideration. We await your reply.\n\nSincerely,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 6,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey [Recipient],\n\nHope you're doing well! I wanted to check in and ask if you could share any feedback on my recent presentation. I'm really looking to improve and would love to hear your honest thoughts\u2014what worked, what didn\u2019t, and any suggestions you might have. Don\u2019t worry about sugar-coating it; all feedback helps! Thanks a ton in advance for taking the time.\n\nBest,\n[Your Name]",
+    "variant_b": "Dear [Recipient],\n\nI hope this message finds you well. I am writing to kindly request your feedback regarding my recent presentation. Your insights would be invaluable to me as I strive to improve my skills and deliver more effective presentations in the future. If you could share your thoughts on what went well and areas where I could enhance my approach, I would greatly appreciate it. Thank you very much for your time and consideration.\n\nSincerely,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 7,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "I hope you\u2019re doing well. I wanted to reach out regarding my recent presentation and, if you have a moment, I would really appreciate any feedback you might be able to share. Your thoughts and suggestions would be invaluable to me as I work to improve my skills. If you have any comments or areas where you think I could do better, I\u2019d be grateful to hear them, whenever you have time. Thank you so much in advance for considering my request.",
+    "variant_b": "I\u2019m reaching out to request your feedback on my recent presentation. I would appreciate it if you could share your honest thoughts on what went well and what could be improved. Your input will help me strengthen my future presentations. Please let me know any specific areas where you think I can improve. Thank you for taking the time to provide your feedback.",
+    "axis": "directness",
+    "scenario_id": 7,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hi,\n\nI need feedback on my recent presentation. Please tell me what worked, what didn\u2019t, and where I can improve. If you have specific suggestions or noticed any issues, include those as well. Let me know your thoughts by the end of the week so I can address any points before my next presentation.\n\nThanks.",
+    "variant_b": "Dear [Name],\n\nI hope this message finds you well. I\u2019m reaching out to kindly request your feedback on my recent presentation. I would truly appreciate your thoughts on what went well, any areas for improvement, and any specific suggestions you might have. Your insights are very valuable to me as I work on refining my skills. If possible, I would be grateful to receive your input by the end of the week.\n\nThank you so much for your time and consideration.",
+    "axis": "politeness",
+    "scenario_id": 7,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Dear [Recipient],\n\nI am writing to request your feedback on my recent presentation. I would appreciate your insights regarding the content, delivery, and any areas in which I can improve for future presentations. Your perspective is important to me, and any comments you can provide would be helpful. Please let me know if you require any additional information or materials to assist with your feedback. Thank you for your time and consideration.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hi [Recipient],\n\nI hope you\u2019re doing well! I wanted to reach out and ask if you could share your thoughts on my recent presentation. I truly value your opinion, and any feedback on the content or delivery would be really helpful as I work to improve for next time. Thank you so much for taking the time\u2014I really appreciate your support and guidance. Please let me know if you need anything from my end to make this easier.\n\nThanks again,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 7,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi,\n\nI hope you\u2019re doing well. I wanted to reach out to see if you could share your thoughts on my recent presentation. Any feedback or suggestions for improvement would be greatly appreciated, whether on the content, delivery, or anything else you noticed. Your opinion means a lot to me as I work to get better.\n\nThank you in advance for taking the time to share your feedback!\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hi,\n\nI hope you\u2019re doing well. I\u2019m reaching out to request your feedback on my presentation, \"Market Trends Q2 2024,\" delivered last Tuesday, June 11th. I\u2019d appreciate your thoughts on the clarity of the data analysis section, the effectiveness of the visual slides (especially slides 7\u201310), and my pacing during the Q&A. If you have specific suggestions for how I could make the recommendations section more actionable, I\u2019d love to hear them. Your insights are very valuable to me as I look to improve future presentations.\n\nThank you so much for your time and feedback!\n\nBest regards,\n[Your Name]",
+    "axis": "specificity",
+    "scenario_id": 7,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear [Recipient],\n\nI hope this email finds you well. I am writing to kindly request your feedback on my recent presentation. Your thoughts and suggestions would be greatly appreciated, as I am eager to learn how I can improve for future opportunities. If you have a few moments to share your impressions or any areas where I could enhance my delivery, content, or style, I would be very grateful. Thank you in advance for your time and support.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Dear [Recipient],\n\nI hope this message reaches you in good spirits. I am reaching out to politely ask for your input on my recent presentation. Your insights and recommendations would be highly valued, as I am keen to understand how I might refine my approach for subsequent occasions. If you could spare a moment to provide your observations or any points where I could strengthen my delivery, material, or approach, I would sincerely appreciate it. Thank you for your consideration and assistance.\n\nKind regards,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 7,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi [Boss's Name],\n\nHope you\u2019re doing well! I was hoping we could set up some time to catch up one-on-one. I\u2019d like to chat about some ongoing projects and get your feedback on a few things. Let me know what your schedule looks like this week or next, and I\u2019ll do my best to fit in. Looking forward to our conversation!\n\nThanks,\n[Your Name]",
+    "variant_b": "Dear [Boss's Name],\n\nI hope this message finds you well. I would like to request a one-on-one meeting at your convenience to discuss my current projects and seek your guidance on several matters. Please let me know your availability in the coming days so that I can adjust my schedule accordingly. I look forward to our discussion and appreciate your time.\n\nBest regards,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 8,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi [Boss\u2019s Name],\n\nI hope you\u2019re doing well. I was wondering if you might have some time in the coming days for a one-on-one meeting. I\u2019d really appreciate the opportunity to discuss a few topics and get your feedback on some ongoing projects. Please let me know if there\u2019s a time that works for you, or if there\u2019s a particular way you\u2019d prefer to schedule this. Thank you so much for considering it!\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hi [Boss\u2019s Name],\n\nI\u2019d like to schedule a one-on-one meeting with you to discuss a few ongoing projects and get your feedback. Please let me know your availability this week so we can set up a time that works. Looking forward to our conversation.\n\nBest,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 8,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I need to set up a one-on-one meeting with you to discuss some updates and questions I have about my current projects. Let me know when you have 30 minutes available this week. If you have a preferred time, just send me a calendar invite or reply with your availability.",
+    "variant_b": "I hope this message finds you well. I would like to request a one-on-one meeting with you to discuss some updates and questions regarding my current projects. If you have 30 minutes available sometime this week, please let me know your preferred time, or feel free to send me a calendar invite at your convenience. Thank you very much for your time and consideration.",
+    "axis": "politeness",
+    "scenario_id": 8,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hello [Boss's Name],\n\nI would like to schedule a one-on-one meeting with you to discuss my current projects and any feedback you may have for me. Please let me know your availability over the next few days so we can arrange a suitable time. I anticipate the meeting will take about 30 minutes, but I am flexible if you need more or less time. Thank you for your consideration.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hi [Boss's Name],\n\nI hope you\u2019re doing well! I\u2019d really appreciate the chance to sit down with you for a one-on-one to catch up on my projects and hear your thoughts. Whenever you have some time in the next few days, please let me know what works best for you. I\u2019m looking forward to our conversation and any feedback you might have. Thanks so much for your time!\n\nBest,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 8,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi [Boss's Name],\n\nI hope you're well. I'd like to set up a one-on-one meeting with you sometime soon to discuss my current projects and get your feedback. Please let me know when you might be available for a brief meeting. I\u2019m flexible and can work around your schedule. Looking forward to your reply.\n\nThank you,\n[Your Name]",
+    "variant_b": "Hi [Boss's Name],\n\nI hope you're doing well. I\u2019d like to schedule a one-on-one meeting with you next week to review my progress on the Q2 marketing campaign and discuss some questions I have about upcoming deadlines. I\u2019m available on Tuesday or Thursday between 10:00\u201311:00 AM or after 2:30 PM either day. Please let me know if one of these times works for you, or suggest an alternative that fits your schedule. Thank you for your time.\n\nBest regards,\n[Your Name]",
+    "axis": "specificity",
+    "scenario_id": 8,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hi [Boss's Name],\n\nI hope you're doing well. I wanted to see if we could arrange a one-on-one meeting sometime this week to discuss my current projects and get your feedback. Please let me know your availability, and I\u2019ll do my best to accommodate your schedule. Looking forward to our conversation.\n\nThank you,\n[Your Name]",
+    "variant_b": "Hello [Boss's Name],\n\nI hope you are having a good day. I wanted to check if we could set up a one-on-one meeting sometime this week to talk about my ongoing tasks and receive your input. Kindly share your preferred times, and I\u2019ll make sure to fit them into my calendar. I look forward to our discussion.\n\nThanks,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 8,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey [Manager's Name],\n\nI wanted to let you know that I\u2019ve decided to resign from my position. It wasn\u2019t an easy decision, but I think it\u2019s the right move for me right now. My last day will be [last working day, typically two weeks from today], so I\u2019ll do my best to wrap things up and make the transition as smooth as possible. Thanks so much for the opportunities and support while I was here. If you need anything from me during this transition, just let me know.\n\nBest,\n[Your Name]",
+    "variant_b": "Dear [Manager's Name],\n\nPlease accept this letter as formal notice of my resignation from my position at [Company Name], effective [last working day, typically two weeks from today]. This decision was not made lightly, and I am grateful for the support and opportunities I have received during my tenure. I am committed to ensuring a smooth transition and will do everything possible to complete outstanding tasks before my departure. Thank you again for your guidance and understanding.\n\nSincerely,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 9,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Dear [Manager's Name],\n\nI hope this message finds you well. After careful consideration, I have decided that it would be best for me to step down from my position at [Company Name]. This was not an easy decision, and I want to express my sincere gratitude for the opportunities and support I have received during my time here. If possible, I would like to discuss how I can make this transition as smooth as possible. Please let me know if there are any steps you would like me to take or if you have suggestions regarding my last working day.\n\nThank you for your understanding.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Dear [Manager's Name],\n\nI am writing to formally resign from my position at [Company Name], effective [last working day, typically two weeks from today]. I appreciate the opportunities and experiences I have gained during my time here. I will do my best to ensure a smooth transition and complete any outstanding tasks before my departure. Please let me know if there is anything specific you would like me to address during my notice period.\n\nThank you for your support.\n\nSincerely,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 9,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I am writing to inform you that I am resigning from my position, effective two weeks from today. This decision is final, and I will ensure that all my tasks are completed or transitioned before my departure. Let me know if you need any specific information or handover details. My last working day will be [date].",
+    "variant_b": "I hope this message finds you well. I am writing to formally tender my resignation from my position, effective two weeks from today. I want to express my gratitude for the opportunities and support I have received during my time here. Please let me know how I can assist with the transition to ensure a smooth handover of my responsibilities. Thank you again for everything. My last working day will be [date].",
+    "axis": "politeness",
+    "scenario_id": 9,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Dear [Manager's Name],\n\nI am writing to formally resign from my position at [Company Name], effective [last working day, typically two weeks from the date of this letter]. I appreciate the opportunities for professional development that I have received during my time here. Please let me know how I can assist in ensuring a smooth transition of my responsibilities. Thank you for your understanding.\n\nSincerely,\n[Your Name]",
+    "variant_b": "Dear [Manager's Name],\n\nI wanted to let you know that I have decided to resign from my position at [Company Name], with my last day being [last working day, typically two weeks from today]. This was not an easy decision, as I have truly valued the support, guidance, and camaraderie I\u2019ve experienced here. I\u2019m grateful for the opportunities I\u2019ve had to grow and learn with the team. Please let me know how I can help during this transition. Thank you so much for everything.\n\nBest regards,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 9,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Dear [Manager],\n\nI am writing to inform you of my decision to resign from my position. This was not an easy choice, and I appreciate the opportunities and experiences I have gained during my time here. I will do my best to help with the transition and ensure a smooth process as I move on. Please let me know how I can assist in this period. Thank you for your understanding and support.\n\nSincerely,\n[Your Name]",
+    "variant_b": "Dear [Manager's Name],\n\nI am writing to formally resign from my position as [Your Job Title] at [Company Name], effective two weeks from today, on [Last Working Day, e.g., June 21, 2024]. I have greatly valued my time at [Company Name], particularly working on projects such as [Project Name] and collaborating with the [Department/Team]. During my notice period, I am committed to completing my current assignments and assisting in training my replacement to ensure a seamless transition. Please let me know if there are specific tasks you\u2019d like me to prioritize. Thank you for your leadership and support throughout my tenure.\n\nSincerely,\n[Your Name]",
+    "axis": "specificity",
+    "scenario_id": 9,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear [Manager's Name],\n\nI am writing to formally resign from my position at [Company Name], effective two weeks from today. I appreciate the opportunities for growth and development that I have experienced during my time here. I am grateful for the guidance and support provided by you and the team.\n\nPlease let me know how I can make the transition as seamless as possible during my remaining time. I wish the company continued success in the future.\n\nSincerely,\n[Your Name]",
+    "variant_b": "Dear [Manager's Name],\n\nI am submitting my formal resignation from my role at [Company Name], effective in two weeks. I value the chances for advancement and learning I have received throughout my tenure. I am thankful for the mentorship and encouragement offered by you and everyone on the team.\n\nKindly inform me of any ways I can assist in making the transition smooth during my notice period. I hope the organization achieves ongoing prosperity moving forward.\n\nBest regards,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 9,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey [Colleague's Name],\n\nThanks so much for covering my shift last week! I really appreciate you stepping in on short notice\u2014it helped me out a lot. If you ever need someone to swap or cover for you, just let me know and I\u2019ll be happy to return the favor. Thanks again for being awesome!\n\nSee you around,\n[Your Name]",
+    "variant_b": "Dear [Colleague's Name],\n\nI wanted to extend my sincere gratitude for covering my shift last week. Your willingness to assist on such short notice was truly appreciated, and it made a significant difference for me. Please know that I am more than happy to reciprocate if you ever require assistance in the future. Thank you once again for your support and professionalism.\n\nBest regards,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 10,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi [Colleague's Name],\n\nI just wanted to reach out and thank you so much for covering my shift last week. I really appreciate you stepping in, especially on such short notice. I know it might have been inconvenient, so it means a lot to me that you were willing to help out. If you ever need any assistance or a shift covered in the future, please let me know\u2014I'd be more than happy to return the favor. Thanks again for your support!\n\nBest,\n[Your Name]",
+    "variant_b": "Hi [Colleague's Name],\n\nThank you for covering my shift last week. Your help made a big difference, and I truly appreciate your willingness to step in. If you ever need me to cover for you in the future, just ask. I\u2019m happy to return the favor. Thanks again for your support.\n\nBest,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 10,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hey, thanks for covering my shift last week. I needed that time off and it really helped out. Let me know if you need someone to swap shifts in the future. Appreciate it.",
+    "variant_b": "Hi, I just wanted to sincerely thank you for covering my shift last week. Your willingness to help out made a big difference for me, and I truly appreciate your support. Please let me know if there\u2019s ever a time I can return the favor. Thanks again for your kindness and teamwork.",
+    "axis": "politeness",
+    "scenario_id": 10,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hello [Colleague's Name],\n\nI wanted to thank you for covering my shift last week. Your flexibility in stepping in on short notice ensured that everything continued to run smoothly, and I appreciate your support. If you ever need someone to cover for you in the future, please let me know.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hi [Colleague's Name],\n\nI can\u2019t thank you enough for stepping in and covering my shift last week. It really meant a lot to me, and I appreciate your kindness and willingness to help out on short notice. You truly helped me out, and I\u2019m grateful to have such a supportive teammate. If you ever need a favor in return, I\u2019m more than happy to help.\n\nThanks again!\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 10,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi, \n\nI just wanted to thank you so much for stepping in and covering my shift last week. I really appreciate your help and support\u2014it made a big difference for me. If you ever need anything or if I can return the favor, just let me know. Thanks again for being such a great teammate!\n\nBest,\n[Your Name]",
+    "variant_b": "Hi [Colleague's Name],\n\nI wanted to thank you for covering my shift last Friday, June 7th, from 2 to 8 PM. Your willingness to step in at the last minute allowed me to attend my family event without any worry. I truly appreciate your support and reliability. Please let me know if there's a time when you need coverage, and I'll be happy to help in return. Thanks again for going above and beyond!\n\nBest regards,\n[Your Name]",
+    "axis": "specificity",
+    "scenario_id": 10,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hi [Colleague's Name],\n\nI wanted to thank you for stepping in and covering my shift last week. I really appreciate your support and willingness to help out on such short notice. Your assistance allowed me to take care of my other commitments without worrying, and I\u2019m grateful to have someone as dependable as you on the team. If you ever need me to return the favor, please don\u2019t hesitate to ask. Thanks again for your kindness!\n\nBest,\n[Your Name]",
+    "variant_b": "Hi [Colleague's Name],\n\nI wanted to express my gratitude for filling in and taking over my shift last week. I truly value your help and readiness to pitch in with such little warning. Your support made it possible for me to manage my other responsibilities stress-free, and I\u2019m thankful to have someone as reliable as you in our group. If you ever need me to do the same for you, just let me know. Thanks again for your generosity!\n\nBest,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 10,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Happy birthday, Grandma! I hope your day is filled with all your favorite things\u2014lots of laughter, good food, and time spent with the people you love. I\u2019m so grateful for all the hugs, stories, and advice you\u2019ve shared with me over the years. You\u2019re the heart of our family, and I can\u2019t imagine life without your warmth and kindness. Wishing you a year ahead that\u2019s as wonderful as you are! Love you lots!",
+    "variant_b": "Dearest Grandmother, wishing you a very happy birthday. I sincerely hope your special day is filled with joy, cherished moments, and the company of those who care for you most. Your wisdom, kindness, and unwavering support have been a guiding light for our family, and I am deeply grateful for all you have done. May the coming year bring you continued happiness, good health, and much love. With all my affection and best wishes.",
+    "axis": "formality",
+    "scenario_id": 11,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi Grandma, I just wanted to wish you a very happy birthday! I hope you\u2019re having a wonderful day filled with all the things you love. You\u2019ve always been such a special person in my life, and I\u2019m so grateful for your kindness, wisdom, and all the memories we\u2019ve shared. If it\u2019s not too much to say, I hope this year brings you lots of happiness, good health, and joy. Thank you for everything you do and for always being there for our family. I\u2019m really looking forward to celebrating with you soon. Love you so much!",
+    "variant_b": "Happy Birthday, Grandma! I hope your day is amazing and full of everything you enjoy. You mean so much to me, and I appreciate all the love and wisdom you\u2019ve given our family. I wish you happiness, good health, and a fantastic year ahead. Thank you for being such a wonderful grandmother. I can\u2019t wait to celebrate with you and make more great memories together. Love you!",
+    "axis": "directness",
+    "scenario_id": 11,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Happy Birthday, Grandma! I hope you have a great day and get to do all the things you enjoy. Thanks for everything you do for our family. You\u2019re always there when I need advice or just want to talk. I appreciate your kindness and all the stories you share. Wishing you happiness, good health, and lots of fun this year. Enjoy your birthday and know that I\u2019m thinking of you. Happy Birthday again!",
+    "variant_b": "Dear Grandma, Happy Birthday! I hope your special day is filled with joy, laughter, and all the things you love most. Thank you so much for your endless support, wisdom, and the warmth you bring to our family. I truly appreciate your kindness and cherish the wonderful stories and memories we share. Wishing you continued happiness, good health, and many wonderful moments in the year ahead. Enjoy your celebration\u2014you deserve every bit of it. Sending you all my love and best wishes on your birthday!",
+    "axis": "politeness",
+    "scenario_id": 11,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Happy Birthday, Grandma! Wishing you a wonderful day and a year ahead filled with good health and happiness. Thank you for all the wisdom and support you have shared over the years. I appreciate everything you do for our family and hope you enjoy your special day. May this birthday bring you moments of joy and relaxation. Looking forward to celebrating with you soon.",
+    "variant_b": "Happy Birthday, Grandma! I hope your special day is filled with all the love, laughter, and happiness you deserve. Thank you for always being there with your kindness, wisdom, and warm hugs. I am so grateful for the memories we share and everything you do for our family. You mean the world to me, and I can't wait to celebrate with you. Wishing you a joyful year ahead!",
+    "axis": "emotional_tone",
+    "scenario_id": 11,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Happy Birthday, Grandma! I hope you have a wonderful day filled with love and happiness. You mean so much to me, and I am so grateful for all of the kindness, wisdom, and support you have shared over the years. Thank you for always being there for our family and for making every moment special. Wishing you good health and lots of joy in the year ahead. I love you so much!",
+    "variant_b": "Happy 80th Birthday, Grandma! I hope your special day is filled with all your favorite things\u2014especially a big slice of chocolate cake and time with your grandkids. Thank you for teaching me how to knit last summer and for your delicious Sunday dinners that bring the whole family together. Your stories from when you grew up in the 1950s always inspire me. Wishing you a year ahead filled with good health and many afternoons in your garden. I love you more than words can say!",
+    "axis": "specificity",
+    "scenario_id": 11,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear Grandma, wishing you a wonderful birthday filled with love and laughter! I am so grateful for all the warmth and wisdom you have shared over the years. Your kindness and strength inspire me every day. I hope this special day brings you as much happiness as you have given to everyone around you. Thank you for always being there for our family. Enjoy your celebration and know how much you are cherished. Happy birthday, Grandma! Love you always.",
+    "variant_b": "Dear Grandma, sending you a delightful birthday filled with affection and joy! I am so thankful for all the comfort and guidance you have provided through the years. Your generosity and resilience motivate me daily. I wish this remarkable day brings you as much joy as you have brought to those near you. Thank you for constantly supporting our family. Relish your festivities and remember how deeply you are treasured. Happy birthday, Grandma! Love you forever.",
+    "axis": "synonym",
+    "scenario_id": 11,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey! I\u2019m really sorry I missed your party. I was looking forward to it but something came up last minute and I couldn\u2019t make it. I hope you all had an awesome time and I can\u2019t wait to hear all about it. Let\u2019s catch up soon\u2014I owe you a drink or two!",
+    "variant_b": "Dear [Friend\u2019s Name],\n\nI sincerely apologize for not being able to attend your party. Unfortunately, an unforeseen circumstance arose at the last minute, and I was unable to join the celebration. I hope the event was a great success and that everyone enjoyed themselves. Please let me know when you are available to meet\u2014I would love to catch up soon.\n\nBest regards,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 12,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hey! I just wanted to reach out and say I\u2019m really sorry for not making it to your party. I hope it was a fantastic time and that you had a great turnout. I feel bad for missing out and I hope I didn\u2019t let you down. Things got unexpectedly busy on my end, and I wish I could\u2019ve been there to celebrate with you. Hopefully we can catch up soon\u2014I\u2019d love to hear all about it. Let me know if you\u2019re free sometime!",
+    "variant_b": "Hey, I\u2019m sorry I missed your party. I should have been there, and I feel bad for not making it. I hope you had a great time and that everything went well. I want to make it up to you\u2014let\u2019s get together soon and celebrate. Let me know when you\u2019re free. Again, I apologize for missing your event.",
+    "axis": "directness",
+    "scenario_id": 12,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hey, I missed your party. Sorry about that\u2014I got caught up with something and couldn\u2019t make it. Didn\u2019t mean to bail, just couldn\u2019t get away in time. Hope you had a good time anyway. Let me know if you want to hang out soon to catch up.",
+    "variant_b": "Hey! I just wanted to sincerely apologize for missing your party. I really wanted to be there, but something came up and I couldn\u2019t make it. I feel bad for not letting you know sooner, and I hope the party was amazing. Thank you for inviting me, and I hope we can get together soon so I can make it up to you.",
+    "axis": "politeness",
+    "scenario_id": 12,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hey, I wanted to let you know I\u2019m sorry I couldn\u2019t make it to your party. Something came up that I had to take care of and I wasn\u2019t able to attend. I hope the event went well and that you had a great time with everyone. Let\u2019s catch up soon when you\u2019re free.",
+    "variant_b": "Hey! I\u2019m really sorry I missed your party. I was really looking forward to it, but something unexpected came up and I just couldn\u2019t make it. I hope you had an amazing time and got to celebrate with everyone. I\u2019d love to hear all about it and make it up to you soon\u2014let\u2019s get together when you have time!",
+    "axis": "emotional_tone",
+    "scenario_id": 12,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hey! I just wanted to say I'm really sorry for not making it to your party. Something came up and I couldn't be there, but I hope you had a great time and that the celebration was awesome. I really wish I could have joined everyone and celebrated with you. Let's definitely catch up soon\u2014maybe we can grab coffee or hang out sometime soon. Hope you had an amazing birthday!",
+    "variant_b": "Hey! I'm so sorry I missed your birthday party last Saturday. I ended up having to stay late at work because of an unexpected project deadline and just couldn't make it in time. I was really looking forward to seeing you and everyone at 7th Street, and I feel bad for missing out on your big night. I hope you had an incredible time and got to enjoy all the cake and dancing! Let's try to meet up for coffee next week\u2014maybe Wednesday or Thursday if you're free? Happy belated birthday again!",
+    "axis": "specificity",
+    "scenario_id": 12,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hey! I\u2019m really sorry I couldn\u2019t make it to your party. I was looking forward to it and hated having to miss out. I hope you had an amazing time and that everything went well. Let\u2019s definitely catch up soon\u2014I\u2019d love to hear all about it and make it up to you! Again, sorry for not being there. Hope to see you soon!",
+    "variant_b": "Hey! I\u2019m truly sorry I wasn\u2019t able to attend your party. I had been anticipating it and was disappointed to have to skip it. I hope you had a fantastic time and that everything turned out great. Let\u2019s for sure get together soon\u2014I want to hear all about it and try to make it up to you! Once more, apologies for missing it. Looking forward to seeing you!",
+    "axis": "synonym",
+    "scenario_id": 12,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey there! I just wanted to introduce myself\u2014I'm Jamie, your new neighbor in 3B. I moved in last week and am still getting settled, but I'm looking forward to meeting everyone around here. If you ever need anything or just want to chat, feel free to knock or say hi if you see me around. Hope to catch up soon!",
+    "variant_b": "Hello, I hope this message finds you well. My name is Jamie, and I have recently moved into apartment 3B. I am pleased to be joining the community and look forward to meeting my neighbors. If you require any assistance or would simply like to connect, please do not hesitate to reach out. Wishing you a wonderful day.",
+    "axis": "formality",
+    "scenario_id": 13,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi there! I hope this isn\u2019t too forward, but I just wanted to introduce myself as one of your new neighbors. My name is Alex, and I recently moved into the building. If you ever need anything or have any questions about the area, please feel free to reach out\u2014I\u2019d be happy to help if I can. I\u2019m still getting settled in, but I\u2019m looking forward to getting to know the community. Maybe we\u2019ll bump into each other around soon. Take care and welcome again!",
+    "variant_b": "Hi, I\u2019m Alex, your new neighbor. I just moved into the building and wanted to introduce myself. If you have any questions or ever need anything, let me know. I\u2019m looking forward to meeting you and getting to know the community. Hope to see you around soon!",
+    "axis": "directness",
+    "scenario_id": 13,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hi, I'm Alex. I just moved in next door and wanted to introduce myself. If you need anything or have questions about me, let me know. I work from home most days, and I have a dog that you might see outside sometimes. Looking forward to meeting you.",
+    "variant_b": "Hello, my name is Alex and I recently moved in next door. I wanted to take a moment to introduce myself and let you know that if you ever need anything, please feel free to reach out. I usually work from home and have a friendly dog you might see outside. Thank you for welcoming a new neighbor\u2014I look forward to getting to know you.",
+    "axis": "politeness",
+    "scenario_id": 13,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hello, my name is Alex Thompson. I recently moved into unit 204 and wanted to introduce myself as your new neighbor. If you need to reach me for any reason, feel free to knock on my door or leave a note. I look forward to being part of the building community and am available if you have any questions about my move-in or would like to exchange contact information. Thank you.",
+    "variant_b": "Hi! I\u2019m Alex Thompson, your new neighbor in unit 204. I just moved in and wanted to say hello and let you know I\u2019m really looking forward to getting to know everyone here. Please feel free to stop by anytime or reach out if you ever need anything or just want to chat. I\u2019m excited to be part of such a friendly community and happy to help with anything if you need. Hope to meet you soon!",
+    "axis": "emotional_tone",
+    "scenario_id": 13,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi there! My name is Alex, and I just moved in next door. I wanted to introduce myself and say hello. If you ever need anything or have any questions about the neighborhood, please feel free to reach out. I'm looking forward to getting to know you and being part of the community. Hope to see you around soon!",
+    "variant_b": "Hello! My name is Alex Martinez, and I moved into Apartment 204 next door last Saturday. I'm originally from Seattle and just relocated here for work at the tech company downtown. If you ever need a hand with anything\u2014like picking up mail while you're away or sharing recommendations for local spots\u2014please don't hesitate to ask. I love hiking and coffee, so if you're ever up for a walk or want to grab a cup at Brewster\u2019s Caf\u00e9 on Main Street, let me know! Looking forward to meeting you soon.",
+    "axis": "specificity",
+    "scenario_id": 13,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hello! My name is Sarah, and I just moved into the apartment next door. I wanted to introduce myself and say hi since I\u2019m new to the building. If you ever need anything or have any tips about living here, I\u2019d appreciate it. I\u2019m looking forward to getting to know you and being a good neighbor. Feel free to knock if you\u2019d like to chat, or if you ever need a hand with anything. Looking forward to meeting you soon!",
+    "variant_b": "Hi! I\u2019m Sarah, and I recently moved into the flat next door. I wanted to greet you and introduce myself, as I\u2019m new around here. If you ever require anything or have any advice about living here, I\u2019d be grateful. I\u2019m eager to get to know you and be a friendly neighbor. Don\u2019t hesitate to stop by if you\u2019d like to talk, or if you ever need some help with something. Hope to meet you soon!",
+    "axis": "synonym",
+    "scenario_id": 13,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey! Just wanted to say a huge thank you for letting me stay with you over the holidays. I had such a great time hanging out, catching up, and enjoying all the awesome food. You really made me feel right at home, and I appreciate everything you did to make it such a fun visit. Let\u2019s do it again soon\u2014my place next time! Thanks again for everything!",
+    "variant_b": "Dear Cousin, \n\nI wanted to express my sincere gratitude for your generous hospitality during the holidays. I truly appreciated the warm welcome and all the thoughtful arrangements you made for my stay. It was wonderful to spend quality time together, and I thoroughly enjoyed our conversations and the delicious meals you prepared. Thank you once again for making my visit so comfortable and memorable. I look forward to returning the favor in the future.\n\nWith appreciation,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 14,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi [Cousin's Name],\n\nI just wanted to say how much I appreciated you welcoming me into your home over the holidays. I hope I wasn\u2019t too much trouble and that everything went smoothly for you. It really meant a lot to be able to spend time together, and I\u2019m grateful for all the effort you put into making me feel comfortable. Thank you again for your hospitality\u2014I had a wonderful time. Hopefully, I can return the favor sometime soon!\n\nTake care,\n[Your Name]",
+    "variant_b": "Hi [Cousin's Name],\n\nThank you so much for hosting me during the holidays. I truly appreciated your warm hospitality and all the thought you put into making my stay comfortable. Spending time together meant a lot to me, and I\u2019m grateful for everything you did. I had a wonderful time and hope I can host you sometime soon in return. Thanks again for everything!\n\nBest,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 14,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hey, thanks for letting me stay at your place over the holidays. I appreciated having a spot to crash and it made things a lot easier for me. The food and company were good, and I enjoyed hanging out. Let me know if you need anything from me or if you want to do something again soon.",
+    "variant_b": "Dear [Cousin's Name],\n\nThank you so much for welcoming me into your home during the holidays. I truly appreciated your hospitality, the delicious meals, and the wonderful company. It made my holiday season extra special, and I\u2019m grateful for all the effort you put into making me feel comfortable. Please let me know if there\u2019s ever anything I can do for you in return. I hope we can spend more time together soon.",
+    "axis": "politeness",
+    "scenario_id": 14,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Thank you for allowing me to stay with you during the holidays. I appreciate your hospitality and the effort you put into making my visit comfortable. It was a welcome opportunity to spend time together, and I am grateful for the meals and accommodations you provided. I enjoyed the chance to catch up and participate in the holiday activities. Thank you again for hosting me; I look forward to staying in touch.",
+    "variant_b": "Thank you so much for welcoming me into your home over the holidays. I truly appreciated your warmth and generosity\u2014it made my visit so special. I loved spending quality time together, sharing delicious meals, and making wonderful memories. Your thoughtfulness and effort made me feel right at home. I\u2019m so grateful for everything you did, and I feel lucky to have you as my cousin. Looking forward to many more great times together!",
+    "axis": "emotional_tone",
+    "scenario_id": 14,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Thank you so much for letting me stay with you over the holidays. I really appreciated your hospitality and all the effort you put into making me feel at home. I had a wonderful time and truly enjoyed our time together. It was great to catch up and spend some quality time with you and the family. I\u2019m so grateful for everything and hope I can return the favor sometime soon. Looking forward to seeing you again!",
+    "variant_b": "Thank you so much for hosting me from December 23rd to the 28th! I really appreciated your warm welcome, from the cozy guest room to the homemade cinnamon rolls on Christmas morning. I had such a great time playing board games with you and the kids, and our movie night was a highlight. It meant a lot to be included in your holiday traditions, and I\u2019m grateful for all the thoughtful touches. I hope I can host you in the spring when you\u2019re in town. Looking forward to more good times together!",
+    "axis": "specificity",
+    "scenario_id": 14,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear [Cousin's Name],\n\nThank you so much for welcoming me into your home and making my holiday stay so enjoyable. I truly appreciated your kindness and all the effort you put into making everything comfortable. The delicious meals, great conversations, and warm atmosphere made my time there really special. I\u2019m grateful for your hospitality and generosity, and I feel lucky to have you as family. I look forward to the next time we get to spend time together. Thanks again for everything!\n\nWith love,\n[Your Name]",
+    "variant_b": "Dear [Cousin's Name],\n\nThank you very much for having me at your place and making my holiday visit so pleasant. I genuinely valued your warmth and all the work you put into ensuring everything was cozy. The tasty food, wonderful chats, and inviting environment made my stay truly memorable. I\u2019m thankful for your friendliness and thoughtfulness, and I feel fortunate to have you as a relative. I\u2019m looking forward to our next get-together. Thanks once more for all you did!\n\nWith love,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 14,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey! I just wanted to check in and let you know I\u2019m here if you need anything. Breakups suck, and I can only imagine how tough this must be right now. Don\u2019t feel like you have to go through it alone\u2014whether you want to talk, vent, or just hang out and do something to take your mind off things, I\u2019m here for you. Seriously, no pressure, but I\u2019ve got your back. Let me know if you need anything or if you just want some company.",
+    "variant_b": "Hello, I wanted to reach out and express my support during this difficult time. I understand that breakups can be challenging, and I want you to know that you are not alone. If you would like to talk, share your thoughts, or simply spend some time together to help take your mind off things, please do not hesitate to let me know. I am here for you, and I am more than willing to help in any way that I can. Take care, and remember that you have my support.",
+    "axis": "formality",
+    "scenario_id": 15,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hey, I just wanted to check in and say I\u2019m really sorry you\u2019re going through this. Breakups can be incredibly tough, and I can only imagine how hard this must feel right now. If you want to talk, vent, or just have some distraction, I\u2019m here for you in whatever way you need. Please don\u2019t feel pressured to respond if you\u2019re not up to it\u2014I just wanted you to know that you\u2019re not alone, and I\u2019m always around if you need a friend. Take things at your own pace, and remember to be gentle with yourself.",
+    "variant_b": "Hey, I\u2019m really sorry you\u2019re going through this breakup. I know this hurts, and I want you to know you\u2019re not alone. If you need to talk or need anything at all, I\u2019m here for you. Don\u2019t hesitate to reach out, even if it\u2019s just to get your mind off things. You deserve support and kindness right now, so please let me know how I can help. Remember, things will get better, and I\u2019ll be with you every step of the way.",
+    "axis": "directness",
+    "scenario_id": 15,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hey, breakups suck and I get that you're hurting. It's normal to feel lost or angry right now, but you don't have to go through this alone. If you need to vent or just sit in silence, let me know. Don't beat yourself up or rush to \"move on\"\u2014healing takes time. Seriously, if you want to hang out or need a distraction, just say so. You don't have to pretend everything's fine around me. I'm here. Things will get better, even if it feels impossible right now.",
+    "variant_b": "Hey, I just wanted to reach out and let you know that I\u2019m really sorry you\u2019re going through this breakup. Please remember that it\u2019s completely valid to feel upset or confused right now, and you don\u2019t have to face this alone. If you ever want to talk, vent, or simply have some company, I\u2019m here for you. Take all the time you need to heal\u2014there\u2019s absolutely no rush. Thank you for trusting me enough to share what you\u2019re going through. I believe things will get better for you, even if it\u2019s hard to see right now.",
+    "axis": "politeness",
+    "scenario_id": 15,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "I understand you\u2019re dealing with a breakup, and that can be a challenging experience. It\u2019s normal to feel a range of emotions during this time. If you need to talk or want support, I\u2019m available to listen. Taking care of yourself and giving yourself time to process everything is important. If you find that you\u2019re struggling or need additional support, it might help to reach out to others you trust or consider professional resources. Let me know if there\u2019s anything specific you need.",
+    "variant_b": "I\u2019m really sorry you\u2019re going through this breakup. I can only imagine how tough and overwhelming it must feel right now. Please know that I\u2019m here for you, whether you want to talk, vent, or just have some company. Take all the time you need to heal and be gentle with yourself. If there\u2019s anything at all I can do to help or any way I can support you, just let me know\u2014I care about you and want to be here for you.",
+    "axis": "emotional_tone",
+    "scenario_id": 15,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hey, I just wanted to let you know that I\u2019m here for you. Breakups are never easy, and it\u2019s totally normal to feel a mix of emotions right now. Please don\u2019t hesitate to reach out if you want to talk, vent, or just be distracted for a while. Remember, you\u2019re not alone in this\u2014your friends care about you and want to support you however we can. Take care of yourself and give yourself the time you need to heal. Whenever you\u2019re ready, I\u2019m here to listen or hang out.",
+    "variant_b": "Hey, I just wanted to check in and let you know that I\u2019m here for you. I know your breakup with Chris last weekend has been really tough, and it\u2019s completely understandable to feel overwhelmed right now. If you ever want to talk, vent, or even just go for a walk in the park like we did last month, I\u2019m just a text away. Remember, you have friends who care about you\u2014we can binge your favorite show, grab coffee at that new place on Main Street, or just hang out whenever you need. Take all the time you need, and know I\u2019m here whenever you want to chat or see someone.",
+    "axis": "specificity",
+    "scenario_id": 15,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hey, I just wanted to reach out and let you know that I\u2019m here for you. I can only imagine how tough this time must be, but please remember you\u2019re not alone. It\u2019s completely normal to feel a mix of emotions after a breakup, and it\u2019s okay to take the time you need to heal. If you want to talk, vent, or just hang out and distract yourself, I\u2019m always available. Take care of yourself and don\u2019t hesitate to lean on your friends\u2014you have a lot of people who care about you. Let me know if there's anything I can do to support you.",
+    "variant_b": "Hey, I just wanted to check in and let you know that I\u2019m here for you. I can only guess how hard this period must be, but please remember you\u2019re not by yourself. It\u2019s completely natural to feel a range of feelings after a breakup, and it\u2019s fine to take the space you need to recover. If you want to chat, express yourself, or just spend time together and take your mind off things, I\u2019m always around. Look after yourself and don\u2019t be afraid to rely on your friends\u2014you have plenty of people who care about you. Let me know if there's anything I can do to help you.",
+    "axis": "synonym",
+    "scenario_id": 15,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey! Hope you\u2019re doing good. Quick favor\u2014any chance I could borrow your car this weekend? I\u2019ve got a couple things I need to get done, and having your car would make it way easier. Let me know if you need it for anything, or if there\u2019s any time that works better for you. I\u2019ll fill up the tank before I bring it back, promise! Thanks a bunch!",
+    "variant_b": "Hello, I hope you are well. I wanted to ask if it would be possible to borrow your car this weekend. I have a few errands to run, and using your vehicle would be a great help. Of course, if you need the car at any point, please let me know and I will adjust my plans accordingly. I will ensure the tank is full before returning it. Thank you very much for considering my request.",
+    "axis": "formality",
+    "scenario_id": 16,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hey! I was wondering if there\u2019s any chance I could possibly borrow your car this weekend? I have a few things I need to get done, and it would really help me out if you\u2019re not planning to use it. Of course, I\u2019ll make sure to fill up the tank and take good care of it. Totally understand if it\u2019s not convenient or if you\u2019ve already got plans for it, just thought I\u2019d ask. Let me know what you think when you get a chance. Thanks so much!",
+    "variant_b": "Hey, can I borrow your car this weekend? I need it to run some errands and get a few things done. If you\u2019re not using it, I\u2019ll make sure to fill up the gas and return it in good shape. Let me know if that\u2019s okay with you. Thanks!",
+    "axis": "directness",
+    "scenario_id": 16,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hey, I need to borrow your car this weekend. Let me know if you\u2019ll be using it or if I can just pick up the keys. I\u2019ve got a few things to take care of and my car isn\u2019t available. If you need it back at a certain time, tell me. Thanks.",
+    "variant_b": "Hey! Hope you\u2019re doing well. I was wondering if it would be possible to borrow your car this weekend, since mine isn\u2019t available and I have a few errands to run. Please let me know if that works for you or if you\u2019ll need it for anything. I really appreciate it and will make sure to return it in great shape. Thank you so much!",
+    "axis": "politeness",
+    "scenario_id": 16,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hi, I wanted to ask if I could borrow your car this weekend. I have a few errands to run and my car is in the shop for repairs. Let me know if that works for you, and if there are any specific times or conditions I should be aware of. I\u2019ll make sure to return it with a full tank and keep it clean. Thanks for considering it. Please let me know your decision when you can.",
+    "variant_b": "Hey! I hope you\u2019re having a good week. I was wondering if it might be possible to borrow your car this weekend\u2014mine\u2019s still getting fixed and I\u2019ve got a few things I need to take care of. Of course, I\u2019ll fill up the tank and take good care of it! Totally understand if you need it yourself, but I\u2019d really appreciate it if it works out. Let me know what you think. Thanks so much!",
+    "axis": "emotional_tone",
+    "scenario_id": 16,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hey! Hope you\u2019re doing well. I was wondering if I could borrow your car for a bit this weekend. I\u2019ve got some things to take care of and my car isn\u2019t available. Let me know if that\u2019s possible or if you need it. Thanks so much, I really appreciate it!",
+    "variant_b": "Hey! Hope you\u2019re doing well. Would you be okay with letting me borrow your car this Saturday and Sunday? My car is at the shop for repairs, and I need to get to a couple of appointments and run errands around town. I\u2019d pick it up Friday evening and return it by Sunday night, with a full tank of gas. Let me know if you need it at any point or if this works for you. Thanks a lot, I really appreciate it!",
+    "axis": "specificity",
+    "scenario_id": 16,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hey, hope you\u2019re doing well! I was wondering if I could borrow your car this weekend. I have a couple of things I need to take care of and having your car would make things a lot easier. If you\u2019re not using it, would you mind lending it to me from Friday evening through Sunday night? Let me know if that works for you or if you need it at any point. Thanks so much\u2014I really appreciate it!",
+    "variant_b": "Hey, hope you\u2019re doing alright! I was curious if I could use your car this weekend. I have a few errands to run and using your car would really help out. If you won\u2019t be needing it, would you be okay with letting me have it from Friday night until Sunday evening? Let me know if that\u2019s okay or if you need it yourself. Thanks a lot\u2014I truly appreciate it!",
+    "axis": "synonym",
+    "scenario_id": 16,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Happy anniversary, my love! I can\u2019t believe how lucky I am to share my life with you. Every day with you is an adventure, and I\u2019m so grateful for all the laughs, memories, and even the challenges we\u2019ve faced together. You make me a better person, and I honestly can\u2019t imagine my world without you. Here\u2019s to more late-night talks, inside jokes, and all the little moments that make our life amazing. I love you more than words can say, and I can\u2019t wait to see what\u2019s next for us.",
+    "variant_b": "My dearest, happy anniversary. As we commemorate another year together, I am filled with gratitude for the love, support, and companionship you have given me. Our shared experiences\u2014both joyful and challenging\u2014have strengthened our bond and enriched my life immeasurably. You inspire me daily to be my best self, and I cherish every moment we spend together. Thank you for your unwavering love and for making our journey so meaningful. I look forward to many more years filled with happiness, growth, and cherished memories by your side.",
+    "axis": "formality",
+    "scenario_id": 17,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi love, I just wanted to take a moment to say how much you mean to me on our anniversary. I hope you know that being with you has made my life so much better, and I can\u2019t imagine a future without you by my side. Thank you for all the little things you do and for being patient with me, even when I\u2019m not at my best. I feel incredibly lucky to share my life with you, and I hope we have many more wonderful years together. Happy anniversary, my heart.",
+    "variant_b": "Happy anniversary, my love. I want you to know how deeply I appreciate you and everything you do. You have changed my life for the better, and I am so grateful to be your partner. Every day with you is a gift, and I wouldn\u2019t trade what we have for anything. Thank you for loving me and for making our life together so amazing. I look forward to many more years with you by my side. I love you, always.",
+    "axis": "directness",
+    "scenario_id": 17,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Here's an anniversary message you can use: \"Happy anniversary. Being with you has changed my life for the better. I appreciate your support, love, and the memories we\u2019ve built together. No matter what we face, I\u2019m glad we\u2019re in this together. I wouldn\u2019t want anyone else by my side. Here\u2019s to more years, more laughter, and more adventures. Love you.\" Use or adjust as needed.",
+    "variant_b": "Of course, I'd be happy to help you craft a heartfelt anniversary message for your spouse. Here\u2019s a suggestion: \"Happy anniversary, my love. Being with you has enriched my life in countless ways, and I\u2019m so grateful for your unwavering support, kindness, and the beautiful memories we\u2019ve made together. No matter what comes our way, I am so thankful to be sharing this journey with you. Here\u2019s to many more years of laughter, love, and adventure. I love you more every day.\" Feel free to personalize it as you wish!",
+    "axis": "politeness",
+    "scenario_id": 17,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Happy Anniversary. Over the years, we have built a partnership based on trust, respect, and shared experiences. I appreciate the support you have given me and the understanding we offer each other in both good and challenging times. Our journey together has shaped who I am, and I value the memories we have created. I look forward to continuing this journey and building more moments together in the years ahead.",
+    "variant_b": "Happy Anniversary, my love. Every day with you fills my heart with gratitude. Thank you for being my partner, my confidant, and my best friend. Through all the ups and downs, your unwavering support and love have meant the world to me. I cherish every moment we've shared and am so excited for all the memories still to come. I love you more with each passing year, and I can't wait to see what the future holds for us.",
+    "axis": "emotional_tone",
+    "scenario_id": 17,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Happy anniversary, my love! I am so grateful for every moment we\u2019ve shared and every memory we\u2019ve created together. Through all of life\u2019s ups and downs, your love and support have meant everything to me. You make every day brighter, and I can\u2019t imagine my life without you by my side. Thank you for being my partner, my best friend, and my greatest blessing. Here\u2019s to all the wonderful years behind us and the many more to come. I love you more than words can say.",
+    "variant_b": "Happy 10th anniversary, my love! I still remember our wedding day on June 15th, 2014, and how we danced until midnight. Over the past decade, we\u2019ve traveled to so many places together\u2014like our trip to Paris in 2019\u2014and built a home filled with laughter and warmth. Your encouragement during my job change last year meant the world to me. Thank you for being my partner, my confidant, and the one who makes every ordinary day extraordinary. Here\u2019s to all our shared memories and to many more adventures ahead. I love you deeply.",
+    "axis": "specificity",
+    "scenario_id": 17,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "My dearest love, happy anniversary! Each moment with you has been a beautiful adventure, and I am so grateful to have you by my side. Thank you for filling my life with laughter, warmth, and endless support. Your kindness and understanding make every day brighter, and I cherish all the memories we\u2019ve made together. I look forward to creating many more wonderful chapters with you. You are my best friend, my soulmate, and my everything. Here\u2019s to us and to many more years of happiness. I love you more than words can express.",
+    "variant_b": "My beloved, joyful anniversary! Every second with you has been a wonderful journey, and I am so thankful to share my life with you. Thanks for bringing joy, comfort, and unwavering encouragement into my days. Your compassion and patience light up my world, and I treasure all the experiences we\u2019ve shared. I am excited for all the amazing moments yet to come. You are my closest companion, my true partner, and my all. Here\u2019s to our love and countless more years together. I adore you beyond what words can say.",
+    "axis": "synonym",
+    "scenario_id": 17,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi! I just wanted to say thanks so much for all the hard work you do for my child and the class. I really appreciate the time and energy you put in every day. My kid has learned a lot this year and always comes home excited to tell me about what happened at school. It means a lot to know they have such a caring and dedicated teacher. If you ever need anything from me, please let me know. Thanks again for everything\u2014you\u2019re awesome!",
+    "variant_b": "Dear Teacher,\n\nI would like to express my sincere gratitude for your dedication and hard work with my child and the entire class. I truly appreciate the effort and care you invest each day to support their learning and growth. My child has greatly benefited from your guidance and consistently shares positive experiences from your classroom. Knowing they are in such capable and thoughtful hands is very reassuring. Please let me know if there is ever any way I can assist. Thank you again for your commitment and professionalism.\n\nSincerely,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 18,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi, I just wanted to take a moment to say thank you for everything you do for my child and the class. I really appreciate all the effort and care you put into your teaching, and it certainly doesn\u2019t go unnoticed. I imagine it must be a challenging job at times, and I\u2019m grateful for how dedicated you are. Thank you again for your hard work and for supporting my child\u2019s learning.",
+    "variant_b": "Thank you for all the hard work and dedication you show to my child and the class. I truly appreciate the effort you put into teaching and supporting their growth. Your commitment makes a real difference, and I want you to know how grateful I am for everything you do. Thanks again for your outstanding work.",
+    "axis": "directness",
+    "scenario_id": 18,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I wanted to let you know that I appreciate the work you\u2019re doing with my child. I\u2019ve noticed the effort you put in and the impact it\u2019s having. Thanks for helping my child learn and grow this year.",
+    "variant_b": "I wanted to take a moment to sincerely thank you for your hard work and dedication in teaching my child. I truly appreciate the time and care you invest in your students, and I\u2019ve noticed the positive impact it\u2019s had on my child\u2019s learning and growth. Thank you so much for everything you do.",
+    "axis": "politeness",
+    "scenario_id": 18,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hello, I wanted to take a moment to thank you for your dedication and hard work in teaching my child this year. I appreciate the time and effort you invest in your students and the classroom. Your commitment to their education does not go unnoticed, and I am grateful for the support and guidance you provide. Thank you for your professionalism and for creating a positive learning environment.",
+    "variant_b": "Hi! I just wanted to say how truly grateful I am for all the care and energy you put into teaching my child this year. Your dedication and kindness have made such a difference, and it means so much to know my child is supported and encouraged every day. Thank you for your patience, inspiration, and for making learning such a positive experience. We really appreciate everything you do!",
+    "axis": "emotional_tone",
+    "scenario_id": 18,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Dear Teacher, \n\nI wanted to take a moment to thank you for all the hard work and dedication you show every day. Your commitment to your students truly makes a difference, and I appreciate everything you do to help them learn and grow. It means a lot to know my child is in such caring and capable hands. Thank you again for all that you do.\n\nSincerely,\n[Your Name]",
+    "variant_b": "Dear Ms. Robinson,\n\nI wanted to express my sincere gratitude for your dedication this year, especially as you\u2019ve helped Emily adjust to third grade. Your thoughtful feedback on her weekly reading assignments and the extra time you spent tutoring her in math after school in October have made a big difference. It\u2019s clear you care deeply about your students, and I truly appreciate how you keep us updated with the monthly newsletters. Thank you for all you do for Emily and her classmates.\n\nWarm regards,\nSarah Kim",
+    "axis": "specificity",
+    "scenario_id": 18,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear Teacher, \n\nI wanted to take a moment to express my gratitude for all your hard work and dedication this year. I truly appreciate the effort you put into creating a positive and supportive learning environment for my child. Your commitment has made a significant difference, and I am thankful for your patience and encouragement. Thank you again for everything you do.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Dear Teacher, \n\nI wanted to take a moment to convey my appreciation for all your efforts and commitment this year. I sincerely value the work you do to foster a nurturing and encouraging educational atmosphere for my child. Your devotion has had a meaningful impact, and I am grateful for your understanding and support. Thanks once more for all that you provide.\n\nBest wishes,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 18,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey! Hope you're doing well. I was wondering if you\u2019d like to come over for dinner sometime this week. It\u2019d be great to catch up and share a meal together. Let me know what day works best for you, and if there\u2019s anything you don\u2019t eat, just let me know. Looking forward to hanging out!",
+    "variant_b": "Dear Neighbor,\n\nI hope this message finds you well. I would like to invite you to join us for dinner at our home sometime this week. It would be a pleasure to spend some time together and get to know each other better. Please let me know which day would be most convenient for you, and if you have any dietary restrictions. I look forward to your reply.\n\nBest regards,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 19,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi! I hope you\u2019re doing well. I was wondering if you might be interested in coming over for dinner sometime soon? I thought it could be nice to catch up and spend a relaxed evening together, but of course, only if you\u2019re free and it sounds good to you. Please let me know if you\u2019d be interested, and if so, maybe we can find a day that works for you. No worries if you\u2019re busy\u2014I just thought I\u2019d ask!",
+    "variant_b": "Hi! Would you like to come over for dinner one night soon? I\u2019d love to have you over, catch up, and enjoy a meal together. Let me know if you\u2019re interested, and we can pick a day that works for you. Just let me know what your schedule looks like!",
+    "axis": "directness",
+    "scenario_id": 19,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hi, I\u2019m having dinner at my place this Friday at 7 PM. You\u2019re invited. Let me know if you can make it. I\u2019ll be making pasta and salad. If you have any dietary restrictions, just tell me. Hope to see you.",
+    "variant_b": "Hello! I hope you\u2019re doing well. I wanted to invite you over for dinner at my place this Friday at 7 PM. I\u2019ll be preparing pasta and salad, and I would love for you to join. Please let me know if you\u2019re able to make it, and if you have any dietary restrictions, feel free to share. It would be wonderful to spend the evening together. Thank you!",
+    "axis": "politeness",
+    "scenario_id": 19,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hello, I wanted to extend an invitation for you to join us for dinner at our place. We\u2019re planning to have dinner this Friday evening around 7 PM and would be glad if you could attend. Please let me know if that works for you or if there is another time that would be more convenient. Looking forward to your response.",
+    "variant_b": "Hi! I hope you\u2019re doing well. We\u2019d love to have you over for dinner at our place this Friday at 7 PM. It would be great to catch up and share a meal together. Please let us know if you can make it, or if another time works better for you. We really hope you can join us!",
+    "axis": "emotional_tone",
+    "scenario_id": 19,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi! I hope you\u2019re doing well. I wanted to see if you\u2019d like to come over for dinner sometime soon. It would be great to spend some time together and get to know each other better. Let me know if you\u2019re interested, and we can work out a day that works for both of us. Looking forward to hearing from you!",
+    "variant_b": "Hi! I hope you\u2019re having a good week. I\u2019d love to invite you over for dinner at our place this Saturday evening, around 6:30 pm. We\u2019re planning to make homemade lasagna and a salad, and it would be great to catch up and get to know each other better. If Saturday doesn\u2019t work, let me know what days are good for you. Looking forward to hearing back!",
+    "axis": "specificity",
+    "scenario_id": 19,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hi [Neighbor's Name],\n\nI hope you're doing well! I wanted to see if you would like to come over for dinner sometime this week. It would be great to spend some time together and catch up. Let me know if there's a day that works best for you or if you have any dietary preferences. Looking forward to hearing from you!\n\nBest,\n[Your Name]",
+    "variant_b": "Hello [Neighbor's Name],\n\nI hope you\u2019re having a good week! I wanted to ask if you\u2019d be interested in joining us for a meal at our place one evening soon. It would be wonderful to get together and reconnect. Please let me know which evening suits you or if you have any food restrictions. I look forward to your reply!\n\nRegards,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 19,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey! Hope you\u2019re doing well\u2014it\u2019s been ages since we last talked. I was thinking about old times and realized how long it\u2019s been since we caught up. Would love to hear what you\u2019ve been up to lately! Let\u2019s grab a coffee or just chat sometime if you\u2019re up for it. Miss those days back in class. Anyway, hope to hear from you soon!",
+    "variant_b": "Hello, I hope this message finds you well. It has been quite some time since we last connected, and I found myself reminiscing about our days as classmates. I would be delighted to catch up and hear about what you have been doing since then. If you are available, perhaps we could arrange a time to meet or have a conversation. Looking forward to reconnecting.",
+    "axis": "formality",
+    "scenario_id": 20,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi [Name],\n\nI hope you\u2019re doing well! I was just thinking back to our school days and realized it\u2019s been ages since we last caught up. I\u2019m not sure if you remember me, but I came across your profile and thought it might be nice to reconnect and hear what you\u2019ve been up to. No worries if you\u2019re busy or not interested, but if you\u2019d like to chat or reminisce a bit, I\u2019d love to hear from you. Take care!",
+    "variant_b": "Hey [Name],\n\nIt\u2019s been a long time since we were in class together! I found your profile and wanted to reach out to reconnect. I\u2019d love to catch up and hear what you\u2019ve been up to since school. Let me know if you\u2019re interested in chatting or grabbing a coffee sometime. Hope to hear from you soon!",
+    "axis": "directness",
+    "scenario_id": 20,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hey, it's been a while since we last talked. I saw your profile pop up and figured I'd reach out. Hope everything's going well with you. Would be cool to catch up and see what you've been up to lately. Let me know if you want to connect.",
+    "variant_b": "Hi! I hope you're doing well. It's been a long time since we were in class together, and I recently came across your profile. I wanted to reach out and reconnect, as I'd love to hear how things have been going for you. If you're interested, please let me know\u2014I'd really enjoy catching up. Take care!",
+    "axis": "politeness",
+    "scenario_id": 20,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hi [Name],\n\nI hope this message finds you well. I recently came across your profile and noticed we were classmates at [School/University]. It\u2019s been a while since we last connected, and I wanted to reach out to see how you\u2019ve been and what you\u2019re up to these days. If you\u2019re open to reconnecting, I\u2019d be interested to hear about your current work or projects. Looking forward to hearing from you.",
+    "variant_b": "Hey [Name]!\n\nIt\u2019s been so long since our days at [School/University], and I was really happy to come across your profile! I still have great memories from our time together and would love to catch up and hear what you\u2019ve been up to. Hope life has been treating you well\u2014let\u2019s reconnect and swap stories! Would love to hear from you soon.",
+    "axis": "emotional_tone",
+    "scenario_id": 20,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hey! I hope you\u2019ve been well. It\u2019s been a while since we last chatted, and I was thinking about some of the good times back in school. I\u2019d love to catch up and hear what you\u2019ve been up to these days. Let me know if you\u2019d like to reconnect sometime!",
+    "variant_b": "Hey, Alex! I hope you\u2019re doing well. It\u2019s been ages since we last talked after Ms. Rivera\u2019s English class in 2013. I was recently looking through some old yearbook photos from our senior year and remembered the project we worked on together. I\u2019d love to hear what you\u2019ve been up to since graduation\u2014maybe we could grab coffee or chat sometime soon. Let me know if you\u2019re interested!",
+    "axis": "specificity",
+    "scenario_id": 20,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hi [Name],\n\nI hope you\u2019ve been doing well! It\u2019s been a while since we last caught up, and I was just thinking about our time back in school. I\u2019d love to hear what you\u2019ve been up to lately and reconnect. If you\u2019re interested, maybe we could grab a coffee or just chat here. Looking forward to hearing from you!\n\nBest,\n[Your Name]",
+    "variant_b": "Hey [Name],\n\nI hope things have been going great! It\u2019s been some time since we last connected, and I was recently reminiscing about our days at school. I\u2019d be interested to learn what you\u2019ve been doing recently and to get back in touch. If you\u2019d like, perhaps we could meet for coffee or simply talk here. Hope to hear from you soon!\n\nTake care,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 20,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey there, I wanted to reach out because my internet keeps going out a lot lately. It\u2019s been happening really often, and it\u2019s making it tough to work from home and stream anything. I\u2019ve tried restarting my modem and router a bunch of times, but it doesn\u2019t really help. Can you check if there\u2019s something wrong in my area, or if there\u2019s anything else I can do to fix this? I\u2019d really appreciate a quick solution since it\u2019s becoming a big hassle. Thanks!",
+    "variant_b": "Dear Customer Support, \n\nI am writing to express my concern regarding the frequent internet outages I have been experiencing recently. These interruptions have significantly impacted my ability to work from home and access online services. I have attempted standard troubleshooting steps, including restarting my modem and router, but the issue persists. Could you please investigate whether there is an ongoing problem in my area or advise on further actions I can take? I would appreciate a prompt resolution to this matter. Thank you for your attention.\n",
+    "axis": "formality",
+    "scenario_id": 21,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hello, I hope this message finds you well. I wanted to bring to your attention that I\u2019ve been experiencing frequent internet outages over the past few weeks. While I understand that occasional issues can arise, the interruptions have been happening quite regularly and are starting to impact my ability to work and stay connected. If possible, I would greatly appreciate it if you could look into this matter and let me know if there\u2019s anything that can be done to resolve the issue. Thank you for your attention and assistance.",
+    "variant_b": "I am writing to formally complain about the frequent internet outages I\u2019ve been experiencing over the past few weeks. These interruptions have become a serious problem and are disrupting my work and daily activities. I expect a reliable service, and this situation is unacceptable. Please investigate this issue immediately and inform me of the steps you will take to resolve it. I look forward to a prompt response and a solution to these ongoing outages.",
+    "axis": "directness",
+    "scenario_id": 21,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "My internet service has been experiencing frequent outages over the past few weeks, which is disrupting my work and daily activities. These interruptions are unacceptable, especially considering the price I'm paying for reliable service. I expect a prompt resolution, including information on what is causing these outages and what steps you are taking to fix them. If this issue is not addressed soon, I will consider switching providers. Please respond with an update as soon as possible.",
+    "variant_b": "I am writing to express my concern about the frequent outages I have been experiencing with my internet service over the past few weeks. These interruptions have been quite disruptive to my work and daily routine. I would greatly appreciate it if you could look into this issue and provide information on the cause, as well as any steps being taken to resolve it. Thank you for your attention to this matter, and I look forward to your prompt response.",
+    "axis": "politeness",
+    "scenario_id": 21,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Dear Customer Service,\n\nI am writing to report frequent internet outages that have been occurring over the past several weeks. The interruptions are unpredictable and have affected both my work and daily activities. I would appreciate it if you could investigate the cause of these outages and provide information on any steps being taken to resolve the issue. Additionally, please inform me if there are any planned maintenance activities or known technical problems in my area. I look forward to your prompt response and a resolution to these disruptions.\n\nThank you.",
+    "variant_b": "Hello,\n\nI hope this message finds you well. I'm reaching out because I've been experiencing frequent internet outages over the past few weeks, which has been really frustrating and disruptive to my work and home life. I\u2019d appreciate your help in looking into what might be causing these interruptions and letting me know how soon the issue can be resolved. If there\u2019s anything I should be aware of, such as scheduled maintenance or ongoing problems in my area, I\u2019d be grateful for an update. Thank you so much for your attention to this matter.",
+    "axis": "emotional_tone",
+    "scenario_id": 21,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hello,\n\nI am writing to express my frustration with the frequent interruptions to my internet service. Over the past several weeks, my connection has been unreliable, with regular outages that disrupt my work and daily activities. I rely on stable internet, and these ongoing problems have become a significant inconvenience. I would appreciate it if you could look into this issue and let me know what steps can be taken to improve the reliability of my service. Thank you for your attention.",
+    "variant_b": "Hello,\n\nI am writing to report repeated internet outages over the past month. Specifically, my connection has dropped at least five times in the last two weeks, usually in the evenings around 8\u201310 PM. For example, on June 5th and June 10th, the service was down for over an hour each time. This has caused issues with my remote work and streaming. My account number is 12345678, and I live at 789 Oak Street. Please investigate these outages and let me know what is being done to resolve them. Thank you.",
+    "axis": "specificity",
+    "scenario_id": 21,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear Customer Support,\n\nI am writing to express my dissatisfaction with the recurring disruptions to my internet service. Over the past few weeks, I have experienced multiple outages, often lasting for extended periods and severely affecting my ability to work from home and carry out daily activities. Despite previous assurances that these interruptions would be resolved, the problem continues to persist. I kindly request that you investigate this issue as a priority and provide a clear explanation, as well as a timeline for a permanent solution. Additionally, I would appreciate information about any compensation available for the inconvenience caused.\n\nThank you for your attention to this matter.",
+    "variant_b": "Dear Customer Service,\n\nI am writing to convey my dissatisfaction with the ongoing interruptions to my internet connection. In recent weeks, I have encountered several outages, frequently lasting for prolonged intervals and significantly impacting my capacity to work remotely and manage daily tasks. Although I have previously received assurances that these issues would be addressed, the situation remains unresolved. I respectfully ask that you look into this matter urgently and supply a detailed explanation, along with an estimate for a lasting fix. Furthermore, I would like to know if any compensation is offered for the trouble experienced.\n\nThank you for your consideration.",
+    "axis": "synonym",
+    "scenario_id": 21,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi there! I recently ordered an item from your site, but unfortunately, it showed up damaged. I was pretty disappointed since I was looking forward to using it. Can you help me out with a refund? I\u2019ve attached some pictures of the damage to this message. Please let me know what you need from me or if there\u2019s any other info you want. Thanks a lot for your help!",
+    "variant_b": "Dear Customer Service Team,\n\nI am writing to request a refund for an item I purchased from your website, which arrived damaged. I have attached photographs that clearly show the damage for your reference. Please advise on the next steps required to process my refund, and let me know if you need any additional information from me. Thank you for your attention to this matter. I look forward to your prompt response.\n\nSincerely,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 22,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hello, I hope this message finds you well. I recently received my order from your store, and unfortunately, the item arrived damaged. I was quite disappointed, as I was looking forward to using it. If possible, could you please advise me on the process for requesting a refund or replacement? I would really appreciate any assistance you can provide, and I can send photos of the damage if needed. Thank you very much for your help, and I look forward to hearing from you soon.",
+    "variant_b": "Hello, I received my order from your store, and the item arrived damaged. I am requesting a refund for this purchase. Please let me know the steps I need to follow and if you require any photos of the damage for processing. I expect a prompt resolution to this issue. Thank you.",
+    "axis": "directness",
+    "scenario_id": 22,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I received my order, but the item arrived damaged. I want a full refund. Attached are photos showing the damage. Let me know what steps I need to take to get this processed. I expect a quick resolution.",
+    "variant_b": "Hello, I recently received my order, but unfortunately the item arrived damaged. I have attached photos to show the issue. Could you please let me know the process for receiving a refund? I would appreciate your help in resolving this matter as soon as possible. Thank you for your attention.",
+    "axis": "politeness",
+    "scenario_id": 22,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hello, I am contacting you regarding a recent order I placed through your website. Upon receipt, I found that the item was damaged. I have attached photos documenting the issue. I would like to request a full refund for this purchase, as the item is not in usable condition. Please let me know if you require any additional information from my end to process the refund. Thank you for your attention to this matter. I look forward to your prompt response.",
+    "variant_b": "Hi there, I hope you\u2019re well. I\u2019m reaching out because the item I ordered recently arrived damaged, which was disappointing. I\u2019ve attached photos to show what happened. I\u2019d really appreciate your help in arranging a refund, as I can\u2019t use the item in its current state. Please let me know if you need any more details from me. Thank you so much for your understanding and assistance\u2014I look forward to hearing from you soon.",
+    "axis": "emotional_tone",
+    "scenario_id": 22,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hello, I recently received an item I purchased from your online store, but it arrived damaged. I would like to request a refund for this order. Please let me know what steps I need to take to complete the process. I can provide any information or photos if needed. Thank you for your assistance.",
+    "variant_b": "Hello, I placed an order (#123456) on your website on May 18th and received it yesterday, May 22nd. Unfortunately, the ceramic vase I ordered arrived with a large crack down the side and several chips around the base. I am requesting a full refund for this damaged item. Please let me know if you need photos of the damage or additional information to process the refund. Thank you for your prompt attention to this matter.",
+    "axis": "specificity",
+    "scenario_id": 22,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hello, \n\nI recently received an item from my online order that arrived damaged. I would like to request a refund for this product. I have attached photographs of the damage for your reference. Please let me know if you require any additional information to process my request. I hope to resolve this matter promptly and appreciate your assistance. Thank you for your attention to this issue.\n\nBest regards,",
+    "variant_b": "Hi, \n\nI just got a product from my online purchase that was delivered broken. I am seeking a reimbursement for the item. I've included pictures of the issue for your review. Please inform me if you need further details to complete my request. I look forward to settling this quickly and value your support. Thanks for looking into this problem.\n\nKind regards,",
+    "axis": "synonym",
+    "scenario_id": 22,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey there! Just wanted to say I had an awesome time dining at your place last night. The food was delicious (especially the pasta!), and our server was super friendly and helpful. The vibe was really chill, and everything came out quickly. I\u2019ll definitely be coming back and recommending you to my friends. Thanks for making our night out so great!",
+    "variant_b": "To whom it may concern, \n\nI would like to express my appreciation for the excellent dining experience I had at your restaurant recently. The quality of the food exceeded my expectations, particularly the pasta dish, and the service was both attentive and courteous throughout the evening. Additionally, the atmosphere was welcoming, and the overall experience was highly enjoyable. I look forward to returning in the future and will certainly recommend your establishment to others.\n\nThank you for a wonderful evening.",
+    "axis": "formality",
+    "scenario_id": 23,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "I just wanted to share how much I enjoyed my recent visit to your restaurant. The food was really delicious, and I especially appreciated how attentive and friendly the staff were throughout the evening. The atmosphere was warm and inviting, which made the whole experience even better. If it\u2019s not too much trouble, I\u2019d love to pass along my thanks to the team for making our evening so special. I hope to visit again soon and will certainly recommend your restaurant to friends and family.",
+    "variant_b": "I had a fantastic experience at your restaurant. The food was excellent, and the staff provided outstanding service. The atmosphere was welcoming and made the meal even more enjoyable. Please thank your team for their hard work and professionalism. I look forward to returning and will definitely recommend your restaurant to others.",
+    "axis": "directness",
+    "scenario_id": 23,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Here\u2019s feedback you can use: The food was excellent, especially the steak, which was cooked perfectly. The staff was attentive and efficient, making sure our glasses were always full. The atmosphere was welcoming and comfortable. I appreciated the quick service and the clean space. Overall, it was a great experience and I\u2019d recommend the place to others. No complaints\u2014keep up the good work.",
+    "variant_b": "Thank you for reaching out. I\u2019d be happy to help you craft feedback: I had a wonderful experience at your restaurant. The food, especially the steak, was delicious and perfectly prepared. The staff were friendly, attentive, and made sure our needs were met throughout the meal. The atmosphere was warm and inviting, and everything was very clean. I truly appreciate the great service and would highly recommend your restaurant to others. Thank you again for a memorable evening!",
+    "axis": "politeness",
+    "scenario_id": 23,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "I recently dined at your restaurant and wanted to share my positive experience. The service was efficient and professional, and the staff was attentive throughout the meal. The dishes were presented well and arrived promptly. The quality of the food met my expectations, particularly the freshness of the ingredients and the balanced flavors. The atmosphere was comfortable and conducive to conversation. Overall, I was satisfied with the entire dining experience and would consider returning in the future. Thank you for maintaining high standards.",
+    "variant_b": "I wanted to thank you for such a wonderful dining experience at your restaurant! From the moment we walked in, the staff made us feel so welcome and taken care of. The food was absolutely delicious\u2014every dish was flavorful and beautifully presented. We especially loved how attentive and friendly everyone was, which really made our evening special. The warm and inviting atmosphere added to our enjoyment. We truly appreciated the care you put into everything and look forward to coming back soon!",
+    "axis": "emotional_tone",
+    "scenario_id": 23,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "I wanted to share my positive experience at your restaurant. The atmosphere was welcoming, and the staff were very friendly and attentive throughout our meal. The food was delicious, and we really enjoyed everything we ordered. Overall, it was a wonderful dining experience, and I would definitely recommend your restaurant to others. Thank you for making our visit so enjoyable!",
+    "variant_b": "I had dinner at your restaurant last Friday evening and was thoroughly impressed. Our server, Maria, greeted us warmly and made great menu recommendations. The grilled salmon with lemon-dill sauce was perfectly cooked, and the chocolate lava cake for dessert was outstanding. We appreciated the cozy lighting and the live jazz music, which created a relaxing atmosphere. Thank you for a memorable evening\u2014I'll be recommending your restaurant to my friends and will definitely return!",
+    "axis": "specificity",
+    "scenario_id": 23,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "I would be happy to help you write feedback for the restaurant. You could say: \"I had a wonderful experience dining at your establishment. The staff was incredibly friendly and attentive, and the food was delicious and beautifully presented. I appreciated the cozy atmosphere and the prompt service. Thank you for making my visit so enjoyable; I will definitely be returning and recommending your place to friends.\" Let me know if you'd like to tailor it further!",
+    "variant_b": "I would be glad to assist you in composing feedback for the restaurant. You might write: \"I had an excellent experience dining at your venue. The team was exceptionally welcoming and considerate, and the cuisine was tasty and attractively served. I valued the comfortable ambiance and the efficient service. Thank you for making my time so pleasant; I will certainly be coming back and suggesting your spot to others.\" Please let me know if you'd like any adjustments!",
+    "axis": "synonym",
+    "scenario_id": 23,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi there,\n\nI'm reaching out because I'm interested in volunteering at your animal shelter. I really love animals and have some experience taking care of dogs and cats. I'm happy to help out wherever you need, whether that\u2019s cleaning, feeding, or just spending time with the animals. My schedule is pretty flexible, so I can come in on weekends or after work during the week. Let me know if you need any more info from me or if there\u2019s a good time to stop by and chat. Looking forward to hearing from you!\n\nThanks,\nAlex",
+    "variant_b": "Dear Volunteer Coordinator,\n\nI am writing to express my interest in volunteering at your animal shelter. I am passionate about animal welfare and have prior experience caring for both dogs and cats. I am willing to assist with a variety of tasks, including feeding, cleaning, and providing companionship to the animals. My availability is flexible, and I am able to volunteer on weekends as well as weekday evenings. Please let me know if there are any application procedures or further information required. I look forward to the opportunity to contribute to your organization.\n\nSincerely,\nAlex",
+    "axis": "formality",
+    "scenario_id": 24,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Dear Animal Shelter Team,\n\nI hope this message finds you well. I am reaching out to express my interest in possibly volunteering at your shelter. I have always cared deeply about animal welfare and, while I do not have formal experience, I believe my compassion and willingness to learn could be beneficial. If there are any volunteer opportunities available, I would be grateful to be considered. Please let me know if there is any further information I can provide or if there are any steps I should follow. Thank you very much for your time and consideration.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hello,\n\nI am writing to apply for a volunteer position at your animal shelter. I am passionate about animal welfare and eager to help care for the animals in your facility. While I don't have prior experience, I am quick to learn and committed to supporting your team in any way needed. Please let me know what steps I should take to get started as a volunteer, and if you need any additional information from me. I look forward to hearing from you soon.\n\nSincerely,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 24,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Hello,\n\nI am interested in volunteering at your animal shelter. I have previous experience working with animals and want to help out. I am available on weekends and some evenings. Let me know what the process is for getting started or if you need more information from me.\n\nThanks.",
+    "variant_b": "Dear Sir or Madam,\n\nI hope this message finds you well. I am writing to express my interest in volunteering at your animal shelter. I have prior experience working with animals and am eager to contribute my time and efforts to support your organization. I am available during weekends and some evenings and would be grateful if you could let me know about the next steps in the application process. Please let me know if there is any additional information I can provide.\n\nThank you very much for your time and consideration.",
+    "axis": "politeness",
+    "scenario_id": 24,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Dear Volunteer Coordinator,\n\nI am writing to express my interest in volunteering at your animal shelter. I am available to assist with animal care, cleaning, and other support tasks as needed. I have prior experience working with animals and am comfortable following established procedures. I am available on weekends and some evenings. Please let me know if there are any specific requirements or forms I need to complete. Thank you for considering my application. I look forward to your response.\n\nSincerely,\n[Your Name]",
+    "variant_b": "Dear Volunteer Coordinator,\n\nI am excited to apply for a volunteer position at your animal shelter. I have a deep love for animals and am eager to help provide them with a safe and caring environment. I have some experience working with animals and am happy to assist with any tasks needed, from daily care to cleaning and playtime. I\u2019m available on weekends and some evenings, and would be grateful for the chance to make a positive impact. Thank you so much for your time and consideration.\n\nBest regards,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 24,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Dear Animal Shelter Team,\n\nI am writing to express my interest in volunteering at your shelter. I have always had a passion for helping animals and would love to contribute my time and energy to supporting your organization. I am a reliable and caring individual who enjoys working with both people and animals. I am open to helping with any tasks you may need, including caring for animals or assisting with events. Please let me know if there are any steps I need to take to apply. Thank you for considering my application. I look forward to the possibility of joining your team.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Dear Riverside Animal Shelter Team,\n\nMy name is Sarah Lee, and I am writing to apply for a volunteer position at your shelter. I am available on weekends and weekday afternoons, and I am especially interested in assisting with dog walking and adoption events. I have previous experience volunteering at Greenfield Pet Rescue for 8 months, where I helped feed, groom, and socialize cats and dogs. I am also comfortable with administrative tasks such as answering phones and organizing supplies. Please let me know if you require references or if there are application forms I should complete. Thank you for your consideration.\n\nSincerely,\nSarah Lee",
+    "axis": "specificity",
+    "scenario_id": 24,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear Animal Shelter Team,\n\nI am writing to express my interest in volunteering at your shelter. I have a deep passion for animal welfare and would love to contribute my time and effort to support your organization. I am comfortable working with animals of all kinds and am eager to assist with daily tasks, whether it\u2019s feeding, cleaning, or providing companionship. I am available on weekends and some weekdays, and I am willing to undergo any necessary training. Thank you for considering my application. I look forward to the opportunity to make a difference at your shelter.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Dear Animal Shelter Staff,\n\nI am reaching out to convey my enthusiasm for volunteering at your shelter. I have a strong commitment to animal care and would be delighted to dedicate my time and energy to help your organization. I am comfortable interacting with animals of all types and am keen to support with regular duties, including feeding, cleaning, or offering companionship. I am free on weekends and certain weekdays, and I am open to completing any required training. Thank you for reviewing my application. I look forward to the chance to contribute at your shelter.\n\nSincerely,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 24,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey! Just wanted to let you know that the heater in my place isn\u2019t working. I tried turning it on a few times, but nothing happens and it\u2019s getting pretty cold in here. Could you send someone to check it out when you get a chance? Thanks a lot!",
+    "variant_b": "Dear [Landlord\u2019s Name],\n\nI hope this message finds you well. I am writing to inform you that the heater in my apartment is currently not functioning. I have attempted to turn it on several times, but it does not appear to be working. As the temperature has dropped, I would appreciate it if you could arrange for a technician to inspect and repair it at your earliest convenience. Thank you for your attention to this matter.\n\nBest regards,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 25,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi [Landlord's Name],\n\nI hope this message finds you well. I wanted to let you know that I\u2019ve been having some trouble with the heater in my apartment\u2014it doesn\u2019t seem to be working properly and isn\u2019t heating the space as it usually does. I was wondering if you might be able to take a look or arrange for someone to check it out when you get a chance. I\u2019d really appreciate any help you can offer, as it\u2019s been getting quite cold lately. Please let me know what you think would be the best next step.\n\nThank you so much for your time!",
+    "variant_b": "Hi [Landlord's Name],\n\nThe heater in my apartment is broken and not heating at all. I need it fixed as soon as possible because it\u2019s been very cold. Please let me know when someone can come to repair it, or if you need any more information from me. I\u2019d appreciate a quick response so this can be resolved soon.\n\nThanks.",
+    "axis": "directness",
+    "scenario_id": 25,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "The heater in my apartment isn\u2019t working. It stopped producing heat yesterday and the temperature inside is getting too cold. I need this fixed as soon as possible. Let me know when someone can come to repair it.",
+    "variant_b": "Hello, I hope you\u2019re well. I wanted to let you know that the heater in my apartment has stopped working since yesterday, and it\u2019s getting quite cold inside. Could you please arrange for someone to take a look and repair it at your earliest convenience? Thank you very much for your help.",
+    "axis": "politeness",
+    "scenario_id": 25,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hello,\n\nI am writing to inform you that the heater in my apartment is not working. I've checked the thermostat and power source, but it still does not turn on. Given the current temperatures, I would appreciate it if you could arrange for a repair as soon as possible. Please let me know when a technician will be available to fix the issue or if you need any additional information from me.\n\nThank you.",
+    "variant_b": "Hi there,\n\nI hope you\u2019re doing well. I wanted to let you know that my heater has stopped working, and I\u2019ve already tried adjusting the thermostat and checking the power. With the weather getting colder, it\u2019s been pretty uncomfortable, so I\u2019d be very grateful if you could help arrange a repair soon. Please let me know if you need any details from me or when someone might be able to come take a look.\n\nThank you so much for your help!",
+    "axis": "emotional_tone",
+    "scenario_id": 25,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hi, I wanted to let you know that the heater in my apartment isn\u2019t working. I\u2019ve tried turning it on a few times, but it doesn\u2019t seem to be heating up. It\u2019s been getting pretty cold, and I\u2019m having trouble staying warm. Can you please look into this or send someone to check it out soon? Let me know if you need any more information from me. Thanks for your help.",
+    "variant_b": "Hi, I wanted to let you know that the heater in my apartment (unit 3B) stopped working yesterday evening. I tried adjusting the thermostat several times, but the unit only blows cold air and never heats up. The temperature inside dropped to around 62\u00b0F overnight, and the outside temperature is expected to stay below freezing this week. Could you please arrange for a repair technician to come by as soon as possible? I am available any day after 3pm. Please let me know if you need any details or if I should contact someone directly. Thank you.",
+    "axis": "specificity",
+    "scenario_id": 25,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hi [Landlord's Name],\n\nI hope you are well. I wanted to let you know that the heater in my apartment has stopped working. I\u2019ve tried turning it off and on, but it isn\u2019t producing any heat. With the colder weather, I would appreciate it if you could arrange for someone to repair it as soon as possible. Please let me know if you need any additional information from my side. Thank you for your attention to this issue.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hello [Landlord's Name],\n\nI trust you are doing well. I\u2019m reaching out to inform you that the heating unit in my apartment is currently not functioning. I have attempted to reset it, but it still isn\u2019t generating warmth. Given the drop in temperature, I would be grateful if you could organize for it to be fixed promptly. Let me know if there\u2019s any further information I can provide. Thank you for addressing this matter.\n\nKind regards,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 25,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi there! I\u2019d like to book a doctor\u2019s appointment sometime next week. Could you let me know what days and times are available? I\u2019m pretty flexible but would prefer mornings if possible. Let me know what works best and what info you need from me to get it set up. Thanks a lot!",
+    "variant_b": "Dear Sir or Madam,\n\nI am writing to request an appointment with the doctor at your earliest convenience next week. Please let me know which dates and times are available; I would prefer a morning slot if possible. Kindly inform me of any additional information you require to schedule the appointment. Thank you very much for your assistance.\n\nBest regards,\n\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 26,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hello, I hope this message finds you well. I was wondering if it might be possible to schedule a doctor's appointment for me sometime next week, if there are any available slots. My schedule is fairly flexible, so I can adjust to whatever times might work best. If you could let me know what options are open, I would really appreciate it. Thank you so much for your help.",
+    "variant_b": "Hi, I would like to schedule a doctor's appointment for next week. My schedule is flexible, so please let me know what times are available. I look forward to your reply with the available slots. Thank you.",
+    "axis": "directness",
+    "scenario_id": 26,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I need to schedule a doctor's appointment for next week. Let me know what times are available. Preferably mornings, but I can be flexible if needed. Please confirm the date and time when it's set.",
+    "variant_b": "Hello, I hope you're well. I would like to schedule a doctor's appointment for next week, if possible. Mornings would be preferable, but I am happy to adjust to other available times if needed. Please let me know what options you have, and thank you very much for your assistance.",
+    "axis": "politeness",
+    "scenario_id": 26,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Hello, I would like to schedule a doctor's appointment for sometime next week. Please let me know what dates and times are available, and if possible, I would prefer a morning appointment. If you need any additional information from me, please let me know. Thank you.",
+    "variant_b": "Hi there! I hope you're having a good day. I wanted to reach out and see if I could schedule a doctor's appointment for next week. Mornings usually work best for me, but I'm flexible if that's not possible. Please let me know what options you have available, and if you need any details from me, just ask. Thank you so much for your help!",
+    "axis": "emotional_tone",
+    "scenario_id": 26,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hello, I would like to schedule a doctor's appointment sometime next week. Please let me know what times you have available, and I can try to find a slot that works for me. If you need any more information from me, please let me know. Thank you for your help.",
+    "variant_b": "Hello, I would like to book a doctor's appointment for next week, preferably on Tuesday or Thursday morning. I am available between 9:00 am and 12:00 pm on those days. If those times are not available, please let me know what other openings you have during the week. My last visit was for a routine check-up, and I would like to schedule a similar appointment. Please let me know what works best. Thank you.",
+    "axis": "specificity",
+    "scenario_id": 26,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hello, I would like to schedule a doctor's appointment for next week. Please let me know what days and times are available, as I am flexible with my schedule. If possible, I would prefer a morning slot. Thank you for your assistance, and I look forward to your response.",
+    "variant_b": "Hi, I would like to arrange a physician's appointment for the coming week. Kindly inform me of the available dates and times, as my timetable is quite open. If it\u2019s convenient, I would favor a morning appointment. Thank you for your help, and I await your reply.",
+    "axis": "synonym",
+    "scenario_id": 26,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi there,\n\nI hope you\u2019re doing well. I need to get an official copy of my transcript from the university. Could you let me know what steps I should take or if there\u2019s a specific form I need to fill out? Also, please let me know if there are any fees or documents I\u2019ll need to provide. I\u2019d really appreciate your help with this!\n\nThanks so much,\n[Your Name]",
+    "variant_b": "Dear Sir or Madam,\n\nI am writing to formally request an official copy of my academic transcript. Kindly advise me on the required procedure and whether there are any forms or supporting documents I need to submit. Additionally, please inform me of any applicable fees for processing this request. Thank you in advance for your assistance. I look forward to your response.\n\nSincerely,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 27,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Dear Registrar,\n\nI hope this message finds you well. I am reaching out to kindly inquire about the process for obtaining an official transcript from the university. If it would not be too much trouble, I would greatly appreciate your guidance on how to proceed, including any necessary forms or requirements. Should there be any associated fees or further details I should be aware of, please let me know at your earliest convenience. Thank you very much for your assistance.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Dear Registrar,\n\nI am writing to request an official transcript from the university. Please let me know the steps I need to follow, as well as any forms to complete or fees to pay. I would appreciate it if you could provide this information as soon as possible so I can proceed with my application. Thank you for your assistance.\n\nSincerely,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 27,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I need to request an official transcript from my university. Can you help me write a message for this? It should include my full name, student ID, the program I was enrolled in, and specify where the transcript should be sent. I also want to mention the reason for the request, like applying for a job or further studies. Please include all necessary details so the university can process it quickly.",
+    "variant_b": "Could you please assist me in drafting a formal request for my official university transcript? I would like the message to include my full name, student ID, and the program I was enrolled in. It should also specify the recipient or destination for the transcript, as well as the reason for my request, such as applying for a job or further studies. Thank you very much for your help in ensuring all the necessary details are included.",
+    "axis": "politeness",
+    "scenario_id": 27,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "To request your transcript from your university, you may use the following template:\n\nDear Registrar,\n\nI am writing to formally request an official copy of my academic transcript. My full name is [Your Full Name], and my student ID number is [Your Student ID]. Please advise if there are any fees or forms required to process this request. I would appreciate guidance on the expected timeline for delivery and the method of issuance (digital or physical copy). If you require any further information, please let me know.\n\nThank you for your assistance.\n\nSincerely,\n[Your Name]",
+    "variant_b": "I\u2019d be happy to help you request your transcript! Here\u2019s a template you can use:\n\nDear Registrar,\n\nI hope this message finds you well. I am kindly requesting an official copy of my academic transcript. My name is [Your Full Name], and my student ID is [Your Student ID]. Please let me know if there are any forms to complete or fees to pay, and I\u2019d appreciate any information on how and when I can expect to receive the transcript. Thank you so much for your assistance\u2014I truly appreciate your help!\n\nBest regards,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 27,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Dear Registrar,\n\nI am writing to request an official transcript from my time at the university. Please let me know what steps I need to follow to obtain this document, and if there are any forms or fees involved. I would appreciate any guidance you can provide on the process and timeline for fulfilling this request. Thank you for your assistance.\n\nSincerely,\n[Your Name]",
+    "variant_b": "Dear Registrar,\n\nI am writing to formally request an official transcript of my academic records from XYZ University. I graduated in May 2022 with a Bachelor of Science in Biology (Student ID: 1234567). Please advise if I need to complete a specific transcript request form or pay any applicable fees. I would appreciate information on the expected processing time and whether the transcript can be sent electronically to gradadmissions@abc.edu. Thank you for your help.\n\nSincerely,\nJane Doe",
+    "axis": "specificity",
+    "scenario_id": 27,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Certainly! Here is a formal request you can use:\n\nDear Registrar,\n\nI am writing to formally request an official copy of my academic transcript. I am a recent graduate of the Department of Computer Science, and my student identification number is 12345678. Please let me know if you require any additional information or documentation to process my request. I would appreciate it if you could inform me of any applicable fees and the estimated processing time. Thank you very much for your assistance.\n\nSincerely,\n[Your Name]",
+    "variant_b": "Of course! Please find a formal request template below:\n\nDear Registrar,\n\nI am contacting you to officially request a certified copy of my academic record. I recently completed my studies in the Department of Computer Science, and my student ID is 12345678. Kindly advise if you need further details or paperwork to fulfill my request. I would be grateful if you could notify me regarding any relevant charges and the expected timeline for processing. Thank you for your support.\n\nYours sincerely,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 27,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi there,\n\nI hope you\u2019re doing well! I have a reservation at your hotel coming up, and I was wondering if it\u2019s possible to check in a bit earlier than the usual time. I\u2019ll be arriving in town in the morning and would really appreciate it if I could get into my room early, if it\u2019s available. Please let me know if that would work or if there\u2019s anything else I should do. Thanks a lot for your help!\n\nBest,\n[Your Name]",
+    "variant_b": "Dear Sir or Madam,\n\nI hope this message finds you well. I have an upcoming reservation at your hotel and would like to kindly request an early check-in, if possible. I am scheduled to arrive in the morning and would appreciate any assistance you can provide regarding early room availability. Please let me know if there are any procedures I should follow or additional fees that may apply. Thank you very much for your attention to this request.\n\nSincerely,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 28,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hello,\n\nI hope this message finds you well. I will be arriving in town earlier than expected and was wondering if it might be possible to check in before the standard time. If there are any available rooms or if there is any way to accommodate an earlier check-in, I would greatly appreciate it. Of course, I understand if this is not feasible due to availability or hotel policies. Please let me know if there\u2019s anything I should do or any additional fees I should be aware of. Thank you very much for your assistance.\n\nBest regards,",
+    "variant_b": "Hello,\n\nI am arriving earlier than the standard check-in time and would like to request an early check-in. Please let me know if you can accommodate this request and inform me of any additional charges involved. I would appreciate confirmation of whether an early check-in is possible. Thank you for your attention to this matter.\n\nRegards,",
+    "axis": "directness",
+    "scenario_id": 28,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I have a reservation at your hotel for tomorrow. I need to check in earlier than your standard time. Please confirm if early check-in is possible and let me know the earliest time I can access the room. If there are any extra charges, specify them. Waiting for your response.",
+    "variant_b": "Dear Hotel Team,\n\nI hope this message finds you well. I have a reservation at your hotel for tomorrow, and I was wondering if it might be possible to arrange an early check-in. If this can be accommodated, could you please let me know the earliest available time and if there are any associated fees? I would greatly appreciate your assistance and look forward to your reply.\n\nThank you very much in advance.",
+    "axis": "politeness",
+    "scenario_id": 28,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Thank you for your request regarding early check-in. While standard check-in time is at 3:00 PM, we will do our best to accommodate your request based on room availability upon your arrival. Please note that early check-in cannot be guaranteed in advance, but we recommend contacting us on the morning of your arrival to receive an update on your room status. Should your room not be ready, we offer complimentary luggage storage. We appreciate your understanding and look forward to welcoming you.",
+    "variant_b": "Thank you so much for reaching out with your early check-in request! We know how important a smooth arrival can be, and we\u2019ll do everything we can to help. Our usual check-in time is 3:00 PM, but if your room is available sooner, we\u2019ll be happy to welcome you early. Just let us know your estimated arrival time, and feel free to contact us on the day\u2014you\u2019re always welcome to leave your bags with us if your room isn\u2019t ready yet. We look forward to making your stay as comfortable as possible!",
+    "axis": "emotional_tone",
+    "scenario_id": 28,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Dear Hotel Team,\n\nI hope this message finds you well. I have a reservation and was wondering if it would be possible to check in earlier than the usual time. I would really appreciate it if you could let me know if early check-in can be arranged, or if there are any options available. Thank you for your assistance. Looking forward to your reply.\n\nBest regards,",
+    "variant_b": "Dear Hotel Team,\n\nI have a reservation for June 15th under the name Alex Smith, with confirmation number 123456. My flight arrives in the morning, so I am wondering if I could check in earlier than your usual 3:00 PM check-in time, ideally around 10:00 AM. If an early check-in is not possible, please let me know if there is a possibility to store my luggage until the room is ready. Thank you very much for your help.\n\nBest regards,",
+    "axis": "specificity",
+    "scenario_id": 28,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear Hotel Team,\n\nI hope this message finds you well. I have a reservation at your property for [date] under the name [your name]. I am writing to kindly request an early check-in if possible, as my arrival in the city is expected earlier than standard check-in time. If there is any way to accommodate this request, I would greatly appreciate it. Please let me know if there are any additional fees or information you require from me. Thank you very much for your assistance, and I look forward to your reply.\n\nBest regards,\n[your name]",
+    "variant_b": "Dear Hotel Staff,\n\nI hope this note reaches you in good spirits. I have booked a stay at your hotel for [date] under the name [your name]. I am contacting you to politely inquire about the possibility of an early check-in, as I am scheduled to arrive in town ahead of the regular check-in time. Should it be possible to arrange this, I would be most grateful. Kindly inform me if there are any extra charges or details you need from me. Thank you for your support, and I await your response.\n\nSincerely,\n[your name]",
+    "axis": "synonym",
+    "scenario_id": 28,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hey there,\n\nJust wanted to say a big thanks for helping me out with my issue. I really appreciate how quickly you got back to me and made sure everything was sorted out. It made a huge difference and saved me a ton of time and stress. You were super helpful and friendly the whole way through, which I really appreciate. Thanks again for your awesome support!\n\nTake care,\n[Your Name]",
+    "variant_b": "Dear Customer Support Team,\n\nI would like to express my sincere gratitude for the assistance you provided in resolving my recent issue. Your prompt and professional response made the entire process smooth and efficient. I truly appreciate the attention to detail and the courteous manner in which my concerns were addressed. Thank you once again for your excellent support. It has made a significant difference, and I am very grateful.\n\nBest regards,\n[Your Name]",
+    "axis": "formality",
+    "scenario_id": 29,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hi there,\n\nI just wanted to take a moment to express my appreciation for your help with my recent issue. I was having some trouble, and your prompt and thoughtful support really made a difference for me. I\u2019m grateful for the time you took to explain things clearly and to make sure everything was resolved. Thank you so much for your patience and for following up to make sure everything was working well. If it\u2019s not too much trouble, please pass along my thanks to your team as well.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hello,\n\nThank you for resolving my issue so quickly and efficiently. Your clear explanations and attention to detail made the process easy for me. I appreciate your support and the way you ensured everything was taken care of. Please let your team know I\u2019m grateful for the excellent service. Thanks again for your help.\n\nSincerely,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 29,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "Thanks for fixing my issue. I appreciate the quick and clear support. Everything works now. Let me know if there\u2019s anything else I need to do.",
+    "variant_b": "Dear Customer Support Team,\n\nThank you so much for your help in resolving my issue. I truly appreciate your prompt and clear assistance throughout the process. Everything is working perfectly now, and I am grateful for your support. Please let me know if there is anything further I should do. Thanks again for your excellent service.\n\nBest regards,\n[Your Name]",
+    "axis": "politeness",
+    "scenario_id": 29,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Dear Customer Support Team,\n\nI am writing to acknowledge the resolution of my recent issue. Your representative addressed my concerns efficiently and provided clear instructions that helped solve the problem. I appreciate the prompt and professional assistance. Thank you for your support.\n\nSincerely,\n[Your Name]",
+    "variant_b": "Dear Customer Support Team,\n\nThank you so much for your outstanding help with my recent issue. I truly appreciate the patience and care your representative showed while guiding me through the solution. It made all the difference to have someone so attentive and understanding. I\u2019m grateful for your support and dedication.\n\nWarm regards,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 29,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Dear Customer Support Team,\n\nI wanted to express my gratitude for your help in resolving my recent issue. Your prompt and professional assistance made a big difference, and I really appreciate the time and care you put into addressing my concerns. Thank you for making the process smooth and for keeping me updated along the way. I\u2019m grateful for your support and dedication.\n\nBest regards,\n\n[Your Name]",
+    "variant_b": "Dear Alex,\n\nThank you so much for your help last Thursday in resolving my login issue with my account (Reference #48213). I appreciate how quickly you responded to my initial email and the clear, step-by-step instructions you provided over the phone, which allowed me to regain access within an hour. Your follow-up email to confirm everything was working properly was especially reassuring. Thanks again for your attentive and friendly support throughout the process.\n\nBest regards,\n\n[Your Name]",
+    "axis": "specificity",
+    "scenario_id": 29,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Dear Customer Support Team,\n\nI wanted to express my gratitude for your prompt assistance in resolving my recent issue. Your professionalism and attention to detail made the entire process smooth and stress-free. I truly appreciate the time you took to understand my concern and the effective solution you provided. Thank you once again for your excellent service. I am grateful for your support and dedication.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Dear Customer Support Team,\n\nI wanted to convey my thanks for your swift help in addressing my recent problem. Your expertise and thoroughness made the whole experience easy and hassle-free. I sincerely value the effort you put into understanding my situation and the efficient remedy you offered. Thanks again for your outstanding support. I am thankful for your assistance and commitment.\n\nBest regards,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 29,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  },
+  {
+    "variant_a": "Hi there,\n\nI\u2019m interested in signing up for swimming classes at the community center and wanted to ask about what\u2019s available. Could you let me know the current schedule, age groups, and prices? Also, do I need to bring any specific gear to the first class, or is equipment provided? If possible, please let me know how to register or if there\u2019s a waitlist. Thanks a lot for your help!\n\nBest,\nAlex",
+    "variant_b": "Dear Community Center Staff,\n\nI am writing to inquire about the swimming classes currently offered at your facility. Could you please provide information regarding class schedules, age group divisions, and associated fees? Additionally, I would appreciate clarification on whether participants are required to bring their own equipment, or if it will be supplied. Kindly advise on the registration process and whether there is a waitlist for any sessions. Thank you very much for your assistance.\n\nSincerely,\nAlex Johnson",
+    "axis": "formality",
+    "scenario_id": 30,
+    "pole_a_label": "casual/informal",
+    "pole_b_label": "formal/professional"
+  },
+  {
+    "variant_a": "Hello,\n\nI hope this message finds you well. I was wondering if you might be able to provide some information regarding swimming classes at your community center. If possible, could you please let me know whether you currently offer any classes, as well as the available times and any details about registration or requirements? I would really appreciate any guidance or recommendations you might have for someone looking to join. Thank you very much for your time and assistance.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hi,\n\nI\u2019m interested in enrolling in swimming classes at your community center. Please provide me with details about current class schedules, availability, and the registration process. Also, let me know if there are any requirements for joining. I look forward to your response and would appreciate the information as soon as possible.\n\nThank you,\n[Your Name]",
+    "axis": "directness",
+    "scenario_id": 30,
+    "pole_a_label": "indirect/hedged",
+    "pole_b_label": "direct/assertive"
+  },
+  {
+    "variant_a": "I want information about swimming classes at your community center. Send me the current schedule, costs, and details on class levels. Also, let me know how to sign up and if there are any spots available soon. Include details about age groups and any equipment needed. Reply as soon as you can.",
+    "variant_b": "Hello,\n\nI hope this message finds you well. I am interested in learning more about the swimming classes offered at your community center. Could you please provide the current schedule, pricing, and information about the different class levels? I would also appreciate details on the registration process, available spots, and any equipment requirements. Thank you very much for your assistance, and I look forward to your response.\n\nBest regards,\n\n[Your Name]",
+    "axis": "politeness",
+    "scenario_id": 30,
+    "pole_a_label": "blunt/terse",
+    "pole_b_label": "polite/courteous"
+  },
+  {
+    "variant_a": "Dear Community Center Staff,\n\nI am interested in learning more about the swimming classes currently offered at your facility. Could you please provide information regarding available class schedules, age group divisions, pricing, and any necessary registration procedures? Additionally, I would appreciate details on the skill levels addressed in your programs and any required equipment or prerequisites for participation. Thank you in advance for your assistance.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hello Community Center Team,\n\nI hope this message finds you well! I'm excited to learn about the swimming classes at the center and would love any information you can share about schedules, age groups, costs, and how to sign up. If you have recommendations for which classes might be a good fit based on different skill levels, that would be wonderful, too. Please let me know if I need to bring anything or meet any requirements beforehand. Thank you so much\u2014I appreciate your help!\n\nWarm regards,\n[Your Name]",
+    "axis": "emotional_tone",
+    "scenario_id": 30,
+    "pole_a_label": "neutral/factual",
+    "pole_b_label": "warm/empathetic"
+  },
+  {
+    "variant_a": "Hello,\n\nI am interested in finding out more about the swimming classes offered at your community center. Could you please provide some information about the different types of classes available, the general schedule, and how to sign up? I would also appreciate any details about costs or requirements for participation. Thank you for your assistance.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hello,\n\nI am interested in enrolling in swimming classes at your community center. Could you please let me know what specific classes are currently available, such as beginner, intermediate, or advanced? I\u2019d also like to know the exact days and times classes are held, the cost per session or for the full term, and whether there are any age restrictions or equipment I need to bring. Additionally, please explain the registration process and upcoming session start dates. Thank you for your help.\n\nBest regards,\n[Your Name]",
+    "axis": "specificity",
+    "scenario_id": 30,
+    "pole_a_label": "vague/general",
+    "pole_b_label": "detailed/specific"
+  },
+  {
+    "variant_a": "Hello,\n\nI am interested in learning more about the swimming classes offered at the community center. Could you please provide information regarding the current schedule, available class levels, and any registration requirements? Additionally, I would appreciate details about fees and whether there are classes suitable for beginners. If possible, please let me know if there are any upcoming sessions or waitlists. Thank you very much for your assistance. I look forward to your response.\n\nBest regards,\n[Your Name]",
+    "variant_b": "Hello,\n\nI would like to inquire about the swimming lessons available at the community center. Could you kindly share details about the present timetable, the types of classes offered, and any enrollment procedures? I would also be grateful for information about costs and whether beginner-friendly sessions are provided. If applicable, please inform me of any forthcoming courses or reservation lists. Thank you for your help. I await your reply.\n\nSincerely,\n[Your Name]",
+    "axis": "synonym",
+    "scenario_id": 30,
+    "pole_a_label": "version_a",
+    "pole_b_label": "version_b"
+  }
+]

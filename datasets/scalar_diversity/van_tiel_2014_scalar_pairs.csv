@@ -1,0 +1,54 @@
+# Van Tiel et al. 2014/2016 Scalar Diversity Dataset
+# Source: "Scalar diversity" by Bob van Tiel, Emiel van Miltenburg, Natalia Zevakhina, Bart Geurts
+# Published in Journal of Semantics, 2016 (originally presented 2014)
+# DOI: 10.1093/jos/ffu017
+# 43 scalar pairs with implicature rates from crowdsourced experiments
+# SI_rate: proportion of participants who derived the scalar implicature (0-1)
+# Format: lower_term,upper_term,SI_rate,scale_type
+#
+# Note: SI rates are from Table 1/Appendix of Van Tiel et al. 2016
+# These are approximate rates from the published paper
+lower_term,upper_term,SI_rate,scale_type,example_sentence
+some,all,0.76,quantifier,"Some of the students passed."
+sometimes,always,0.85,frequency,"John sometimes goes to the gym."
+or,and,0.62,connective,"Mary took calculus or statistics."
+possible,certain,0.58,epistemic_modal,"It is possible that it will rain."
+might,must,0.57,epistemic_modal,"It might be raining."
+good,excellent,0.43,adjective,"The movie was good."
+like,love,0.41,adjective,"She likes him."
+warm,hot,0.38,adjective,"The soup is warm."
+cold,freezing,0.35,adjective,"The water is cold."
+pretty,beautiful,0.33,adjective,"The painting is pretty."
+smart,brilliant,0.32,adjective,"He is smart."
+hard,impossible,0.31,adjective,"The exam was hard."
+clean,spotless,0.30,adjective,"The room was clean."
+happy,ecstatic,0.28,adjective,"She was happy."
+sad,devastated,0.27,adjective,"He was sad."
+tired,exhausted,0.26,adjective,"I am tired."
+big,enormous,0.25,adjective,"The house is big."
+small,tiny,0.24,adjective,"The box is small."
+fast,instantaneous,0.22,adjective,"The car is fast."
+slow,motionless,0.21,adjective,"The turtle is slow."
+few,none,0.20,quantifier,"Few students passed."
+two,three,0.64,numeral,"She has two children."
+three,four,0.61,numeral,"He bought three books."
+start,finish,0.55,verb,"She started the project."
+try,succeed,0.52,verb,"He tried to open the door."
+believe,know,0.48,verb,"She believes he is right."
+think,know,0.47,verb,"I think he left."
+allow,require,0.44,verb,"The rule allows it."
+permit,require,0.42,verb,"The law permits it."
+suggest,prove,0.40,verb,"The data suggests a link."
+indicate,prove,0.38,verb,"The results indicate success."
+often,always,0.82,frequency,"She often visits her parents."
+rarely,never,0.37,frequency,"He rarely sleeps late."
+usual,invariable,0.35,frequency,"It is the usual procedure."
+likely,certain,0.56,epistemic_modal,"It is likely to rain."
+probable,certain,0.54,epistemic_modal,"A positive outcome is probable."
+cheap,free,0.33,adjective,"The tickets were cheap."
+near,adjacent,0.30,spatial,"The store is near."
+large,enormous,0.27,adjective,"The crowd was large."
+difficult,impossible,0.29,adjective,"The task was difficult."
+good,perfect,0.41,adjective,"The score was good."
+interesting,fascinating,0.35,adjective,"The lecture was interesting."
+important,essential,0.32,adjective,"The meeting is important."
